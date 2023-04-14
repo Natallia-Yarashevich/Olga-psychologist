@@ -39,32 +39,95 @@
 .blog {
     max-width: 1369px;
     height: 505px;
-    $color-bg-main:#DEDBDC;
+    background-color: $color-bg-main;
     margin-left: 39px;
     margin-bottom: 379px;
+
+    &__paragraf {
+        @include paragraf;
+    font-family: Montserrat;
+    font-size: 36px;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    }
+
+    .titleH2 {
+        @include title;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left
+    }
+
+    .btn{
+        @include button-green
+    }
 }
 
-.titleH2 {
-    @include title;
-font-size: 64px;
-line-height: 70px;
-letter-spacing: 0em;
-text-align: left
+
+
+.footer-wrapper {
+    background-color: $color-bg-dark;
+    max-width: 1440px;
+    height: 72px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.blog__paragraf {
-    @include paragraf;
-font-family: Montserrat;
-font-size: 36px;
-line-height: 70px;
-letter-spacing: 0em;
-text-align: left;
+.navigation {
+    max-width: 1440px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
-}
-.btn{
-    @include button-green
+    &__text {
+        width: 326px;
+        height: 39px;
+        margin-left: 45px;
+        margin-top: 17px;
+        margin-bottom: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: $color-dark;
+        }
 }
 
+
+.social-media {
+display: flex;
+justify-content: space-between;
+margin-left: 40px;
+list-style-type: none;
+width: 405px;
+height: 48px;
+margin-top: 13px;
+margin-bottom: 10px;
+
+&__phone-number {
+    @include paragraf; 
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: $color-bg-main;
+
+max-width: 229px;
+height: 29px;
+padding-right: 13px;
+margin-top: 6px;
+}
+
+&__whatsapp, &__telegram {
+    margin-right: 35px;
+}
+}
 
 
 @import "media";

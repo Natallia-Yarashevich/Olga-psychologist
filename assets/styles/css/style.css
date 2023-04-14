@@ -17,20 +17,10 @@
 .blog {
   max-width: 1369px;
   height: 505px;
+  background-color: #DEDBDC;
   margin-left: 39px;
   margin-bottom: 379px;
 }
-
-.titleH2 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 70px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
 .blog__paragraf {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -41,8 +31,16 @@
   letter-spacing: 0em;
   text-align: left;
 }
-
-.btn {
+.blog .titleH2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.blog .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -54,9 +52,68 @@
   background-color: #9aa581;
   color: #EFECE8;
 }
-.btn:hover {
+.blog .btn:hover {
   transition: 0.7s;
 }
+.footer-wrapper {
+  background-color: #ABA39B;
+  max-width: 1440px;
+  height: 72px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navigation {
+  max-width: 1440px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.navigation__text {
+  width: 326px;
+  height: 39px;
+  margin-left: 45px;
+  margin-top: 17px;
+  margin-bottom: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #383838;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  list-style-type: none;
+  width: 405px;
+  height: 48px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+.social-media__phone-number {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #DEDBDC;
+  max-width: 229px;
+  height: 29px;
+  padding-right: 13px;
+  margin-top: 6px;
+}
+.social-media__whatsapp, .social-media__telegram {
+  margin-right: 35px;
+}
+
 @media (max-width: 1500px) {
   .container {
     max-width: 800px;
