@@ -1,2 +1,41 @@
 @import "colors";
-@import "fonts";
+@import "mixins";
+
+*,
+* ::before,
+* ::after {
+    box-sizing: inherit;
+}
+
+// Примерно такой css должен получится, конечно, можете выбрать другие брейкпоинты, если вам удобней и понятней 
+/* здесь ваши стили для десктопа (компьютер) */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+// ALISA
+
+
+// ABOUT ME =ARINA
+
+
+// INFO =TATIANA
+
+
+// PSYCHO =LYUDMILA
+
+
+// ENERGU =NATALIA
+
+
+// REVIEW =ANNA
+
+
+// FOOTER =VICTORIA
+
+
+@import "media";

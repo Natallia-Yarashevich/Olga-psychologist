@@ -1,0 +1,27 @@
+@media (max-width: 1500px) {
+    .container {
+        max-width: 800px;
+    }
+
+    /* здесь ваши стили для ноутбука */
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 600px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* здесь ваши стили для планшета */
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 480px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* здесь ваши стили для смартфона */
+}

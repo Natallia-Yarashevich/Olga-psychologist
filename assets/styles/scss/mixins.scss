@@ -1,0 +1,93 @@
+@mixin title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin h1 {
+    @include title;
+    line-height: 107px;
+    font-size: 88px;
+    color: $color-black;
+}
+
+@mixin h2 {
+    @include title;
+    line-height: 78px;
+    font-size: 64px;
+    color: $color-dark;
+}
+
+@mixin h3 {
+    @include title;
+    line-height: 60px;
+    font-size: 48px;
+    color: $color-dark;
+}
+
+@mixin h4 {
+    @include title;
+    line-height: 60px;
+    font-size: 36px;
+    color: $color-dark;
+}
+
+@mixin paragraf {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin p {
+    @include paragraf;
+    font-size: 15px;
+    line-height: 160%;
+    /* or 24px */
+}
+
+@mixin btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+// кнопка зеленая
+@mixin button-green {
+    @include btn;
+    padding: 17px 35px;
+    background-color: $color-green;
+    color: $color-light;
+
+    &:hover {
+        // background-color: $color-primary-light;
+        transition: 0.7s;
+    }
+
+    &:focus {
+        // outline-color: transparent;- изменить под требования
+        // outline-style: solid;
+        // box-shadow: 0 0 0 2px #f3c496;
+    }
+}
+
+@mixin button-light {
+    @include btn;
+    padding: 10px 25px;
+    background-color: $color-light;
+    color: $color-dark;
+
+    &:hover {
+        // background-color: $color-primary-light;
+        transition: 0.7s;
+    }
+
+    &:focus {
+        // outline-color: transparent;- изменить под требования
+        // outline-style: solid;
+        // box-shadow: 0 0 0 2px #f3c496;
+    }
+}
