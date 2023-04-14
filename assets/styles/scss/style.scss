@@ -36,6 +36,35 @@
 
 
 // FOOTER =VICTORIA
+.blog {
+    max-width: 1369px;
+    height: 505px;
+    $color-bg-main:#DEDBDC;
+    margin-left: 39px;
+    margin-bottom: 379px;
+}
+
+.titleH2 {
+    @include title;
+font-size: 64px;
+line-height: 70px;
+letter-spacing: 0em;
+text-align: left
+}
+
+.blog__paragraf {
+    @include paragraf;
+font-family: Montserrat;
+font-size: 36px;
+line-height: 70px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.btn{
+    @include button-green
+}
+
 
 
 @import "media";

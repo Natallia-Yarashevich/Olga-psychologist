@@ -2,8 +2,7 @@
 *,
 * ::before,
 * ::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* здесь ваши стили для десктопа (компьютер) */
@@ -15,6 +14,49 @@
   padding-right: 30px;
 }
 
+.blog {
+  max-width: 1369px;
+  height: 505px;
+  margin-left: 39px;
+  margin-bottom: 379px;
+}
+
+.titleH2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.blog__paragraf {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Montserrat;
+  font-size: 36px;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 17px 35px;
+  background-color: #9aa581;
+  color: #EFECE8;
+}
+.btn:hover {
+  transition: 0.7s;
+}
 @media (max-width: 1500px) {
   .container {
     max-width: 800px;
@@ -37,4 +79,3 @@
   }
   /* здесь ваши стили для смартфона */
 }
-/*# sourceMappingURL=style.css.map */
