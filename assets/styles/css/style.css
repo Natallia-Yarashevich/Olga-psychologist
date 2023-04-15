@@ -15,6 +15,132 @@
   padding-right: 30px;
 }
 
+.psycho {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.psycho .psycho-content {
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1373px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #EFECE8;
+  min-height: 1216px;
+}
+.psycho .psycho-content .one {
+  text-indent: 40px;
+}
+.psycho .psycho-content li {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+}
+.psycho .psycho-content li::marker {
+  color: #9aa581;
+  font-size: 1.2em;
+}
+.psycho .psycho-content__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 48px;
+  color: #383838;
+  color: #9aa581;
+}
+.psycho .psycho-content__paragraf {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+}
+.psycho .psycho-content .nobullet {
+  list-style-type: none;
+}
+.psycho .psycho-content .about {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  background-color: #EFECE8;
+  border-style: none;
+  border-bottom: 4px solid #9aa581;
+}
+.psycho .psycho-content .about:hover, .psycho .psycho-content .about:focus, .psycho .psycho-content .about:active {
+  border-bottom: 7px solid #9aa581;
+  color: #9aa581;
+  -webkit-transform: 3s;
+          transform: 3s;
+}
+.psycho .psycho-content .hidden {
+  display: none;
+  position: absolute;
+}
+.psycho .psycho-content .psycho-content__second {
+  position: relative;
+}
+.psycho .psycho-content .psycho-content__second:hover .hidden {
+  display: block;
+}
+.psycho__price {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+}
+.psycho .button-green {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 17px 35px;
+  background-color: #9aa581;
+  color: #EFECE8;
+  max-width: 300px;
+  max-height: 63px;
+}
+.psycho .button-green:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.psycho .tariff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (max-width: 1500px) {
   .container {
     max-width: 800px;
@@ -37,4 +163,3 @@
   }
   /* здесь ваши стили для смартфона */
 }
-/*# sourceMappingURL=style.css.map */

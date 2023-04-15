@@ -27,7 +27,77 @@
 
 
 // PSYCHO =LYUDMILA
-
+.psycho {
+    box-sizing: border-box;
+        .psycho-content {
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        max-width: 1373px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: $color-light;
+        min-height: 1216px;
+        .one {
+            text-indent: 40px;
+        }
+        li {
+            @include h4;             
+        }
+        li::marker {
+            color: $color-green; 
+            font-size: 1.2em;           
+        }
+        &__subtitle {
+            @include h3;
+            color: $color-green;
+        }
+        &__paragraf {
+            @include h4;
+        }
+        .nobullet {
+            list-style-type: none;
+        }
+        .about {
+            @include h4;
+            max-width: min-content;
+            background-color: $color-light;
+            border-style: none;
+            border-bottom: 4px solid $color-green;
+            &:hover,
+            &:focus,
+            &:active {
+                border-bottom: 7px solid $color-green;
+                color: $color-green;
+                transform: 3s;  
+            }
+        }
+        .hidden {
+            display: none;
+            position: absolute;
+        }
+        .psycho-content__second {
+            position: relative;
+        }
+        .psycho-content__second:hover .hidden {
+            display: block;
+        }
+    }
+    &__price {
+        @include h4;
+    }
+    .button-green {
+        @include button-green;
+        max-width: 300px;
+        max-height: 63px;
+    }
+    .tariff {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
 // ENERGU =NATALIA
 
