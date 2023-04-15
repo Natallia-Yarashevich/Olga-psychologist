@@ -36,36 +36,48 @@
 
 
 // FOOTER =VICTORIA
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 .blog {
     max-width: 1369px;
-    height: 505px;
+    height: 396px;
     background-color: $color-bg-main;
     margin-left: 39px;
-    margin-bottom: 379px;
+    margin-bottom: 315px;
 
     &__paragraf {
         @include paragraf;
+    max-width: 1369px;
+    height: 181px;
     font-family: Montserrat;
     font-size: 36px;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 38px;
+    margin-bottom: 29px;
+    }
+
+    .titleH2 {
+        @include title;
+    max-width: 1369px;
+    height: 86px;
+    font-size: 64px;
     line-height: 70px;
     letter-spacing: 0em;
     text-align: left;
     }
 
-    .titleH2 {
-        @include title;
-    font-size: 64px;
-    line-height: 70px;
-    letter-spacing: 0em;
-    text-align: left
-    }
-
     .btn{
-        @include button-green
+        @include button-green;
     }
 }
-
-
 
 .footer-wrapper {
     background-color: $color-bg-dark;
@@ -86,9 +98,9 @@
     justify-content: space-between;
 
     &__text {
-        width: 326px;
+        width: 284px;
         height: 39px;
-        margin-left: 45px;
+        margin-left: 38px;
         margin-top: 17px;
         margin-bottom: 16px;
         font-family: 'Montserrat';
@@ -106,26 +118,33 @@ display: flex;
 justify-content: space-between;
 margin-left: 40px;
 list-style-type: none;
-width: 405px;
-height: 48px;
-margin-top: 13px;
+width: 456px;
+height: 49px;
+margin-top: 12px;
 margin-bottom: 10px;
 
 &__phone-number {
-    @include paragraf; 
+    @include paragraf;
 font-weight: 600;
 font-size: 24px;
 line-height: 29px;
 color: $color-bg-main;
 
-max-width: 229px;
-height: 29px;
+max-width: 321px;
+height: 15px;
 padding-right: 13px;
-margin-top: 6px;
+margin-top: 10px;
 }
 
-&__whatsapp, &__telegram {
-    margin-right: 35px;
+&__whatsapp {
+    width: 50px;
+    padding-left: 40px;
+}
+
+&__telegram {
+    width: 50px;
+    margin-left: 35px;
+    padding-right: 20px;
 }
 }
 

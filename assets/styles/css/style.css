@@ -14,27 +14,40 @@
   padding-right: 30px;
 }
 
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .blog {
   max-width: 1369px;
-  height: 505px;
+  height: 396px;
   background-color: #DEDBDC;
   margin-left: 39px;
-  margin-bottom: 379px;
+  margin-bottom: 315px;
 }
 .blog__paragraf {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
+  max-width: 1369px;
+  height: 181px;
   font-family: Montserrat;
   font-size: 36px;
-  line-height: 70px;
+  line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
+  margin-left: 38px;
+  margin-bottom: 29px;
 }
 .blog .titleH2 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
+  max-width: 1369px;
+  height: 86px;
   font-size: 64px;
   line-height: 70px;
   letter-spacing: 0em;
@@ -74,9 +87,9 @@
   justify-content: space-between;
 }
 .navigation__text {
-  width: 326px;
+  width: 284px;
   height: 39px;
-  margin-left: 45px;
+  margin-left: 38px;
   margin-top: 17px;
   margin-bottom: 16px;
   font-family: "Montserrat";
@@ -92,9 +105,9 @@
   justify-content: space-between;
   margin-left: 40px;
   list-style-type: none;
-  width: 405px;
-  height: 48px;
-  margin-top: 13px;
+  width: 456px;
+  height: 49px;
+  margin-top: 12px;
   margin-bottom: 10px;
 }
 .social-media__phone-number {
@@ -105,13 +118,19 @@
   font-size: 24px;
   line-height: 29px;
   color: #DEDBDC;
-  max-width: 229px;
-  height: 29px;
+  max-width: 321px;
+  height: 15px;
   padding-right: 13px;
-  margin-top: 6px;
+  margin-top: 10px;
 }
-.social-media__whatsapp, .social-media__telegram {
-  margin-right: 35px;
+.social-media__whatsapp {
+  width: 50px;
+  padding-left: 40px;
+}
+.social-media__telegram {
+  width: 50px;
+  margin-left: 35px;
+  padding-right: 20px;
 }
 
 @media (max-width: 1500px) {
