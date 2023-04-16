@@ -22,6 +22,7 @@
 }
 
 .blog {
+  position: relative;
   max-width: 1369px;
   height: 396px;
   background-color: #DEDBDC;
@@ -39,8 +40,7 @@
   line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 38px;
-  margin-bottom: 29px;
+  margin-bottom: 12px;
 }
 .blog .titleH2 {
   font-family: "Montserrat", sans-serif;
@@ -64,6 +64,8 @@
   padding: 17px 35px;
   background-color: #9aa581;
   color: #EFECE8;
+  position: absolute;
+  right: 0px;
 }
 .blog .btn:hover {
   transition: 0.7s;

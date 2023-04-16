@@ -45,6 +45,7 @@
 }
 
 .blog {
+    position: relative;
     max-width: 1369px;
     height: 396px;
     background-color: $color-bg-main;
@@ -60,8 +61,7 @@
     line-height: 60px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 38px;
-    margin-bottom: 29px;
+    margin-bottom: 12px;
     }
 
     .titleH2 {
@@ -76,6 +76,8 @@
 
     .btn{
         @include button-green;
+        position: absolute;
+        right: 0px;
     }
 }
 
