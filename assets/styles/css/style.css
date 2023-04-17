@@ -18,13 +18,15 @@
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
+  line-height: 60px;
   font-size: 36px;
+  color: #383838;
   line-height: 70px;
 }
-.info .info__button {
+.info__button {
   text-align: right;
 }
-.info .info__button button {
+.info__button .button-green {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -36,7 +38,7 @@
   background-color: #9aa581;
   color: #EFECE8;
 }
-.info .info__button button:hover {
+.info__button .button-green:hover {
   transition: 0.7s;
 }
 @media (max-width: 1500px) {

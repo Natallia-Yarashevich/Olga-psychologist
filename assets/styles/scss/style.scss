@@ -25,17 +25,14 @@
 
 // INFO =TATIANA
 .info {
-    @include paragraf;
-    font-size: 36px;
+    @include h4;
     line-height: 70px;
 
-    .info__button {
+    &__button {
         text-align: right;
 
-        button {
+        .button-green {
             @include button-green;
-            // width: 451px;
-            // height: 72px;
         }
     }
 }
