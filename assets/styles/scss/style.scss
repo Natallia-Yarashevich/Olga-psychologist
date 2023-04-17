@@ -37,25 +37,13 @@
 
 // FOOTER =VICTORIA
 
-.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
 .blog {
-    position: relative;
-    max-width: 1369px;
-    height: 396px;
+    min-height: 70vh;
     background-color: $color-bg-main;
-    margin-left: 39px;
     margin-bottom: 315px;
 
-    &__paragraf {
+    &__subtitle.subtitle {
         @include paragraf;
-    max-width: 1369px;
-    height: 181px;
     font-family: Montserrat;
     font-size: 36px;
     line-height: 60px;
@@ -64,91 +52,79 @@
     margin-bottom: 12px;
     }
 
-    .titleH2 {
+    .titleH2.titleH2 {
         @include title;
-    max-width: 1369px;
-    height: 86px;
     font-size: 64px;
     line-height: 70px;
     letter-spacing: 0em;
     text-align: left;
     }
-
-    .btn{
-        @include button-green;
-        position: absolute;
-        right: 0px;
-    }
 }
 
-.footer-wrapper {
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btn {
+@include button-green;
+}
+
+.footer {
     background-color: $color-bg-dark;
-    max-width: 1440px;
-    height: 72px;
     margin: 0 auto;
-    width: 100%;
     padding-left: 30px;
     padding-right: 30px;
 }
 
+.container.footer-wrapper {
+    background-color: $color-bg-dark;
+    width: 100%;
+}
+
 .navigation {
-    max-width: 1440px;
-    height: 72px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 
     &__text {
-        width: 284px;
-        height: 39px;
         margin-left: 38px;
         margin-top: 17px;
         margin-bottom: 16px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 39px;
+        @include phone;
         color: $color-dark;
         }
 }
-
 
 .social-media {
 display: flex;
 justify-content: space-between;
 margin-left: 40px;
 list-style-type: none;
-width: 456px;
-height: 49px;
 margin-top: 12px;
 margin-bottom: 10px;
 
 &__phone-number {
-    @include paragraf;
-font-weight: 600;
-font-size: 24px;
-line-height: 29px;
+@include phone;
+text-decoration: none;
 color: $color-bg-main;
-
-max-width: 321px;
-height: 15px;
 padding-right: 13px;
 margin-top: 10px;
 }
 
 &__whatsapp {
-    width: 50px;
+    @include phone;
     padding-left: 40px;
 }
 
 &__telegram {
-    width: 50px;
+    @include phone;
     margin-left: 35px;
     padding-right: 20px;
 }
 }
 
 
-@import "media";
+@import "media"
