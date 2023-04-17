@@ -17,6 +17,17 @@
     padding-right: 30px;
 }
 
+body {
+    background-color: $color-bg-main;
+}
+
+.navbar {
+    background: $color-dark;
+    height: 200px;
+    width: 100%;
+    order: 1;
+}
+
 // ALISA
 
 
@@ -24,13 +35,78 @@
 
 
 // INFO =TATIANA
+// INFO =TATIANA end
+.services {
+    background: $color-bg-main;
+    // padding: 30px 100px;
+}
 
+.titleH2 {
+    @include h2;
+}
+
+.energy {
+    background: $color-light;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 30px;
+
+    &__subtitle {
+        @include h3;
+    }
+
+    &__paragraf {
+        @include h4;
+    }
+
+    &__price {
+        @include h4;
+        display: flex;
+    }
+}
 
 // PSYCHO =LYUDMILA
 
-
 // ENERGU =NATALIA
+ul {
+    list-style: none;
+}
 
+span {
+    color: $color-green;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;
+    font-size: 40px;
+}
+
+label {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    @include p;
+}
+
+.list {
+    display: none;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked~.list {
+    display: block;
+}
+
+.button-green {
+    @include button-green;
+}
 
 // REVIEW =ANNA
 
