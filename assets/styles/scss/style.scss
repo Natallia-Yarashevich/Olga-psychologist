@@ -4,38 +4,107 @@
 *,
 * ::before,
 * ::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-// Примерно такой css должен получится, конечно, можете выбрать другие брейкпоинты, если вам удобней и понятней 
+// Примерно такой css должен получится, конечно, можете выбрать другие брейкпоинты, если вам удобней и понятней
 /* здесь ваши стили для десктопа (компьютер) */
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 // ALISA
 
+header {
+  background-color: $color-bg-main;
 
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $color-bg-dark;
+    max-height: 70px;
+    color: $color-dark;
+    @include paragraf;
+
+    &__title {
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    &__info:link {
+      color: $color-bg-main;
+      text-decoration: none;
+    }
+
+    &__info:active {
+      color: $color-light;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    &__info:visited {
+      color: $color-bg-main;
+      text-decoration: none;
+    }
+
+    &__button--call {
+      @include button-light;
+      background-color: $color-bg-main;
+    }
+  }
+  .intro {
+    display: flex;
+    flex-direction: row;
+    color: $color-dark;
+    margin-top: 30px;
+
+    &__text__title {
+      @include h1;
+      color: $color-dark;
+      line-height: 40px;
+      margin-left: 10px;
+    }
+
+    &__text__job {
+      @include h4;
+      font-size: 30px;
+      margin-left: 10px;
+    }
+
+    &__text__quote {
+      @include h4;
+      font-weight: 300;
+      margin-left: 10px;
+      padding-top: 20px;
+    }
+
+    &__pic {
+      width: 500px;
+      margin-left: 130px;
+    }
+  }
+}
 // ABOUT ME =ARINA
-
 
 // INFO =TATIANA
 
-
 // PSYCHO =LYUDMILA
-
 
 // ENERGU =NATALIA
 
-
 // REVIEW =ANNA
 
-
 // FOOTER =VICTORIA
-
 
 @import "media";
