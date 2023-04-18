@@ -7,8 +7,7 @@
     box-sizing: inherit;
 }
 
-// Примерно такой css должен получится, конечно, можете выбрать другие брейкпоинты, если вам удобней и понятней 
-/* здесь ваши стили для десктопа (компьютер) */
+// Обшие стили для всего документа, то что повторяется
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -21,13 +20,34 @@ body {
     background-color: $color-bg-main;
 }
 
-.navbar {
-    background: $color-dark;
-    height: 200px;
-    width: 100%;
-    order: 1;
+.titleH2 {
+    @include h2;
 }
 
+.paragraf {
+    @include h4;
+}
+
+ul {
+    list-style: none;
+}
+
+.button-green {
+    @include button-green;
+    text-align: center;
+
+    &__help {
+        color: white;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+// разные разделы, смотрим, что вынесено в обший
 // ALISA
 
 
@@ -35,83 +55,84 @@ body {
 
 
 // INFO =TATIANA
+
 // INFO =TATIANA end
-.services {
-    background: $color-bg-main;
-    // padding: 30px 100px;
-}
+// .services {
+//     background: $color-bg-main;
+//     // padding: 30px 100px;
+// }
 
-.titleH2 {
-    @include h2;
-}
 
-.energy {
+
+.servise_part {
     background: $color-light;
+    box-sizing: border-box;
     border-radius: 30px;
     margin: 0 auto;
-    padding: 30px;
 
-    &__subtitle {
+    .subtitle {
         @include h3;
+        color: $color-green;
     }
 
-    &__paragraf {
-        @include h4;
+    span {
+        color: $color-green;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        font-size: 50px;
     }
 
-    &__price {
-        @include h4;
+    .tariff {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__more {
+            margin: 0;
+            @include h4;
+        }
+    }
+
+    .servise__list {
+        @include h4;
+        // text-align: justify;
     }
 }
 
-// PSYCHO =LYUDMILA
+.details {
+    @include h4;
+    color: $color-dark;
+    font-weight: bold;
+
+    &:hover {
+        padding-bottom: 5px;
+        border-bottom: 5px solid $color-green;
+    }
+}
+
 
 // ENERGU =NATALIA
-ul {
-    list-style: none;
-}
 
-span {
-    color: $color-green;
-    font-weight: bold;
-    display: inline-block;
-    width: 1.5em;
-    font-size: 40px;
-}
 
-label {
-    cursor: pointer;
-}
 
-ul {
-    list-style: none;
-}
 
-li {
-    @include p;
-}
 
-.list {
-    display: none;
-}
-
-.checkbox {
-    display: none;
-}
-
-.checkbox:checked~.list {
-    display: block;
-}
-
-.button-green {
-    @include button-green;
-}
 
 // REVIEW =ANNA
 
 
 // FOOTER =VICTORIA
+
+
+
+
 
 
 @import "media";
