@@ -136,7 +136,78 @@ a {
 
 
 // FOOTER =VICTORIA
+.blog {
+    min-height: 70vh;
 
+    &__subtitle {
+        @include paragraf;
+    font-family: Montserrat;
+    font-size: 36px;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    }
+
+    &__titleH2 {
+        @include title;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    }
+}
+    .button__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+.footer {
+    background-color: $color-bg-dark;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    background-color: $color-bg-dark;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &__text {
+        @include phone;
+        }
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+
+    .social-media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &__phone-number {
+        @include phone;
+        color: $color-bg-main;
+        }
+        
+        &__whatsapp {
+            width: 50px;
+            margin: 0 40px;
+        }
+        
+        &__telegram {
+            width: 50px;
+        }
+        }
+}
 
 
 

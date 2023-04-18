@@ -53,7 +53,6 @@ ul {
   text-align: center;
 }
 .button-green:hover {
-  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 .button-green__help {
@@ -89,13 +88,11 @@ a {
   color: #EFECE8;
 }
 .info__button .button-green:hover {
-  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 .servise_part {
   background: #EFECE8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 30px;
   margin: 0 auto;
 }
@@ -116,27 +113,14 @@ a {
   font-size: 50px;
 }
 .servise_part .tariff {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .servise_part .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .servise_part .price__more {
   margin: 0;
@@ -169,6 +153,87 @@ a {
 .details:hover {
   padding-bottom: 5px;
   border-bottom: 5px solid #9aa581;
+}
+
+.blog {
+  min-height: 70vh;
+}
+.blog__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Montserrat;
+  font-size: 36px;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.blog__titleH2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.button__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  background-color: #ABA39B;
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  background-color: #ABA39B;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.navigation__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #383838;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts .social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts .social-media__phone-number {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #383838;
+  color: #DEDBD6;
+}
+.contacts .social-media__whatsapp {
+  width: 50px;
+  margin: 0 40px;
+}
+.contacts .social-media__telegram {
+  width: 50px;
 }
 
 @media (max-width: 1500px) {
