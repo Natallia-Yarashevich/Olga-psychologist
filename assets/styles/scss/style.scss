@@ -28,10 +28,14 @@ header {
     padding-right: 30px;
   }
 
+  ul {
+    list-style: none;
+  }
+
   .nav {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: $color-bg-dark;
     max-height: 70px;
     color: $color-dark;
@@ -66,31 +70,36 @@ header {
   .intro {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     color: $color-dark;
     margin-top: 30px;
 
-    &__text__title {
+    &__text {
+      width: 60%;
+    }
+
+    &__title {
       @include h1;
       color: $color-dark;
-      line-height: 40px;
-      margin-left: 10px;
+      //line-height: 40px;
+      // margin-left: 10px;
     }
 
-    &__text__job {
+    &__job {
       @include h4;
       font-size: 30px;
-      margin-left: 10px;
+      // margin-left: 10px;
     }
 
-    &__text__quote {
+    &__quote {
       @include h4;
       font-weight: 300;
-      margin-left: 10px;
-      padding-top: 20px;
+      // margin-left: 10px;
+      // padding-top: 20px;
     }
 
     &__pic {
-      width: 500px;
+      width: 40%;
       margin-left: 130px;
     }
   }
