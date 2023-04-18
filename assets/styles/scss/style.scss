@@ -24,7 +24,18 @@
 
 
 // INFO =TATIANA
+.info {
+    @include h4;
+    line-height: 70px;
 
+    &__button {
+        text-align: right;
+
+        .button-green {
+            @include button-green;
+        }
+    }
+}
 
 // PSYCHO =LYUDMILA
 

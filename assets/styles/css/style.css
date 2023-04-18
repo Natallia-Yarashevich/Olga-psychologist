@@ -2,8 +2,7 @@
 *,
 * ::before,
 * ::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* здесь ваши стили для десктопа (компьютер) */
@@ -15,6 +14,33 @@
   padding-right: 30px;
 }
 
+.info {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+  line-height: 70px;
+}
+.info__button {
+  text-align: right;
+}
+.info__button .button-green {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 17px 35px;
+  background-color: #9aa581;
+  color: #EFECE8;
+}
+.info__button .button-green:hover {
+  transition: 0.7s;
+}
 @media (max-width: 1500px) {
   .container {
     max-width: 800px;
@@ -37,4 +63,5 @@
   }
   /* здесь ваши стили для смартфона */
 }
+
 /*# sourceMappingURL=style.css.map */
