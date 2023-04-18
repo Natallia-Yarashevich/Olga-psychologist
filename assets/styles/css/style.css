@@ -2,8 +2,7 @@
 *,
 * ::before,
 * ::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .container {
@@ -28,12 +27,15 @@ body {
 }
 
 .paragraf {
+=======
+.info {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
   color: #383838;
+
 }
 
 ul {
@@ -41,6 +43,14 @@ ul {
 }
 
 .button-green {
+=======
+  line-height: 70px;
+}
+.info__button {
+  text-align: right;
+}
+.info__button .button-green {
+
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -51,6 +61,7 @@ ul {
   padding: 17px 35px;
   background-color: #9aa581;
   color: #EFECE8;
+
   text-align: center;
 }
 .button-green:hover {
@@ -144,6 +155,12 @@ a {
   border-bottom: 5px solid #9aa581;
 }
 
+
+}
+.info__button .button-green:hover {
+  transition: 0.7s;
+}
+
 @media (max-width: 1500px) {
   .container {
     max-width: 800px;
@@ -166,4 +183,5 @@ a {
   }
   /* здесь ваши стили для смартфона */
 }
+
 /*# sourceMappingURL=style.css.map */
