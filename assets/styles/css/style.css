@@ -5,7 +5,6 @@
   box-sizing: inherit;
 }
 
-/* здесь ваши стили для десктопа (компьютер) */
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -14,6 +13,21 @@
   padding-right: 30px;
 }
 
+body {
+  background-color: #DEDBD6;
+}
+
+.titleH2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 78px;
+  font-size: 64px;
+  color: #383838;
+}
+
+.paragraf {
+=======
 .info {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -21,12 +35,22 @@
   line-height: 60px;
   font-size: 36px;
   color: #383838;
+
+}
+
+ul {
+  list-style: none;
+}
+
+.button-green {
+=======
   line-height: 70px;
 }
 .info__button {
   text-align: right;
 }
 .info__button .button-green {
+
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -37,10 +61,106 @@
   padding: 17px 35px;
   background-color: #9aa581;
   color: #EFECE8;
+
+  text-align: center;
+}
+.button-green:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.button-green__help {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.servise_part {
+  background: #EFECE8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.servise_part .subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 48px;
+  color: #383838;
+  color: #9aa581;
+}
+.servise_part span {
+  color: #9aa581;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  font-size: 50px;
+}
+.servise_part .tariff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.servise_part .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.servise_part .price__more {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+}
+.servise_part .servise__list {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+}
+
+.details {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+  color: #383838;
+  font-weight: bold;
+}
+.details:hover {
+  padding-bottom: 5px;
+  border-bottom: 5px solid #9aa581;
+}
+
+
 }
 .info__button .button-green:hover {
   transition: 0.7s;
 }
+
 @media (max-width: 1500px) {
   .container {
     max-width: 800px;

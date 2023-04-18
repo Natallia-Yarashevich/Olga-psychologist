@@ -7,8 +7,7 @@
     box-sizing: inherit;
 }
 
-// Примерно такой css должен получится, конечно, можете выбрать другие брейкпоинты, если вам удобней и понятней 
-/* здесь ваши стили для десктопа (компьютер) */
+// Обшие стили для всего документа, то что повторяется
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -17,6 +16,38 @@
     padding-right: 30px;
 }
 
+body {
+    background-color: $color-bg-main;
+}
+
+.titleH2 {
+    @include h2;
+}
+
+.paragraf {
+    @include h4;
+}
+
+ul {
+    list-style: none;
+}
+
+.button-green {
+    @include button-green;
+    text-align: center;
+
+    &__help {
+        color: white;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+// разные разделы, смотрим, что вынесено в обший
 // ALISA
 
 
@@ -28,6 +59,13 @@
     @include h4;
     line-height: 70px;
 
+
+// INFO =TATIANA end
+// .services {
+//     background: $color-bg-main;
+//     // padding: 30px 100px;
+// }
+
     &__button {
         text-align: right;
 
@@ -37,16 +75,78 @@
     }
 }
 
-// PSYCHO =LYUDMILA
+
+
+
+.servise_part {
+    background: $color-light;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 0 auto;
+
+    .subtitle {
+        @include h3;
+        color: $color-green;
+    }
+
+    span {
+        color: $color-green;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        font-size: 50px;
+    }
+
+    .tariff {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__more {
+            margin: 0;
+            @include h4;
+        }
+    }
+
+    .servise__list {
+        @include h4;
+        // text-align: justify;
+    }
+}
+
+.details {
+    @include h4;
+    color: $color-dark;
+    font-weight: bold;
+
+    &:hover {
+        padding-bottom: 5px;
+        border-bottom: 5px solid $color-green;
+    }
+}
 
 
 // ENERGU =NATALIA
+
+
+
+
 
 
 // REVIEW =ANNA
 
 
 // FOOTER =VICTORIA
+
+
+
+
 
 
 @import "media";
