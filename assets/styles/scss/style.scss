@@ -59,19 +59,16 @@ a {
   border-radius: 5px;
 }
 
-.about__text {
-  margin-bottom: 12px;
-}
 
-.container__about {
+.about {
   display: flex;
   justify-content: center;
-}
 
-.container__about-text {
+
+&__paragraf {
   margin-left: 40px;
   margin-right: 40px;
-}
+}}
 
 // INFO =TATIANA
 .info {
