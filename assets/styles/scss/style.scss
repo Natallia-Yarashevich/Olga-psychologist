@@ -55,20 +55,21 @@ a {
 
 
 .photo_2 {
-  width: 600px;
-  border-radius: 5px;
+    width: 600px;
+    border-radius: 5px;
 }
 
 
 .about {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 
 
-&__paragraf {
-  margin-left: 40px;
-  margin-right: 40px;
-}}
+    &__paragraf {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
 
 // INFO =TATIANA
 .info {
@@ -179,6 +180,57 @@ a {
 
 
 // REVIEW =ANNA
+#swiper-button-prev,
+#swiper-button-next {
+    color: $color-bg-dark;
+}
+
+/*.title {
+    @include title;
+    color: $color-dark;
+    height: 50px;
+}*/
+.text {
+    @include paragraf;
+    color: $color-black;
+}
+
+
+#slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    padding: 50px;
+    gap: 5px;
+    background-color: $color-light;
+    border-radius: 10%;
+}
+
+.review__title {
+    display: flex;
+    align-content: end;
+}
+
+
+.review-block {
+    background-color: $color-bg-main;
+    height: 100%;
+}
+
+.review__image {
+    width: 5%;
+    height: 5%
+}
 
 
 //  =VICTORIA
