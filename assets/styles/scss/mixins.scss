@@ -45,6 +45,15 @@
     /* or 24px */
 }
 
+@mixin phone {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: $color-dark;
+}
+
 @mixin btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -90,4 +99,13 @@
         // outline-style: solid;
         // box-shadow: 0 0 0 2px #f3c496;
     }
+}
+
+@mixin phone {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: $color-dark;
 }

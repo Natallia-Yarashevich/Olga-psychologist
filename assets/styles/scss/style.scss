@@ -7,8 +7,7 @@
     box-sizing: inherit;
 }
 
-// Примерно такой css должен получится, конечно, можете выбрать другие брейкпоинты, если вам удобней и понятней 
-/* здесь ваши стили для десктопа (компьютер) */
+// Обшие стили для всего документа, то что повторяется
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -17,6 +16,38 @@
     padding-right: 30px;
 }
 
+body {
+    background-color: $color-bg-main;
+}
+
+.titleH2 {
+    @include h2;
+}
+
+.paragraf {
+    @include h4;
+}
+
+ul {
+    list-style: none;
+}
+
+.button-green {
+    @include button-green;
+    text-align: center;
+
+    &__help {
+        color: white;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+// разные разделы, смотрим, что вынесено в обший
 // ALISA
 
 
@@ -43,18 +74,176 @@
 }
 
 // INFO =TATIANA
+.info {
+    @include h4;
+    line-height: 70px;
+
+    &__button {
+        text-align: right;
+
+        .button-green {
+            @include button-green;
+        }
+    }
+}
+
+// SERVIS general
+.servise_part {
+    background: $color-light;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 0 auto;
+
+    span {
+        color: $color-green;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        font-size: 50px;
+    }
+}
+
+.subtitle {
+    padding-top: 48px;
+    @include h3;
+    color: $color-green;
+    font-weight: bold;
+}
 
 
-// PSYCHO =LYUDMILA
 
+.tariff {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-// ENERGU =NATALIA
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__more {
+        margin: 0;
+        @include h4;
+    }
+}
+
+.servise__list {
+    @include h4;
+}
+
+// / PSYCHO =LYUDMILA
+.one {
+    text-indent: 42px;
+}
+
+.still {
+    @include h4;
+    color: $color-dark;
+    font-weight: bold;
+    max-width: min-content;
+    background-color: $color-light;
+    border-style: none;
+    border-bottom: 5px solid $color-green;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-green;
+    }
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+}
+
+.psycho-content__second {
+    position: relative;
+}
+
+.psycho-content__second:hover .hidden {
+    display: block;
+}
+
+// / ENERGU =NATALIA
+.details {
+    @include h4;
+    color: $color-dark;
+    font-weight: bold;
+    border-bottom: 5px double $color-green;
+
+    &:hover {
+        padding-bottom: 5px;
+        border-bottom: 5px solid $color-green;
+    }
+}
 
 
 // REVIEW =ANNA
 
 
+//  =VICTORIA
+.blog {
+    min-height: 70vh;
+}
+
+.button__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 // FOOTER =VICTORIA
+.footer {
+    background-color: $color-bg-dark;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &__text {
+        @include phone;
+    }
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+
+    .social-media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__phone-number {
+            @include phone;
+            color: $color-bg-main;
+        }
+
+        &__whatsapp {
+            width: 50px;
+            margin: 0 40px;
+        }
+
+        &__telegram {
+            width: 50px;
+        }
+    }
+}
+
+
+
 
 
 @import "media";
