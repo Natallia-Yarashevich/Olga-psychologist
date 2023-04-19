@@ -28,31 +28,10 @@
   border-radius: 5px;
 }
 
-.titleH2 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  height: 86px;
-  font-size: 64px;
-  line-height: 70px;
-  text-align: left;
-  color: $color-dark;
-}
-
 .about__text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 80px;
-  text-align: left;
   margin-bottom: 12px;
-  color: $color-dark;
 }
 
-.container {
-  background-color: $color-light;
-}
 .container__about {
   display: flex;
   justify-content: center;
