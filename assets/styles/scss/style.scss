@@ -18,92 +18,115 @@
 
 // ALISA
 
-header {
+body {
   background-color: $color-bg-main;
+}
 
-  .container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+.header {
+  background-color: $color-bg-dark;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
-  ul {
-    list-style: none;
-  }
+ul {
+  list-style: none;
+}
 
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $color-bg-dark;
-    max-height: 70px;
-    color: $color-dark;
-    @include paragraf;
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-dark;
 
+  @include paragraf;
+
+  .logo {
     &__title {
       font-weight: bold;
       font-size: 25px;
     }
+  }
 
-    &__info:link {
+  .nav {
+    width: 80%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 25px;
+
+    &__info {
       color: $color-bg-main;
-      text-decoration: none;
+
+      &:link {
+        text-decoration: none;
+        color: $color-bg-dark;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $color-light;
+        transition: 0.5s;
+      }
+      &:active {
+        text-decoration: none;
+        color: $color-light;
+        transition: 0.5s;
+      }
     }
 
-    &__info:active {
-      color: $color-light;
-      text-decoration: none;
-      font-weight: 400;
-    }
-
-    &__info:visited {
-      color: $color-bg-main;
-      text-decoration: none;
-    }
-
-    &__button--call {
+    &__info-call {
       @include button-light;
       background-color: $color-bg-main;
-    }
-  }
-  .intro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: $color-dark;
-    margin-top: 30px;
 
-    &__text {
-      width: 60%;
-    }
-
-    &__title {
-      @include h1;
-      color: $color-dark;
-      //line-height: 40px;
-      // margin-left: 10px;
-    }
-
-    &__job {
-      @include h4;
-      font-size: 30px;
-      // margin-left: 10px;
-    }
-
-    &__quote {
-      @include h4;
-      font-weight: 300;
-      // margin-left: 10px;
-      // padding-top: 20px;
-    }
-
-    &__pic {
-      width: 40%;
-      margin-left: 130px;
+      &:hover {
+        color: $color-dark-hover;
+      }
     }
   }
 }
+
+.intro {
+  width: 100%;
+  display: flex;
+  color: $color-dark;
+  margin-top: 30px;
+  gap: 130px;
+
+  &__text {
+    width: 60%;
+  }
+
+  &__title {
+    @include h1;
+    color: $color-dark;
+  }
+
+  &__job {
+    @include h4;
+    font-size: 30px;
+  }
+
+  &__quote {
+    @include h4;
+    font-weight: 300;
+  }
+
+  &__image {
+    max-width: 560px;
+    height: 100%;
+
+    &__pic {
+      max-width: 560px;
+      height: 100%;
+    }
+  }
+}
+
 // ABOUT ME =ARINA
 
 // INFO =TATIANA
