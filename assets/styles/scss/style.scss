@@ -68,19 +68,12 @@ a {
     }
 }
 
-
-
-
+// SERVIS general
 .servise_part {
     background: $color-light;
     box-sizing: border-box;
     border-radius: 30px;
     margin: 0 auto;
-
-    .subtitle {
-        @include h3;
-        color: $color-green;
-    }
 
     span {
         color: $color-green;
@@ -89,46 +82,43 @@ a {
         width: 1em;
         font-size: 50px;
     }
-
-    .tariff {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .price {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        &__more {
-            margin: 0;
-            @include h4;
-        }
-    }
-
-    .servise__list {
-        @include h4;
-        // text-align: justify;
-    }
 }
 
-.details {
-    @include h4;
-    color: $color-dark;
+.subtitle {
+    padding-top: 48px;
+    @include h3;
+    color: $color-green;
     font-weight: bold;
-
-    &:hover {
-        padding-bottom: 5px;
-        border-bottom: 5px solid $color-green;
-    }
 }
 
 
-// ENERGU =NATALIA
+
+.tariff {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__more {
+        margin: 0;
+        @include h4;
+    }
+}
+
+.servise__list {
+    @include h4;
+}
+
+// / PSYCHO =LYUDMILA
 .one {
     text-indent: 42px;
 }
+
 .still {
     @include h4;
     color: $color-dark;
@@ -137,47 +127,57 @@ a {
     background-color: $color-light;
     border-style: none;
     border-bottom: 5px solid $color-green;
+
     &:hover,
     &:focus,
     &:active {
-        color: $color-green; 
+        color: $color-green;
     }
 }
-.psycho-content {
-    display: flex;
-    flex-direction: column;
-}
+
 .hidden {
     display: none;
     position: absolute;
 }
+
 .psycho-content__second {
     position: relative;
 }
+
 .psycho-content__second:hover .hidden {
     display: block;
 }
 
+// / ENERGU =NATALIA
+.details {
+    @include h4;
+    color: $color-dark;
+    font-weight: bold;
+    border-bottom: 5px double $color-green;
 
-
-
-
+    &:hover {
+        padding-bottom: 5px;
+        border-bottom: 5px solid $color-green;
+    }
+}
 
 
 // REVIEW =ANNA
 
 
-// FOOTER =VICTORIA
+//  =VICTORIA
 .blog {
     min-height: 70vh;
 }
-    .button__wrapper {
+
+.button__wrapper {
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
     justify-content: flex-end;
-    }
+}
 
+// FOOTER =VICTORIA
 .footer {
     background-color: $color-bg-dark;
     margin: 0 auto;
@@ -195,7 +195,7 @@ a {
 
     &__text {
         @include phone;
-        }
+    }
 }
 
 .contacts {
@@ -206,21 +206,21 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         &__phone-number {
-        @include phone;
-        color: $color-bg-main;
+            @include phone;
+            color: $color-bg-main;
         }
-        
+
         &__whatsapp {
             width: 50px;
             margin: 0 40px;
         }
-        
+
         &__telegram {
             width: 50px;
         }
-        }
+    }
 }
 
 
