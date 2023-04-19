@@ -155,6 +155,7 @@ a {
   border-bottom: 5px solid #9aa581;
 }
 
+
 .blog {
   min-height: 70vh;
 }
@@ -214,6 +215,54 @@ a {
 }
 .contacts .social-media__telegram {
   width: 50px;
+=======
+.one {
+  text-indent: 42px;
+}
+
+.about {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+  color: #383838;
+  font-weight: bold;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  background-color: #EFECE8;
+  border-style: none;
+  border-bottom: 5px solid #9aa581;
+}
+.about:hover, .about:focus, .about:active {
+  color: #9aa581;
+}
+
+.psycho-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-content: center;
+}
+
+.hidden {
+  display: none;
+  position: absolute;
+}
+
+.psycho-content__second {
+  position: relative;
+}
+
+.psycho-content__second:hover .hidden {
+  display: block;
+
 }
 
 @media (max-width: 1500px) {
