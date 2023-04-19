@@ -54,6 +54,22 @@ a {
 // ABOUT ME =ARINA
 
 
+.photo_2 {
+  width: 600px;
+  border-radius: 5px;
+}
+
+
+.about {
+  display: flex;
+  justify-content: center;
+
+
+&__paragraf {
+  margin-left: 40px;
+  margin-right: 40px;
+}}
+
 // INFO =TATIANA
 .info {
     @include h4;

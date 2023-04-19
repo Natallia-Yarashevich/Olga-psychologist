@@ -6,6 +6,7 @@
           box-sizing: inherit;
 }
 
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -64,7 +65,45 @@ ul {
 a {
   text-decoration: none;
 }
+/* ABOUT ME =ARINA */
 
+.photo_2 {
+  width: 600px;
+  border-radius: 5px;
+}
+
+.titleH2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 86px;
+  font-size: 64px;
+  line-height: 70px;
+  text-align: left;
+  color: #383838;
+}
+
+.about__text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 80px;
+  text-align: left;
+  margin-bottom: 12px;
+  color: #383838;
+
+}
+.container__about {
+  display: flex;
+  justify-content: center;
+}
+
+.container__about-text {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+/* INFO TATIANA*/
 .info {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -322,3 +361,5 @@ a {
   /* здесь ваши стили для смартфона */
 }
 /*# sourceMappingURL=style.css.map */
+
+
