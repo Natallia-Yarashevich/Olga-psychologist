@@ -158,25 +158,6 @@ a {
 .blog {
   min-height: 70vh;
 }
-.blog__subtitle {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-family: Montserrat;
-  font-size: 36px;
-  line-height: 60px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.blog__titleH2 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 70px;
-  letter-spacing: 0em;
-  text-align: left;
-}
 
 .button__wrapper {
   padding-left: 30px;
@@ -191,7 +172,6 @@ a {
 }
 
 .footer-wrapper {
-  background-color: #ABA39B;
   width: 100%;
 }
 

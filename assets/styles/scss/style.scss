@@ -138,23 +138,6 @@ a {
 // FOOTER =VICTORIA
 .blog {
     min-height: 70vh;
-
-    &__subtitle {
-        @include paragraf;
-    font-family: Montserrat;
-    font-size: 36px;
-    line-height: 60px;
-    letter-spacing: 0em;
-    text-align: left;
-    }
-
-    &__titleH2 {
-        @include title;
-    font-size: 64px;
-    line-height: 70px;
-    letter-spacing: 0em;
-    text-align: left;
-    }
 }
     .button__wrapper {
     padding-left: 30px;
@@ -169,7 +152,6 @@ a {
 }
 
 .footer-wrapper {
-    background-color: $color-bg-dark;
     width: 100%;
 }
 
