@@ -182,7 +182,7 @@ a {
 // REVIEW =ANNA
 #swiper-button-prev,
 #swiper-button-next {
-    color: $color-bg-dark;
+    color: $color-black;
 }
 
 /*.title {
@@ -190,11 +190,16 @@ a {
     color: $color-dark;
     height: 50px;
 }*/
-.text {
+.review__text {
     @include paragraf;
     color: $color-black;
+    font-size: 20px;
 }
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #slide,
 #slide1,
@@ -206,7 +211,7 @@ a {
 #slide7 {
     display: flex;
     flex-direction: row;
-    height: 500px;
+    height: 550px;
     justify-content: start;
     align-items: center;
     margin: 10px;
@@ -218,7 +223,7 @@ a {
 
 .review__title {
     display: flex;
-    align-content: end;
+    align-content: center;
 }
 
 
@@ -229,7 +234,57 @@ a {
 
 .review__image {
     width: 5%;
-    height: 5%
+    height: 5%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $color-dark;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .review__text {
+        font-size: 16px;
+    }
+
+    #slide,
+    #slide1,
+    #slide2,
+    #slide3,
+    #slide4,
+    #slide5,
+    #slide6,
+    #slide7 {
+        height: 500px;
+    }
+
+    .review__image {
+        width: 4%;
+        height: 4%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .review__text {
+        font-size: 14px;
+    }
+
+    #slide,
+    #slide1,
+    #slide2,
+    #slide3,
+    #slide4,
+    #slide5,
+    #slide6,
+    #slide7 {
+        height: 420px;
+    }
+
+    .review__image {
+        width: 3%;
+        height: 3%;
+    }
 }
 
 
