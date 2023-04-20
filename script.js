@@ -9,6 +9,8 @@ const swiper = new Swiper(".swiper", {
     pagination: {
         el: ".swiper-pagination",
         paginationClickable: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
     },
     // Navigation arrows
     navigation: {
