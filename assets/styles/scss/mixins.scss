@@ -4,24 +4,42 @@
     font-weight: 400;
 }
 
+@mixin navigator {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+@mixin logos {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+}
+
 @mixin h1 {
     @include title;
     line-height: 107px;
-    font-size: 88px;
+    font-size: 90px;
     color: $color-black;
+    line-height: 110px;
+    letter-spacing: 0.04em;
+    text-align: center;
 }
 
 @mixin h2 {
     @include title;
-    line-height: 78px;
     font-size: 64px;
+    line-height: 78px;
     color: $color-dark;
 }
 
 @mixin h3 {
-    @include title;
-    line-height: 60px;
-    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 70px;
     color: $color-dark;
 }
 
@@ -76,11 +94,11 @@
         transition: 0.7s;
     }
 
-    &:focus {
-        // outline-color: transparent;- изменить под требования
-        // outline-style: solid;
-        // box-shadow: 0 0 0 2px #f3c496;
-    }
+    // &:focus {
+    //     // outline-color: transparent;- изменить под требования
+    //     // outline-style: solid;
+    //     // box-shadow: 0 0 0 2px #f3c496;
+    // }
 }
 
 @mixin button-light {
@@ -94,11 +112,11 @@
         transition: 0.7s;
     }
 
-    &:focus {
-        // outline-color: transparent;- изменить под требования
-        // outline-style: solid;
-        // box-shadow: 0 0 0 2px #f3c496;
-    }
+    // &:focus {
+    //     // outline-color: transparent;- изменить под требования
+    //     // outline-style: solid;
+    //     // box-shadow: 0 0 0 2px #f3c496;
+    // }
 }
 
 @mixin phone {
