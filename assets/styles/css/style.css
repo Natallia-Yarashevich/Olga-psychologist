@@ -2,10 +2,8 @@
 *,
 * ::before,
 * ::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 
 .container {
   max-width: 1440px;
@@ -55,7 +53,6 @@ ul {
   text-align: center;
 }
 .button-green:hover {
-  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 .button-green__help {
@@ -65,45 +62,21 @@ ul {
 a {
   text-decoration: none;
 }
-/* ABOUT ME =ARINA */
 
 .photo_2 {
   width: 600px;
   border-radius: 5px;
 }
 
-.titleH2 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  height: 86px;
-  font-size: 64px;
-  line-height: 70px;
-  text-align: left;
-  color: #383838;
-}
-
-.about__text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 80px;
-  text-align: left;
-  margin-bottom: 12px;
-  color: #383838;
-
-}
-.container__about {
+.about {
   display: flex;
   justify-content: center;
 }
-
-.container__about-text {
+.about__paragraf {
   margin-left: 40px;
   margin-right: 40px;
 }
-/* INFO TATIANA*/
+
 .info {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -129,13 +102,11 @@ a {
   color: #EFECE8;
 }
 .info__button .button-green:hover {
-  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 .servise_part {
   background: #EFECE8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 30px;
   margin: 0 auto;
 }
@@ -160,28 +131,15 @@ a {
 }
 
 .tariff {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .price__more {
   margin: 0;
@@ -215,8 +173,6 @@ a {
   color: #383838;
   color: #383838;
   font-weight: bold;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   background-color: #EFECE8;
   border-style: none;
@@ -255,6 +211,58 @@ a {
   border-bottom: 5px solid #9aa581;
 }
 
+#swiper-button-prev,
+#swiper-button-next {
+  color: #ABA39B;
+}
+
+/*.title {
+    @include title;
+    color: $color-dark;
+    height: 50px;
+}*/
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+}
+
+#slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: start;
+  align-items: center;
+  margin: 10px;
+  padding: 50px;
+  gap: 5px;
+  background-color: #EFECE8;
+  border-radius: 10%;
+}
+
+.review__title {
+  display: flex;
+  align-content: end;
+}
+
+.review-block {
+  background-color: #DEDBD6;
+  height: 100%;
+}
+
+.review__image {
+  width: 5%;
+  height: 5%;
+}
+
 .blog {
   min-height: 70vh;
 }
@@ -262,12 +270,8 @@ a {
 .button__wrapper {
   padding-left: 30px;
   padding-right: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .footer {
@@ -280,18 +284,10 @@ a {
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .navigation__text {
   font-family: "Montserrat";
@@ -303,23 +299,13 @@ a {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .contacts .social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .contacts .social-media__phone-number {
   font-family: "Montserrat";
@@ -360,6 +346,3 @@ a {
   }
   /* здесь ваши стили для смартфона */
 }
-/*# sourceMappingURL=style.css.map */
-
-
