@@ -19,6 +19,10 @@ body {
     background-color: $color-bg-main;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .titleH2 {
     @include h2;
 }
@@ -31,6 +35,10 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .button-green {
     @include button-green;
     text-align: center;
@@ -40,25 +48,10 @@ ul {
     }
 }
 
-a {
-    text-decoration: none;
-}
-
-
-
 // разные разделы, смотрим, что вынесено в обший
 // ALISA
-
-body {
-    background-color: $color-bg-main;
-}
-
 .header {
     background-color: $color-bg-dark;
-}
-
-ul {
-    list-style: none;
 }
 
 .navbar {
@@ -67,65 +60,61 @@ ul {
     align-items: center;
     justify-content: space-between;
     color: $color-dark;
-
     @include paragraf;
 
     .logo {
         &__title {
-            font-weight: bold;
-            font-size: 25px;
-        }
-    }
-
-    .nav {
-        width: 80%;
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-        font-weight: bold;
-        font-size: 25px;
-
-        &__info {
-            color: $color-bg-main;
-
-            &:link {
-                text-decoration: none;
-                color: $color-bg-dark;
-            }
-
-            &:hover {
-                text-decoration: none;
-                color: $color-light;
-                transition: 0.5s;
-            }
-
-            &:active {
-                text-decoration: none;
-                color: $color-light;
-                transition: 0.5s;
-            }
-        }
-
-        &__info-call {
-            @include button-light;
-            background-color: $color-bg-main;
-
-            &:hover {
-                color: $color-dark-hover;
-            }
+            @include logos;
         }
     }
 }
 
+.nav {
+    width: 80%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info {
+        @include navigator;
+        color: $color-nav;
+
+        &:link {
+            color: $color-bg-dark;
+        }
+
+        &:hover {
+            color: $color-light;
+            transition: 0.5s;
+        }
+
+        &:active {
+            color: $color-light;
+            transition: 0.5s;
+        }
+    }
+
+    &__info-call {
+        @include button-light;
+        background-color: $color-bg-main;
+
+        &:hover {
+            color: $color-dark-hover;
+        }
+    }
+}
+
+// SECTION ONE
 .intro {
     width: 100%;
     display: flex;
     color: $color-dark;
-    margin-top: 30px;
+    margin-top: 40px;
     gap: 130px;
 
     &__text {
         width: 60%;
+        text-align: center;
     }
 
     &__title {
@@ -135,11 +124,14 @@ ul {
 
     &__job {
         @include h4;
-        font-size: 30px;
+        line-height: 44px;
     }
 
     &__quote {
         @include h4;
+        font-size: 36px;
+        line-height: 44px;
+
         font-weight: 300;
     }
 
@@ -148,29 +140,29 @@ ul {
         height: 100%;
 
         &__pic {
-            max-width: 560px;
-            height: 100%;
+            max-width: 100%;
+            height: auto;
         }
     }
 }
 
 // ABOUT ME =ARINA
-
+.aboutme {
+    margin-top: 115px;
+}
 
 .photo_2 {
     width: 600px;
     border-radius: 5px;
 }
 
-
 .about {
     display: flex;
     justify-content: center;
 
 
-    &__paragraf {
+    &__text {
         margin-left: 40px;
-        margin-right: 40px;
     }
 }
 
@@ -274,124 +266,126 @@ ul {
     color: $color-dark;
     font-weight: bold;
     border-bottom: 5px double $color-green;
+}
 
-    // ENERGU =NATALIA
+// ENERGU =NATALIA
 
 
-    // REVIEW =ANNA
-    #swiper-button-prev,
-    #swiper-button-next {
-        color: $color-bg-dark;
-    }
+// REVIEW =ANNA
+#swiper-button-prev,
+#swiper-button-next {
+    color: $color-bg-dark;
+}
 
-    /*.title {
+/*.title {
     @include title;
     color: $color-dark;
     height: 50px;
 }*/
-    .text {
-        @include paragraf;
-        color: $color-black;
+.text {
+    @include paragraf;
+    color: $color-black;
+}
+
+
+#slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    padding: 50px;
+    gap: 5px;
+    background-color: $color-light;
+    border-radius: 10%;
+}
+
+.review__title {
+    display: flex;
+    align-content: end;
+}
+
+
+.review-block {
+    background-color: $color-bg-main;
+    height: 100%;
+}
+
+.review__image {
+    width: 5%;
+    height: 5%
+}
+
+
+//  =VICTORIA
+.blog {
+    min-height: 70vh;
+}
+
+.button__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+// FOOTER =VICTORIA
+.footer {
+    background-color: $color-bg-dark;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &__text {
+        @include phone;
     }
+}
 
+.contacts {
+    display: flex;
+    align-items: center;
 
-    #slide,
-    #slide1,
-    #slide2,
-    #slide3,
-    #slide4,
-    #slide5,
-    #slide6,
-    #slide7 {
+    .social-media {
         display: flex;
-        flex-direction: row;
-        height: 500px;
-        justify-content: start;
-        align-items: center;
-        margin: 10px;
-        padding: 50px;
-        gap: 5px;
-        background-color: $color-light;
-        border-radius: 10%;
-    }
-
-    .review__title {
-        display: flex;
-        align-content: end;
-    }
-
-
-    .review-block {
-        background-color: $color-bg-main;
-        height: 100%;
-    }
-
-    .review__image {
-        width: 5%;
-        height: 5%
-    }
-
-
-    //  =VICTORIA
-    .blog {
-        min-height: 70vh;
-    }
-
-    .button__wrapper {
-        padding-left: 30px;
-        padding-right: 30px;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    // FOOTER =VICTORIA
-    .footer {
-        background-color: $color-bg-dark;
-        margin: 0 auto;
-    }
-
-    .footer-wrapper {
-        width: 100%;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: space-between;
-
-        &__text {
-            @include phone;
-        }
-    }
-
-    .contacts {
-        display: flex;
         align-items: center;
 
-        .social-media {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        &__phone-number {
+            @include phone;
+            color: $color-bg-main;
+        }
 
-            &__phone-number {
-                @include phone;
-                color: $color-bg-main;
-            }
+        &__whatsapp {
+            width: 50px;
+            margin: 0 40px;
+        }
 
-            &__whatsapp {
-                width: 50px;
-                margin: 0 40px;
-            }
-
-            &__telegram {
-                width: 50px;
-            }
+        &__telegram {
+            width: 50px;
         }
     }
+}
 
 
 
 
 
-    @import "media";
+
+@import "media";

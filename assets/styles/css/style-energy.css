@@ -22,8 +22,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 78px;
   font-size: 64px;
+  line-height: 78px;
   color: #383838;
 }
 
@@ -73,17 +73,16 @@ a {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 78px;
   font-size: 64px;
+  line-height: 78px;
   color: #383838;
 }
 
 .subtitle {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
-  line-height: 60px;
-  font-size: 48px;
+  font-size: 36px;
+  line-height: 70px;
   color: #383838;
 }
 
@@ -171,24 +170,25 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 107px;
-  font-size: 88px;
+  font-size: 90px;
   color: #000;
+  line-height: 110px;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 .energy__subtitle {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
-  line-height: 60px;
-  font-size: 48px;
+  font-size: 36px;
+  line-height: 70px;
   color: #383838;
   text-align: justify;
 }
 .energy__paragraf {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
-  line-height: 60px;
-  font-size: 48px;
+  font-size: 36px;
+  line-height: 70px;
   color: #383838;
 }
 .energy__price {
@@ -338,14 +338,19 @@ body {
   width: 50px;
 }
 
-/* @media (max-width: 1500px) {
+/* здесь ваши стили для ноутбука */
+@media (max-width: 1500px) {
   .container {
     max-width: 1200px;
   }
-
   .intro {
-    flex-direction: row;
-  }*/
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/* здесь ваши стили для планшета */
 @media (max-width: 900px) {
   .container {
     max-width: 600px;
@@ -358,7 +363,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* здесь ваши стили для планшета */
 }
 @media (max-width: 640px) {
   .container {
@@ -368,3 +372,4 @@ body {
   }
   /* здесь ваши стили для смартфона */
 }
+/*# sourceMappingURL=style-energy.css.map */
