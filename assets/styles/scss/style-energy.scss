@@ -1,0 +1,237 @@
+@import "colors";
+@import "mixins";
+
+*,
+* ::before,
+* ::after {
+    box-sizing: inherit;
+}
+
+// Обшие стили для всего документа, то что повторяется
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+body {
+    background-color: $color-bg-main;
+}
+
+.titleH2 {
+    @include h2;
+}
+
+.paragraf {
+    @include h4;
+}
+
+ul {
+    list-style: none;
+}
+
+.button-green {
+    @include button-green;
+    text-align: center;
+
+    &__help {
+        color: white;
+
+        &:hover {
+            padding-bottom: 5px;
+            border-bottom: 5px solid $color-green;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.titleH2 {
+    @include h2;
+}
+
+.subtitle {
+    @include h3;
+}
+
+a {
+    text-decoration: none;
+
+
+}
+
+.navbar {
+    display: flex;
+    // width: 95%;
+    padding: 0 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $color-bg-dark;
+    @include paragraf;
+}
+
+.logo {
+    &__title {
+        font-weight: bold;
+        font-size: 25px;
+        color: $color-dark;
+    }
+}
+
+.nav {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info {
+        text-decoration: none;
+        color: $color-bg-main;
+        font-weight: bold;
+        // font-size: 20px;
+
+        &:hover {
+            border: 1px solid red;
+        }
+    }
+
+    // бордер как пример стоит  для проверки , все ли работает
+    // 
+    &__info-call {
+        @include button-light;
+
+        &:hover {
+            border: 1px solid rgb(47, 0, 255);
+        }
+    }
+}
+
+
+
+body {
+    background-color: $color-bg-main;
+}
+
+.container-energy {
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.energy {
+    &__title {
+        @include h1;
+    }
+
+    &__subtitle {
+        @include h3;
+        text-align: justify;
+    }
+
+    &__paragraf {
+        @include h3;
+    }
+
+    &__price {
+        @include h4;
+        display: flex;
+    }
+}
+
+.energy {
+    &__list {
+        @include h4;
+        list-style: none;
+
+        span {
+            color: $color-green;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            font-size: 40px;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        @include h4;
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__more {
+        margin: 0;
+        @include h4;
+    }
+}
+
+.tariff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper {
+    background-color: $color-bg-dark;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__back {
+        @include phone;
+        text-decoration: none;
+        color: $color-bg-main;
+        font-weight: bold;
+    }
+}
+
+.contacts {
+    display: flex;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__phone-number {
+        @include phone;
+        color: azure;
+    }
+
+    &__whatsapp {
+        width: 50px;
+        margin: 0 40px;
+        // padding-left: 40px;
+    }
+
+    &__telegram {
+        width: 50px;
+        // margin-left: 35px;
+        // padding-right: 20px;
+    }
+}
+
+
+
+@import "media";

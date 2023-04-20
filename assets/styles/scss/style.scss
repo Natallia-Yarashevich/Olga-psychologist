@@ -4,133 +4,394 @@
 *,
 * ::before,
 * ::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
-// Примерно такой css должен получится, конечно, можете выбрать другие брейкпоинты, если вам удобней и понятней
-/* здесь ваши стили для десктопа (компьютер) */
+// Обшие стили для всего документа, то что повторяется
 .container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-
-// ALISA
 
 body {
-  background-color: $color-bg-main;
+    background-color: $color-bg-main;
 }
 
-.header {
-  background-color: $color-bg-dark;
+.titleH2 {
+    @include h2;
+}
+
+.paragraf {
+    @include h4;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
+}
+
+.button-green {
+    @include button-green;
+    text-align: center;
+
+    &__help {
+        color: white;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+// разные разделы, смотрим, что вынесено в обший
+// ALISA
+
+body {
+    background-color: $color-bg-main;
+}
+
+.header {
+    background-color: $color-bg-dark;
+}
+
+ul {
+    list-style: none;
 }
 
 .navbar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: $color-dark;
-
-  @include paragraf;
-
-  .logo {
-    &__title {
-      font-weight: bold;
-      font-size: 25px;
-    }
-  }
-
-  .nav {
-    width: 80%;
-    display: inline-flex;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: bold;
-    font-size: 25px;
+    color: $color-dark;
 
-    &__info {
-      color: $color-bg-main;
+    @include paragraf;
 
-      &:link {
-        text-decoration: none;
-        color: $color-bg-dark;
-      }
-      &:hover {
-        text-decoration: none;
-        color: $color-light;
-        transition: 0.5s;
-      }
-      &:active {
-        text-decoration: none;
-        color: $color-light;
-        transition: 0.5s;
-      }
+    .logo {
+        &__title {
+            font-weight: bold;
+            font-size: 25px;
+        }
     }
 
-    &__info-call {
-      @include button-light;
-      background-color: $color-bg-main;
+    .nav {
+        width: 80%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 25px;
 
-      &:hover {
-        color: $color-dark-hover;
-      }
+        &__info {
+            color: $color-bg-main;
+
+            &:link {
+                text-decoration: none;
+                color: $color-bg-dark;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: $color-light;
+                transition: 0.5s;
+            }
+
+            &:active {
+                text-decoration: none;
+                color: $color-light;
+                transition: 0.5s;
+            }
+        }
+
+        &__info-call {
+            @include button-light;
+            background-color: $color-bg-main;
+
+            &:hover {
+                color: $color-dark-hover;
+            }
+        }
     }
-  }
 }
 
 .intro {
-  width: 100%;
-  display: flex;
-  color: $color-dark;
-  margin-top: 30px;
-  gap: 130px;
-
-  &__text {
-    width: 60%;
-  }
-
-  &__title {
-    @include h1;
+    width: 100%;
+    display: flex;
     color: $color-dark;
-  }
+    margin-top: 30px;
+    gap: 130px;
 
-  &__job {
-    @include h4;
-    font-size: 30px;
-  }
-
-  &__quote {
-    @include h4;
-    font-weight: 300;
-  }
-
-  &__image {
-    max-width: 560px;
-    height: 100%;
-
-    &__pic {
-      max-width: 560px;
-      height: 100%;
+    &__text {
+        width: 60%;
     }
-  }
+
+    &__title {
+        @include h1;
+        color: $color-dark;
+    }
+
+    &__job {
+        @include h4;
+        font-size: 30px;
+    }
+
+    &__quote {
+        @include h4;
+        font-weight: 300;
+    }
+
+    &__image {
+        max-width: 560px;
+        height: 100%;
+
+        &__pic {
+            max-width: 560px;
+            height: 100%;
+        }
+    }
 }
 
 // ABOUT ME =ARINA
 
+
+.photo_2 {
+    width: 600px;
+    border-radius: 5px;
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+
+
+    &__paragraf {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
 // INFO =TATIANA
+.info {
+    @include h4;
+    line-height: 70px;
 
-// PSYCHO =LYUDMILA
+    &__button {
+        text-align: right;
 
-// ENERGU =NATALIA
+        .button-green {
+            @include button-green;
+        }
+    }
+}
 
-// REVIEW =ANNA
+// SERVIS general
+.servise_part {
+    background: $color-light;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 0 auto;
 
-// FOOTER =VICTORIA
+    span {
+        color: $color-green;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        font-size: 50px;
+    }
+}
 
-@import "media";
+.subtitle {
+    padding-top: 48px;
+    @include h3;
+    color: $color-green;
+    font-weight: bold;
+}
+
+
+
+.tariff {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__more {
+        margin: 0;
+        @include h4;
+    }
+}
+
+.servise__list {
+    @include h4;
+}
+
+// / PSYCHO =LYUDMILA
+.one {
+    text-indent: 42px;
+}
+
+.still {
+    @include h4;
+    color: $color-dark;
+    font-weight: bold;
+    max-width: min-content;
+    background-color: $color-light;
+    border-style: none;
+    border-bottom: 5px solid $color-green;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-green;
+    }
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+}
+
+.psycho-content__second {
+    position: relative;
+}
+
+.psycho-content__second:hover .hidden {
+    display: block;
+}
+
+// / ENERGU =NATALIA
+.details {
+    @include h4;
+    color: $color-dark;
+    font-weight: bold;
+    border-bottom: 5px double $color-green;
+
+    // ENERGU =NATALIA
+
+
+    // REVIEW =ANNA
+    #swiper-button-prev,
+    #swiper-button-next {
+        color: $color-bg-dark;
+    }
+
+    /*.title {
+    @include title;
+    color: $color-dark;
+    height: 50px;
+}*/
+    .text {
+        @include paragraf;
+        color: $color-black;
+    }
+
+
+    #slide,
+    #slide1,
+    #slide2,
+    #slide3,
+    #slide4,
+    #slide5,
+    #slide6,
+    #slide7 {
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        justify-content: start;
+        align-items: center;
+        margin: 10px;
+        padding: 50px;
+        gap: 5px;
+        background-color: $color-light;
+        border-radius: 10%;
+    }
+
+    .review__title {
+        display: flex;
+        align-content: end;
+    }
+
+
+    .review-block {
+        background-color: $color-bg-main;
+        height: 100%;
+    }
+
+    .review__image {
+        width: 5%;
+        height: 5%
+    }
+
+
+    //  =VICTORIA
+    .blog {
+        min-height: 70vh;
+    }
+
+    .button__wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    // FOOTER =VICTORIA
+    .footer {
+        background-color: $color-bg-dark;
+        margin: 0 auto;
+    }
+
+    .footer-wrapper {
+        width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        &__text {
+            @include phone;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        align-items: center;
+
+        .social-media {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__phone-number {
+                @include phone;
+                color: $color-bg-main;
+            }
+
+            &__whatsapp {
+                width: 50px;
+                margin: 0 40px;
+            }
+
+            &__telegram {
+                width: 50px;
+            }
+        }
+    }
+
+
+
+
+
+    @import "media";
