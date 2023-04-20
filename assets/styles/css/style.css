@@ -2,7 +2,8 @@
 *,
 * ::before,
 * ::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .container {
@@ -53,6 +54,7 @@ ul {
   text-align: center;
 }
 .button-green:hover {
+  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 .button-green__help {
@@ -69,8 +71,12 @@ a {
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .about__paragraf {
   margin-left: 40px;
@@ -102,11 +108,13 @@ a {
   color: #EFECE8;
 }
 .info__button .button-green:hover {
+  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 .servise_part {
   background: #EFECE8;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 30px;
   margin: 0 auto;
 }
@@ -131,15 +139,28 @@ a {
 }
 
 .tariff {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .price__more {
   margin: 0;
@@ -173,6 +194,8 @@ a {
   color: #383838;
   color: #383838;
   font-weight: bold;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
   max-width: min-content;
   background-color: #EFECE8;
   border-style: none;
@@ -236,11 +259,20 @@ a {
 #slide5,
 #slide6,
 #slide7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 500px;
-  justify-content: start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10px;
   padding: 50px;
   gap: 5px;
@@ -249,8 +281,11 @@ a {
 }
 
 .review__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: end;
+  -ms-flex-line-pack: end;
+      align-content: end;
 }
 
 .review-block {
@@ -270,8 +305,12 @@ a {
 .button__wrapper {
   padding-left: 30px;
   padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer {
@@ -284,10 +323,18 @@ a {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .navigation__text {
   font-family: "Montserrat";
@@ -299,13 +346,23 @@ a {
 }
 
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contacts .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contacts .social-media__phone-number {
   font-family: "Montserrat";
@@ -346,3 +403,4 @@ a {
   }
   /* здесь ваши стили для смартфона */
 }
+/*# sourceMappingURL=style.css.map */
