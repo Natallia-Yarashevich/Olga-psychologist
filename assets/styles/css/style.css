@@ -7,9 +7,8 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
-  width: 100%;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -18,12 +17,16 @@ body {
   background-color: #DEDBD6;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .titleH2 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 78px;
   font-size: 64px;
+  line-height: 78px;
   color: #383838;
 }
 
@@ -38,6 +41,10 @@ body {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .button-green {
@@ -61,8 +68,142 @@ ul {
   color: white;
 }
 
-a {
-  text-decoration: none;
+.header {
+  background-color: #ABA39B;
+}
+
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #383838;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.navbar .logo__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+}
+
+.nav {
+  width: 80%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav__info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #EFECEB;
+}
+.nav__info:link {
+  color: #ABA39B;
+}
+.nav__info:hover {
+  color: #EFECE8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.nav__info:active {
+  color: #EFECE8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.nav__info-call {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  background-color: #EFECE8;
+  color: #383838;
+  background-color: #DEDBD6;
+}
+.nav__info-call:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.nav__info-call:hover {
+  color: rgb(100, 99, 94);
+}
+
+.intro {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #383838;
+  margin-top: 40px;
+  gap: 130px;
+}
+.intro__text {
+  width: 60%;
+  text-align: center;
+}
+.intro__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 107px;
+  font-size: 90px;
+  color: #000;
+  line-height: 110px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #383838;
+}
+.intro__job {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+  line-height: 44px;
+}
+.intro__quote {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 300;
+}
+.intro__image {
+  max-width: 560px;
+  height: 100%;
+}
+.intro__image__pic {
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutme {
+  margin-top: 115px;
 }
 
 .photo_2 {
@@ -78,9 +219,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.about__paragraf {
+.about__text {
   margin-left: 40px;
-  margin-right: 40px;
 }
 
 .info {
@@ -111,6 +251,7 @@ a {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
+
 .servise_part {
   background: #EFECE8;
   -webkit-box-sizing: border-box;
@@ -129,10 +270,9 @@ a {
 .subtitle {
   padding-top: 48px;
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
-  line-height: 60px;
-  font-size: 48px;
+  font-size: 36px;
+  line-height: 70px;
   color: #383838;
   color: #9aa581;
   font-weight: bold;
@@ -228,10 +368,6 @@ a {
   color: #383838;
   font-weight: bold;
   border-bottom: 5px double #9aa581;
-}
-.details:hover {
-  padding-bottom: 5px;
-  border-bottom: 5px solid #9aa581;
 }
 
 #swiper-button-prev,
@@ -381,19 +517,31 @@ a {
   width: 50px;
 }
 
+/* здесь ваши стили для ноутбука */
 @media (max-width: 1500px) {
   .container {
-    max-width: 800px;
+    max-width: 1200px;
   }
-  /* здесь ваши стили для ноутбука */
+  .intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
+/* здесь ваши стили для планшета */
 @media (max-width: 900px) {
   .container {
     max-width: 600px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* здесь ваши стили для планшета */
+  .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media (max-width: 640px) {
   .container {
