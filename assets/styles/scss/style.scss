@@ -50,8 +50,23 @@ a {
 
 // ABOUT ME =ARINA
 
+.about__photo {
+  max-width: 560px;
+  height: 100%;
+}
+
 .photo_2 {
-  width: 560px;
+  border-radius: 5px;
+  max-width: 560px;
+  height: auto;
+}
+
+.aboutme {
+  margin-top: 115px;
+}
+
+.photo_2 {
+  width: 600px;
   border-radius: 5px;
 }
 
@@ -59,15 +74,14 @@ a {
   display: flex;
   justify-content: center;
 
-  &__paragraf {
-    margin-left: 36px;
-    margin-right: 38px;
-    line-height: 70px;
-  }
-
-  &__titleH2 {
+  &__text {
     margin-left: 40px;
   }
+}
+
+.about__paragraf {
+  font-size: 36px;
+  line-height: 70px;
 }
 
 // INFO =TATIANA

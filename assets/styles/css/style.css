@@ -53,19 +53,31 @@ ul {
 a {
   text-decoration: none; }
 
+.about__photo {
+  max-width: 560px;
+  height: 100%; }
+
 .photo_2 {
-  width: 560px;
+  border-radius: 5px;
+  max-width: 560px;
+  height: auto; }
+
+.aboutme {
+  margin-top: 115px; }
+
+.photo_2 {
+  width: 600px;
   border-radius: 5px; }
 
 .about {
   display: flex;
   justify-content: center; }
-  .about__paragraf {
-    margin-left: 36px;
-    margin-right: 38px;
-    line-height: 70px; }
-  .about__titleH2 {
+  .about__text {
     margin-left: 40px; }
+
+.about__paragraf {
+  font-size: 36px;
+  line-height: 70px; }
 
 .info {
   font-family: 'Montserrat', sans-serif;
