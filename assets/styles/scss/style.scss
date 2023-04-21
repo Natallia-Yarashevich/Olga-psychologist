@@ -401,7 +401,9 @@ a {
 
 //  =VICTORIA
 .blog {
-    min-height: 70vh;
+    min-height: 100%;
+    margin-bottom: 416px;
+
 }
 
 .button__wrapper {
@@ -439,6 +441,7 @@ a {
         align-items: center;
 
         &__phone-number {
+            @include phone;
             color: $color-bg-main;
 
             &:hover {
@@ -449,10 +452,24 @@ a {
         &__whatsapp {
             width: 50px;
             margin: 0 40px;
+
+            &:hover, &:active  {
+                background: rgba(0,0,0,0);
+                color: $color-nav;
+                box-shadow: inset 0 0 0 3px $color-nav;
+                border-radius: 10px;
         }
+    }
 
         &__telegram {
             width: 50px;
+
+            &:hover, &:active  {
+                background: rgba(0,0,0,0);
+                color: $color-nav;
+                box-shadow: inset 0 0 0 3px $color-nav;
+                border-radius: 10px;
+        }
         }
     }
 }
