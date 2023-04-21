@@ -9,15 +9,18 @@
 
 // Обшие стили для всего документа, то что повторяется
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 body {
   background-color: $color-bg-main;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .titleH2 {
@@ -32,23 +35,145 @@ ul {
   list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: $color-light;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        inset: -30px;
+    }
+}
+
+// Проверить как себя ведет на моб экране
+// inset: -30p увеличивает область клика на ссылку
+
 .button-green {
   @include button-green;
   text-align: center;
 
-  &__help {
-    color: white;
-  }
-}
+    &__help {
+        color: $color-light;
 
-a {
-  text-decoration: none;
+        &:hover,
+        &:active {
+            color: $color-dark;
+            transition: 0.7s;
+        }
+    }
 }
 
 // разные разделы, смотрим, что вынесено в обший
 // ALISA
+.header {
+    background-color: $color-bg-dark;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-dark;
+
+    .logo {
+        &__title {
+            @include logos;
+        }
+    }
+}
+
+.nav {
+    width: 80%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info {
+        @include navigator;
+        color: $color-nav;
+
+        &:hover {
+            color: $color-dark;
+            transition: 0.9s;
+            padding-bottom: 5px;
+            border-bottom: 3px solid $color-dark;
+        }
+
+        &:active {
+            color: $color-dark;
+            transition: 0.7s;
+        }
+    }
+
+    &__info-call {
+        @include button-light;
+        background-color: $color-bg-main;
+
+        &:hover {
+            color: $color-dark;
+            background-color: $color-green;
+        }
+    }
+}
+
+// SECTION ONE
+.intro {
+    width: 100%;
+    display: flex;
+    color: $color-dark;
+    margin-top: 40px;
+    gap: 130px;
+
+    &__text {
+        width: 60%;
+        text-align: center;
+    }
+
+    &__title {
+        @include h1;
+        color: $color-dark;
+    }
+
+    &__job {
+        @include h4;
+        line-height: 44px;
+    }
+
+    &__quote {
+        @include h4;
+        font-size: 36px;
+        line-height: 44px;
+
+        font-weight: 300;
+    }
+
+    &__image {
+        max-width: 560px;
+        height: 100%;
+
+        &__pic {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
 
 // ABOUT ME =ARINA
+.aboutme {
+    margin-top: 115px;
+}
+
+.photo_2 {
+    width: 600px;
+    border-radius: 5px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
 
 .about__photo {
   width: 560px;
@@ -115,10 +240,8 @@ a {
 }
 
 .subtitle {
-  padding-top: 48px;
-  @include h3;
-  color: $color-green;
-  font-weight: bold;
+    padding-top: 48px;
+    @include h3;
 }
 
 .tariff {
@@ -178,18 +301,132 @@ a {
 
 // / ENERGU =NATALIA
 .details {
-  @include h4;
-  color: $color-dark;
-  font-weight: bold;
-  border-bottom: 5px double $color-green;
+    @include h4;
+    color: $color-green;
+    font-weight: bold;
+    border-bottom: 5px double $color-green;
 
-  &:hover {
-    padding-bottom: 5px;
-    border-bottom: 5px solid $color-green;
-  }
+    &:hover,
+    &:active {
+        color: $color-dark;
+        transition: 0.9s;
+        padding-bottom: 5px;
+        border-bottom: 3px solid $color-dark;
+    }
+
 }
 
+// ENERGU =NATALIA
+
+
 // REVIEW =ANNA
+#swiper-button-prev,
+#swiper-button-next {
+    color: $color-black;
+}
+
+/*.title {
+    @include title;
+    color: $color-dark;
+    height: 50px;
+}*/
+.review__text {
+    @include p;
+    color: $color-black;
+    font-size: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    padding: 50px;
+    gap: 5px;
+    background-color: $color-light;
+    border-radius: 10%;
+}
+
+.review__title {
+    display: flex;
+    align-content: center;
+}
+
+
+.review-block {
+    background-color: $color-bg-main;
+    height: 100%;
+}
+
+.review__image {
+    width: 5%;
+    height: 5%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $color-dark;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .review__text {
+        font-size: 16px;
+    }
+
+    #slide,
+    #slide1,
+    #slide2,
+    #slide3,
+    #slide4,
+    #slide5,
+    #slide6,
+    #slide7 {
+        height: 500px;
+    }
+
+    .review__image {
+        width: 4%;
+        height: 4%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .review__text {
+        font-size: 14px;
+    }
+
+    #slide,
+    #slide1,
+    #slide2,
+    #slide3,
+    #slide4,
+    #slide5,
+    #slide6,
+    #slide7 {
+        height: 420px;
+    }
+
+    .review__image {
+        width: 3%;
+        height: 3%;
+    }
+}
+
 
 //  =VICTORIA
 .blog {
@@ -214,14 +451,11 @@ a {
 }
 
 .navigation {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-
-  &__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     @include phone;
-  }
 }
 
 .contacts {
@@ -233,10 +467,13 @@ a {
     justify-content: space-between;
     align-items: center;
 
-    &__phone-number {
-      @include phone;
-      color: $color-bg-main;
-    }
+        &__phone-number {
+            color: $color-bg-main;
+
+            &:hover {
+                color: $color-dark;
+            }
+        }
 
     &__whatsapp {
       width: 50px;
@@ -248,5 +485,10 @@ a {
     }
   }
 }
+
+
+
+
+
 
 @import "media";

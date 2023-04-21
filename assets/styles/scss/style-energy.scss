@@ -20,151 +20,136 @@ body {
     background-color: $color-bg-main;
 }
 
-.titleH2 {
-    @include h2;
-}
-
-.paragraf {
-    @include h4;
-}
-
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.button-green {
-    @include button-green;
-    text-align: center;
+a {
+    text-decoration: none;
+    color: $color-light;
+    position: relative;
 
-    &__help {
-        color: white;
-
-        &:hover {
-            padding-bottom: 5px;
-            border-bottom: 5px solid $color-green;
-        }
+    &:after {
+        content: '';
+        position: absolute;
+        inset: -10px;
     }
 }
 
-a {
-    text-decoration: none;
-}
-
-.titleH2 {
-    @include h2;
-}
-
-.subtitle {
-    @include h3;
-}
-
-a {
-    text-decoration: none;
-
-
+.header {
+    background-color: $color-bg-dark;
 }
 
 .navbar {
+    width: 100%;
     display: flex;
-    // width: 95%;
-    padding: 0 20px;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: $color-bg-dark;
-    @include paragraf;
-}
+    align-items: center;
+    justify-content: space-between;
+    color: $color-dark;
 
-.logo {
-    &__title {
-        font-weight: bold;
-        font-size: 25px;
-        color: $color-dark;
+    .logo {
+        &__title {
+            @include logos;
+        }
     }
 }
 
 .nav {
-    display: flex;
-    width: 80%;
+    width: 100%;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
 
     &__info {
-        text-decoration: none;
-        color: $color-bg-main;
-        font-weight: bold;
-        // font-size: 20px;
+        @include navigator;
+        color: $color-nav;
 
         &:hover {
-            border: 1px solid red;
+            color: $color-dark;
+            transition: 0.9s;
+            padding-bottom: 5px;
+            border-bottom: 3px solid $color-dark;
+        }
+
+        &:active {
+            color: $color-dark;
+            transition: 0.7s;
         }
     }
 
-    // бордер как пример стоит  для проверки , все ли работает
-    // 
     &__info-call {
         @include button-light;
+        background-color: $color-bg-main;
 
         &:hover {
-            border: 1px solid rgb(47, 0, 255);
+            color: $color-dark;
+            background-color: $color-green;
         }
     }
 }
 
-
-
-body {
-    background-color: $color-bg-main;
-}
-
-.container-energy {
-    box-sizing: border-box;
-    border-radius: 30px;
-    margin: 0 auto;
-    padding: 30px;
+span {
+    color: $color-green;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 40px;
 }
 
 .energy {
+    list-style: none;
+    margin-bottom: 50px;
+
     &__title {
         @include h1;
-    }
-
-    &__subtitle {
-        @include h3;
-        text-align: justify;
+        color: $color-green;
+        text-align: left;
     }
 
     &__paragraf {
-        @include h3;
-    }
-
-    &__price {
         @include h4;
-        display: flex;
-    }
-}
+        color: $color-dark;
 
-.energy {
-    &__list {
-        @include h4;
-        list-style: none;
-
-        span {
-            color: $color-green;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            font-size: 40px;
+        &_bold {
+            font-weight: 500;
         }
     }
 
-    &__item {
-        list-style: none;
+    &__list {
         @include h4;
-        font-size: 30px;
+        font-weight: 600;
         text-align: justify;
     }
 
+    &__item {
+        @include h4;
+        padding-left: 40px;
+    }
+
+    &__subtitle {}
+}
+
+.span {
+    width: 1.5em;
+}
+
+.list {
+    &__item {
+        @include h4;
+        // padding-left: 40px;
+    }
+}
+
+.tariff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
     &__price {
+        margin: 30px 0;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -174,64 +159,196 @@ body {
         margin: 0;
         @include h4;
     }
+
+    &__button-green {
+        @include button-green;
+        text-align: center;
+
+        &__help {
+            color: $color-light;
+
+            &:hover,
+            &:active {
+                color: $color-dark;
+                transition: 0.7s;
+            }
+        }
+    }
 }
 
-.tariff {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
+
+
+
+.help {
+    color: $color-light;
+
+    &:hover,
+    &:active {
+        color: $color-dark;
+        transition: 0.7s;
+    }
 }
 
-.footer-wrapper {
+.footer {
     background-color: $color-bg-dark;
+    margin: 0 auto;
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    bottom: 0;
+    // height: auto;
+    @include phone;
 
-}
-
-.navigation {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &__back {
-        @include phone;
-        text-decoration: none;
-        color: $color-bg-main;
-        font-weight: bold;
+    &__nav {
+        // min-height: 120px;
+        bottom: 0;
     }
 }
 
 .contacts {
     display: flex;
+    justify-content: flex-end;
+    width: 20%;
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+
+        &__whatsapp,
+        &__telegram {
+            width: 50px;
+            padding: 10px 0;
+
+            &:hover,
+            &:active {
+                color: $color-green;
+            }
+        }
+
+        &__whatsapp {
+            margin: 0 40px;
+        }
+    }
 }
 
-.social-media {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* здесь ваши стили для ноутбука */
+@media (max-width: 1500px) {
 
-    &__phone-number {
-        @include phone;
-        color: azure;
+    // ОБЩИЕ СТИЛИ
+    .container {
+        max-width: 1024px;
     }
 
-    &__whatsapp {
-        width: 50px;
-        margin: 0 40px;
-        // padding-left: 40px;
+    .titleH2 {
+        font-size: 60px;
+        line-height: 73px;
     }
 
-    &__telegram {
-        width: 50px;
-        // margin-left: 35px;
-        // padding-right: 20px;
+    .subtitle {
+        font-size: 44px;
+        line-height: 53px;
     }
+
+    .paragraf {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    // АЛИСА
+    // .intro {
+    //   прописать св-ва для картинки и шрифтов
+    // }
+    // АРИНА
+
+    // ТАНЯ
+
+    // ЛЮДА
+
+    // НАТАША
+
+    // АНЯ
+
+    // ВИКА
 }
 
+/* здесь ваши стили для планшета */
+@media (max-width: 900px) {
+    .container {
+        max-width: 600px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
+    // .titleH2 {
+    //   font-size: 60px;
+    //   line-height: 73px;
+    // }
 
-@import "media";
+    // .subtitle {
+    //   font-size: 44px;
+    //   line-height: 53px;
+    // }
+
+    // .paragraf {
+    //   font-size: 30px;
+    //   line-height: 50px;
+    // }
+
+    // АЛИСА
+    // .intro {
+    //   прописать св-ва для картинки и шрифтов
+    // }
+    // АРИНА
+
+    // ТАНЯ
+
+    // ЛЮДА
+
+    // НАТАША
+
+    // АНЯ
+
+    // ВИКА
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 480px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .titleH2 {
+        font-size: 60px;
+        line-height: 73px;
+    }
+
+    .subtitle {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .paragraf {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    // АЛИСА
+    // .intro {
+    //   прописать св-ва для картинки и шрифтов
+    // }
+    // АРИНА
+
+    // ТАНЯ
+
+    // ЛЮДА
+
+    // НАТАША
+
+    // АНЯ
+
+    // ВИКА
+}

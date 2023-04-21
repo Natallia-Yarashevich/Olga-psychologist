@@ -1,23 +1,24 @@
 /* здесь ваши стили для ноутбука */
 @media (max-width: 1500px) {
   .container {
-    max-width: 1024px;
+    max-width: 800px;
   }
 
-  .titleH2 {
-    font-size: 60px;
-    line-height: 73px;
-  }
+  // АЛИСА
+  // .intro {
+  //   прописать св-ва для картинки и шрифтов
+  // }
+  // АРИНА
 
-  .subtitle {
-    font-size: 44px;
-    line-height: 53px;
-  }
+  // ТАНЯ
 
-  .paragraf {
-    font-size: 30px;
-    line-height: 50px;
-  }
+  // ЛЮДА
+
+  // НАТАША
+
+  // АНЯ
+
+  // ВИКА
 }
 
 /* здесь ваши стили для планшета */
@@ -28,21 +29,7 @@
     padding-right: 20px;
   }
 
-  .about__photo {
-    width: 390px;
-    height: 548px;
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .photo_2 {
-      object-fit: cover;
-      width: 100%;
-      border-radius: 5px;
-    }
-  }
+  /* здесь ваши стили для планшета */
 }
 
 /* здесь ваши стили для смартфона */
@@ -53,30 +40,5 @@
     padding-right: 16px;
   }
 
-  .about__photo {
-    width: 186px;
-    height: 240px;
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-    .photo_2 {
-      object-fit: cover;
-      width: 100%;
-      border-radius: 5px;
-    }
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-.about__text {
-  margin-left: 40px;
-  width: 100%;
+  /* здесь ваши стили для смартфона */
 }

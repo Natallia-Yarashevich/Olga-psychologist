@@ -7,6 +7,10 @@
     <title>Ольга Танотина</title>
     <!-- <link rel="shortcut icon" href="#" type="image/png" /> -->
     <link rel="stylesheet" href="./assets/styles/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/styles/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +26,21 @@
       <div class="container">
         <!-- -внутри секций общий div-container = обертка -->
       </div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <p class="logo__title">Ольга Танотина</p>
+                </div>
+                <ul class="nav">
+                    <li><a class="nav__info" href="#">Обо мне</a></li>
+                    <li><a class="nav__info" href="#"> Услуги</a></li>
+                    <li><a class="nav__info" href="#">Отзывы</a></li>
+                    <li><a class="nav__info" href="#">Контакты</a></li>
+                    <li><a class="nav__info nav__info-call" href="#">Позвонить</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -32,29 +51,9 @@
       </section>
 
       <!-- ABOUT ME =ARINA -->
-      <section class="aboutme">
+      <section>
         <!-- -внутри секций общий div-container = обертка -->
-        <div class="container">
-          <div class="about">
-            <div class="about__photo">
-              <img
-                class="photo_2"
-                src="assets/images/photo_2.jpg"
-                alt="Ольга Танотина"
-              />
-            </div>
-            <div class="about__text">
-              <h2 class="about__titleH2 titleH2">Обо мне</h2>
-              <p class="about__paragraf paragraf">
-                Меня зовут Ольга, <br />
-                я - дипломированный психолог, регрессолог и энерготерапевт.
-                Работаю по методике интегративного подхода, объединяя
-                эмоционально образную терапию, транзактный анализ и регрессивный
-                гипноз.
-              </p>
-            </div>
-          </div>
-        </div>
+        <div class="container"></div>
       </section>
 
       <!-- INFO =TATIANA -->
@@ -75,6 +74,24 @@
           </div>
         </div>
       </section>
+        <!-- INFO =TATIANA -->
+        <section class="info">
+            <!-- -внутри секций общий div-container = обертка -->
+            <div class="container">
+                <p class="info__paragraf paragraf">
+                    Помогу Вам понять свои чувства и телесные реакции, выйти из
+                    напряжения в расслабленное, гармоничное состояние. Быть здоровыми и
+                    счастливыми.
+                </p>
+                <p>
+                    Определить потребность и наметить план совместной работы мы сможем
+                    на <span class="bold">бесплатной</span> получасовой сессии.
+                </p>
+                <div class="info__button">
+                    <button class="button-green">Записаться на пробную сессию</button>
+                </div>
+            </div>
+        </section>
 
       <!--LUDA&NATA-->
       <section class="services container">
