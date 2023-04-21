@@ -9,6 +9,8 @@ const swiper = new Swiper(".swiper", {
     pagination: {
         el: ".swiper-pagination",
         paginationClickable: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
     },
     // Navigation arrows
     navigation: {
@@ -36,9 +38,17 @@ const swiper = new Swiper(".swiper", {
             slidesPerView: 1,
             spaceBetween: 10,
         },
-        // when window width is >= 800px
-        1000: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        900: {
             slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        // when window width is >= 800px
+        1200: {
+            slidesPerView: 4,
             spaceBetween: 10,
         },
     },
