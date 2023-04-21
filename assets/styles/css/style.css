@@ -2,11 +2,12 @@
 *,
 * ::before,
 * ::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -31,7 +32,6 @@ body {
 
 .paragraf {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -44,6 +44,13 @@ ul {
 
 a {
   text-decoration: none;
+  color: #EFECE8;
+  position: relative;
+}
+a:after {
+  content: "";
+  position: absolute;
+  inset: -30px;
 }
 
 .button-green {
@@ -59,11 +66,13 @@ a {
   color: #EFECE8;
   text-align: center;
 }
-.button-green:hover {
-  transition: 0.7s;
-}
 .button-green__help {
-  color: white;
+  color: #EFECE8;
+}
+.button-green__help:hover, .button-green__help:active {
+  color: #383838;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .header {
@@ -72,13 +81,16 @@ a {
 
 .navbar {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #383838;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
 }
 .navbar .logo__title {
   font-family: "Montserrat", sans-serif;
@@ -89,9 +101,15 @@ a {
 
 .nav {
   width: 80%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .nav__info {
   font-family: "Montserrat", sans-serif;
@@ -100,16 +118,17 @@ a {
   line-height: 29px;
   color: #EFECEB;
 }
-.nav__info:link {
-  color: #9aa581;
-}
 .nav__info:hover {
-  color: #EFECE8;
-  transition: 0.5s;
+  color: #383838;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #383838;
 }
 .nav__info:active {
-  color: #EFECE8;
-  transition: 0.5s;
+  color: #383838;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .nav__info-call {
   font-family: "Montserrat", sans-serif;
@@ -125,14 +144,18 @@ a {
   background-color: #DEDBD6;
 }
 .nav__info-call:hover {
+  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 .nav__info-call:hover {
-  color: rgb(100, 99, 94);
+  color: #383838;
+  background-color: #9aa581;
 }
 
 .intro {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #383838;
   margin-top: 40px;
@@ -146,17 +169,15 @@ a {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 107px;
+  line-height: 109px;
   font-size: 90px;
   color: #000;
-  line-height: 110px;
   letter-spacing: 0.04em;
   text-align: center;
   color: #383838;
 }
 .intro__job {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -165,7 +186,6 @@ a {
 }
 .intro__quote {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -193,8 +213,12 @@ a {
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .about__text {
   margin-left: 40px;
@@ -202,7 +226,6 @@ a {
 
 .info {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -224,13 +247,11 @@ a {
   background-color: #9aa581;
   color: #EFECE8;
 }
-.info__button .button-green:hover {
-  transition: 0.7s;
-}
 
 .servise_part {
   background: #EFECE8;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 30px;
   margin: 0 auto;
 }
@@ -246,28 +267,38 @@ a {
   padding-top: 48px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 70px;
-  color: #383838;
+  font-size: 48px;
+  line-height: 58px;
   color: #9aa581;
-  font-weight: bold;
 }
 
 .tariff {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .price__more {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -276,7 +307,6 @@ a {
 
 .servise__list {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -289,13 +319,14 @@ a {
 
 .still {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
   color: #383838;
   color: #383838;
   font-weight: bold;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
   max-width: min-content;
   background-color: #EFECE8;
   border-style: none;
@@ -320,14 +351,20 @@ a {
 
 .details {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
   color: #383838;
-  color: #383838;
+  color: #9aa581;
   font-weight: bold;
   border-bottom: 5px double #9aa581;
+}
+.details:hover, .details:active {
+  color: #383838;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #383838;
 }
 
 #swiper-button-prev,
@@ -344,13 +381,19 @@ a {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
   color: #000;
   font-size: 20px;
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #slide,
@@ -361,11 +404,20 @@ a {
 #slide5,
 #slide6,
 #slide7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 550px;
-  justify-content: start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10px;
   padding: 50px;
   gap: 5px;
@@ -374,8 +426,11 @@ a {
 }
 
 .review__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .review-block {
@@ -397,13 +452,13 @@ a {
     font-size: 16px;
   }
   #slide,
-  #slide1,
-  #slide2,
-  #slide3,
-  #slide4,
-  #slide5,
-  #slide6,
-  #slide7 {
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
     height: 500px;
   }
   .review__image {
@@ -416,13 +471,13 @@ a {
     font-size: 14px;
   }
   #slide,
-  #slide1,
-  #slide2,
-  #slide3,
-  #slide4,
-  #slide5,
-  #slide6,
-  #slide7 {
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
     height: 420px;
   }
   .review__image {
@@ -437,8 +492,12 @@ a {
 .button__wrapper {
   padding-left: 30px;
   padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer {
@@ -451,12 +510,18 @@ a {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-.navigation__text {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -466,22 +531,29 @@ a {
 }
 
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contacts .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contacts .social-media__phone-number {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
-  color: #383838;
   color: #DEDBD6;
+}
+.contacts .social-media__phone-number:hover {
+  color: #383838;
 }
 .contacts .social-media__whatsapp {
   width: 50px;
@@ -494,10 +566,19 @@ a {
 /* здесь ваши стили для ноутбука */
 @media (max-width: 1500px) {
   .container {
-    max-width: 1200px;
+    max-width: 1024px;
   }
-  .intro {
-    flex-direction: row;
+  .titleH2 {
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .subtitle {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .paragraf {
+    font-size: 30px;
+    line-height: 50px;
   }
 }
 /* здесь ваши стили для планшета */
@@ -507,9 +588,6 @@ a {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .intro {
-    flex-direction: column;
-  }
 }
 @media (max-width: 640px) {
   .container {
@@ -517,5 +595,20 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
-  /* здесь ваши стили для смартфона */
+  .container {
+    max-width: 1024px;
+  }
+  .titleH2 {
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .subtitle {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .paragraf {
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
+/*# sourceMappingURL=style.css.map */

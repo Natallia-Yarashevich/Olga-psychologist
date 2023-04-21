@@ -9,7 +9,7 @@
 
 // Обшие стили для всего документа, то что повторяется
 .container {
-    max-width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -37,14 +37,31 @@ ul {
 
 a {
     text-decoration: none;
+    color: $color-light;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        inset: -30px;
+    }
 }
+
+// Проверить как себя ведет на моб экране
+// inset: -30p увеличивает область клика на ссылку
 
 .button-green {
     @include button-green;
     text-align: center;
 
     &__help {
-        color: white;
+        color: $color-light;
+
+        &:hover,
+        &:active {
+            color: $color-dark;
+            transition: 0.7s;
+        }
     }
 }
 
@@ -60,7 +77,6 @@ a {
     align-items: center;
     justify-content: space-between;
     color: $color-dark;
-    @include paragraf;
 
     .logo {
         &__title {
@@ -79,18 +95,16 @@ a {
         @include navigator;
         color: $color-nav;
 
-        &:link {
-            color: $color-green;
-        }
-
         &:hover {
-            color: $color-light;
-            transition: 0.5s;
+            color: $color-dark;
+            transition: 0.9s;
+            padding-bottom: 5px;
+            border-bottom: 3px solid $color-dark;
         }
 
         &:active {
-            color: $color-light;
-            transition: 0.5s;
+            color: $color-dark;
+            transition: 0.7s;
         }
     }
 
@@ -99,7 +113,8 @@ a {
         background-color: $color-bg-main;
 
         &:hover {
-            color: $color-dark-hover;
+            color: $color-dark;
+            background-color: $color-green;
         }
     }
 }
@@ -160,7 +175,6 @@ a {
     display: flex;
     justify-content: center;
 
-
     &__text {
         margin-left: 40px;
     }
@@ -199,11 +213,7 @@ a {
 .subtitle {
     padding-top: 48px;
     @include h3;
-    color: $color-green;
-    font-weight: bold;
 }
-
-
 
 .tariff {
     display: flex;
@@ -263,9 +273,18 @@ a {
 // / ENERGU =NATALIA
 .details {
     @include h4;
-    color: $color-dark;
+    color: $color-green;
     font-weight: bold;
     border-bottom: 5px double $color-green;
+
+    &:hover,
+    &:active {
+        color: $color-dark;
+        transition: 0.9s;
+        padding-bottom: 5px;
+        border-bottom: 3px solid $color-dark;
+    }
+
 }
 
 // ENERGU =NATALIA
@@ -283,7 +302,7 @@ a {
     height: 50px;
 }*/
 .review__text {
-    @include paragraf;
+    @include p;
     color: $color-black;
     font-size: 20px;
 }
@@ -407,10 +426,7 @@ a {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-
-    &__text {
-        @include phone;
-    }
+    @include phone;
 }
 
 .contacts {
@@ -423,8 +439,11 @@ a {
         align-items: center;
 
         &__phone-number {
-            @include phone;
             color: $color-bg-main;
+
+            &:hover {
+                color: $color-dark;
+            }
         }
 
         &__whatsapp {

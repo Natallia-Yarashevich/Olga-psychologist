@@ -1,8 +1,6 @@
-@mixin title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-}
+// @mixin title {
+
+// }
 
 @mixin navigator {
     font-family: 'Montserrat', sans-serif;
@@ -19,17 +17,20 @@
 }
 
 @mixin h1 {
-    @include title;
-    line-height: 107px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 109px;
     font-size: 90px;
     color: $color-black;
-    line-height: 110px;
     letter-spacing: 0.04em;
     text-align: center;
 }
 
 @mixin h2 {
-    @include title;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 64px;
     line-height: 78px;
     color: $color-dark;
@@ -38,26 +39,24 @@
 @mixin h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 70px;
-    color: $color-dark;
+    font-size: 48px;
+    line-height: 58px;
+    color: $color-green;
 }
 
 @mixin h4 {
-    @include title;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     line-height: 60px;
     font-size: 36px;
     color: $color-dark;
 }
 
-@mixin paragraf {
+
+@mixin p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-}
-
-@mixin p {
-    @include paragraf;
     font-size: 15px;
     line-height: 160%;
     /* or 24px */
@@ -89,17 +88,17 @@
     background-color: $color-green;
     color: $color-light;
 
-    &:hover {
-        // background-color: $color-primary-light;
-        transition: 0.7s;
-    }
-
-    // &:focus {
-    //     // outline-color: transparent;- изменить под требования
-    //     // outline-style: solid;
-    //     // box-shadow: 0 0 0 2px #f3c496;
-    // }
 }
+
+//  {
+//     // outline-color: transparent;- изменить под требования
+//     // outline-style: solid;
+//     // box-shadow: 0 0 0 2px #f3c496;
+//     a:hover {свойства;}
+// Когда нажали на ссылку — a:active {свойства;}
+// Когда перешли по ссылке — a:visited
+// }
+// }
 
 @mixin button-light {
     @include btn;
