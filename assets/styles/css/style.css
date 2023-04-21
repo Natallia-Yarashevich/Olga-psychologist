@@ -363,7 +363,7 @@ a {
 #slide7 {
   display: flex;
   flex-direction: row;
-  height: 550px;
+  min-height: 550px;
   justify-content: start;
   align-items: center;
   margin: 10px;
