@@ -6,7 +6,7 @@
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -31,7 +31,6 @@ body {
 
 .paragraf {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -44,6 +43,13 @@ ul {
 
 a {
   text-decoration: none;
+  color: #EFECE8;
+  position: relative;
+}
+a:after {
+  content: "";
+  position: absolute;
+  inset: -30px;
 }
 
 .button-green {
@@ -59,11 +65,12 @@ a {
   color: #EFECE8;
   text-align: center;
 }
-.button-green:hover {
-  transition: 0.7s;
-}
 .button-green__help {
-  color: white;
+  color: #EFECE8;
+}
+.button-green__help:hover, .button-green__help:active {
+  color: #383838;
+  transition: 0.7s;
 }
 
 .header {
@@ -76,9 +83,6 @@ a {
   align-items: center;
   justify-content: space-between;
   color: #383838;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
 }
 .navbar .logo__title {
   font-family: "Montserrat", sans-serif;
@@ -100,16 +104,15 @@ a {
   line-height: 29px;
   color: #EFECEB;
 }
-.nav__info:link {
-  color: #9aa581;
-}
 .nav__info:hover {
-  color: #EFECE8;
-  transition: 0.5s;
+  color: #383838;
+  transition: 0.9s;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #383838;
 }
 .nav__info:active {
-  color: #EFECE8;
-  transition: 0.5s;
+  color: #383838;
+  transition: 0.7s;
 }
 .nav__info-call {
   font-family: "Montserrat", sans-serif;
@@ -128,7 +131,8 @@ a {
   transition: 0.7s;
 }
 .nav__info-call:hover {
-  color: rgb(100, 99, 94);
+  color: #383838;
+  background-color: #9aa581;
 }
 
 .intro {
@@ -146,17 +150,15 @@ a {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 107px;
+  line-height: 109px;
   font-size: 90px;
   color: #000;
-  line-height: 110px;
   letter-spacing: 0.04em;
   text-align: center;
   color: #383838;
 }
 .intro__job {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -165,7 +167,6 @@ a {
 }
 .intro__quote {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -202,7 +203,6 @@ a {
 
 .info {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -224,9 +224,6 @@ a {
   background-color: #9aa581;
   color: #EFECE8;
 }
-.info__button .button-green:hover {
-  transition: 0.7s;
-}
 
 .servise_part {
   background: #EFECE8;
@@ -246,11 +243,9 @@ a {
   padding-top: 48px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 70px;
-  color: #383838;
+  font-size: 48px;
+  line-height: 58px;
   color: #9aa581;
-  font-weight: bold;
 }
 
 .tariff {
@@ -267,7 +262,6 @@ a {
 .price__more {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -276,7 +270,6 @@ a {
 
 .servise__list {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -289,7 +282,6 @@ a {
 
 .still {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
@@ -320,14 +312,19 @@ a {
 
 .details {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 60px;
   font-size: 36px;
   color: #383838;
-  color: #383838;
+  color: #9aa581;
   font-weight: bold;
   border-bottom: 5px double #9aa581;
+}
+.details:hover, .details:active {
+  color: #383838;
+  transition: 0.9s;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #383838;
 }
 
 #swiper-button-prev,
@@ -344,6 +341,9 @@ a {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
   color: #000;
   font-size: 20px;
 }
@@ -455,8 +455,6 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-}
-.navigation__text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -475,13 +473,10 @@ a {
   align-items: center;
 }
 .contacts .social-media__phone-number {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
-  color: #383838;
   color: #DEDBD6;
+}
+.contacts .social-media__phone-number:hover {
+  color: #383838;
 }
 .contacts .social-media__whatsapp {
   width: 50px;
@@ -494,10 +489,19 @@ a {
 /* здесь ваши стили для ноутбука */
 @media (max-width: 1500px) {
   .container {
-    max-width: 1200px;
+    max-width: 1024px;
   }
-  .intro {
-    flex-direction: row;
+  .titleH2 {
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .subtitle {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .paragraf {
+    font-size: 30px;
+    line-height: 50px;
   }
 }
 /* здесь ваши стили для планшета */
@@ -507,9 +511,6 @@ a {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .intro {
-    flex-direction: column;
-  }
 }
 @media (max-width: 640px) {
   .container {
@@ -517,5 +518,19 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
-  /* здесь ваши стили для смартфона */
+  .container {
+    max-width: 1024px;
+  }
+  .titleH2 {
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .subtitle {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .paragraf {
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
