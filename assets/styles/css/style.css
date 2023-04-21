@@ -63,14 +63,11 @@ a {
   align-items: center; }
   .about__photo .photo_2 {
     object-fit: cover;
-    width: 100%; }
+    width: 100%;
+    border-radius: 5px; }
 
 .aboutme {
   margin-top: 115px; }
-
-.photo_2 {
-  width: 560px;
-  border-radius: 5px; }
 
 .about {
   display: flex;
@@ -253,7 +250,16 @@ a {
 /* здесь ваши стили для ноутбука */
 @media (max-width: 1500px) {
   .container {
-    max-width: 800px; } }
+    max-width: 1024px; }
+  .titleH2 {
+    font-size: 60px;
+    line-height: 73px; }
+  .subtitle {
+    font-size: 44px;
+    line-height: 53px; }
+  .paragraf {
+    font-size: 30px;
+    line-height: 50px; } }
 
 /* здесь ваши стили для планшета */
 @media (max-width: 900px) {

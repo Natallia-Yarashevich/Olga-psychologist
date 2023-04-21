@@ -62,16 +62,12 @@ a {
   .photo_2 {
     object-fit: cover;
     width: 100%;
+    border-radius: 5px;
   }
 }
 
 .aboutme {
   margin-top: 115px;
-}
-
-.photo_2 {
-  width: 560px;
-  border-radius: 5px;
 }
 
 .about {
