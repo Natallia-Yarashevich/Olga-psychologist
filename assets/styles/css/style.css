@@ -447,14 +447,8 @@ a:after {
   margin: 0 auto;
 }
 
-.footer-wrapper {
-  width: 100%;
-}
-
 .navigation {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   font-family: "Montserrat";
   font-style: normal;
@@ -464,16 +458,12 @@ a:after {
   color: #383838;
 }
 
-.contacts {
-  display: flex;
-  align-items: center;
-}
 .contacts .social-media {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .contacts .social-media__phone-number {
+  margin: 0 40px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -485,20 +475,11 @@ a:after {
 .contacts .social-media__phone-number:hover {
   color: #383838;
 }
-.contacts .social-media__whatsapp {
+.contacts .social-media__whatsapp, .contacts .social-media__telegram {
   width: 50px;
-  margin: 0 40px;
+  margin: 0 15px;
 }
-.contacts .social-media__whatsapp:hover, .contacts .social-media__whatsapp:active {
-  background: rgba(0, 0, 0, 0);
-  color: #EFECEB;
-  box-shadow: inset 0 0 0 3px #EFECEB;
-  border-radius: 10px;
-}
-.contacts .social-media__telegram {
-  width: 50px;
-}
-.contacts .social-media__telegram:hover, .contacts .social-media__telegram:active {
+.contacts .social-media__whatsapp:hover, .contacts .social-media__whatsapp:active, .contacts .social-media__telegram:hover, .contacts .social-media__telegram:active {
   background: rgba(0, 0, 0, 0);
   color: #EFECEB;
   box-shadow: inset 0 0 0 3px #EFECEB;
