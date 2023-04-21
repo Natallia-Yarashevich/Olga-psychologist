@@ -11,13 +11,16 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    width: 100%;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 body {
     background-color: $color-bg-main;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .titleH2 {
@@ -32,27 +35,150 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: $color-light;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        inset: -30px;
+    }
+}
+
+// Проверить как себя ведет на моб экране
+// inset: -30p увеличивает область клика на ссылку
+
 .button-green {
     @include button-green;
     text-align: center;
 
     &__help {
-        color: white;
+        color: $color-light;
+
+        &:hover,
+        &:active {
+            color: $color-dark;
+            transition: 0.7s;
+        }
     }
 }
 
-a {
-    text-decoration: none;
-}
-
-
-
 // разные разделы, смотрим, что вынесено в обший
 // ALISA
+.header {
+    background-color: $color-bg-dark;
+}
 
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-dark;
+
+    .logo {
+        &__title {
+            @include logos;
+        }
+    }
+}
+
+.nav {
+    width: 80%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info {
+        @include navigator;
+        color: $color-nav;
+
+        &:hover {
+            color: $color-dark;
+            transition: 0.9s;
+            padding-bottom: 5px;
+            border-bottom: 3px solid $color-dark;
+        }
+
+        &:active {
+            color: $color-dark;
+            transition: 0.7s;
+        }
+    }
+
+    &__info-call {
+        @include button-light;
+        background-color: $color-bg-main;
+
+        &:hover {
+            color: $color-dark;
+            background-color: $color-green;
+        }
+    }
+}
+
+// SECTION ONE
+.intro {
+    width: 100%;
+    display: flex;
+    color: $color-dark;
+    margin-top: 40px;
+    gap: 130px;
+
+    &__text {
+        width: 60%;
+        text-align: center;
+    }
+
+    &__title {
+        @include h1;
+        color: $color-dark;
+    }
+
+    &__job {
+        @include h4;
+        line-height: 44px;
+    }
+
+    &__quote {
+        @include h4;
+        font-size: 36px;
+        line-height: 44px;
+
+        font-weight: 300;
+    }
+
+    &__image {
+        max-width: 560px;
+        height: 100%;
+
+        &__pic {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
 
 // ABOUT ME =ARINA
+.aboutme {
+    margin-top: 115px;
+}
 
+.photo_2 {
+    width: 600px;
+    border-radius: 5px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        margin-left: 40px;
+    }
+}
 
 // INFO =TATIANA
 .info {
@@ -68,19 +194,12 @@ a {
     }
 }
 
-
-
-
+// SERVIS general
 .servise_part {
     background: $color-light;
     box-sizing: border-box;
     border-radius: 30px;
     margin: 0 auto;
-
-    .subtitle {
-        @include h3;
-        color: $color-green;
-    }
 
     span {
         color: $color-green;
@@ -89,41 +208,84 @@ a {
         width: 1em;
         font-size: 50px;
     }
+}
 
-    .tariff {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+.subtitle {
+    padding-top: 48px;
+    @include h3;
+}
 
-    .price {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+.tariff {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-        &__more {
-            margin: 0;
-            @include h4;
-        }
-    }
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-    .servise__list {
+    &__more {
+        margin: 0;
         @include h4;
-        // text-align: justify;
     }
 }
 
-.details {
+.servise__list {
+    @include h4;
+}
+
+// / PSYCHO =LYUDMILA
+.one {
+    text-indent: 42px;
+}
+
+.still {
     @include h4;
     color: $color-dark;
     font-weight: bold;
+    max-width: min-content;
+    background-color: $color-light;
+    border-style: none;
+    border-bottom: 5px solid $color-green;
 
-    &:hover {
-        padding-bottom: 5px;
-        border-bottom: 5px solid $color-green;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-green;
     }
 }
 
+.hidden {
+    display: none;
+    position: absolute;
+}
+
+.psycho-content__second {
+    position: relative;
+}
+
+.psycho-content__second:hover .hidden {
+    display: block;
+}
+
+// / ENERGU =NATALIA
+.details {
+    @include h4;
+    color: $color-green;
+    font-weight: bold;
+    border-bottom: 5px double $color-green;
+
+    &:hover,
+    &:active {
+        color: $color-dark;
+        transition: 0.9s;
+        padding-bottom: 5px;
+        border-bottom: 3px solid $color-dark;
+    }
+
+}
 
 // ENERGU =NATALIA
 .one {
@@ -160,14 +322,172 @@ a {
 
 
 
-
-
-
-
 // REVIEW =ANNA
+#swiper-button-prev,
+#swiper-button-next {
+    color: $color-black;
+}
 
+/*.title {
+    @include title;
+    color: $color-dark;
+    height: 50px;
+}*/
+.review__text {
+    @include p;
+    color: $color-black;
+    font-size: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    padding: 50px;
+    gap: 5px;
+    background-color: $color-light;
+    border-radius: 10%;
+}
+
+.review__title {
+    display: flex;
+    align-content: center;
+}
+
+
+.review-block {
+    background-color: $color-bg-main;
+    height: 100%;
+}
+
+.review__image {
+    width: 5%;
+    height: 5%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $color-dark;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .review__text {
+        font-size: 16px;
+    }
+
+    #slide,
+    #slide1,
+    #slide2,
+    #slide3,
+    #slide4,
+    #slide5,
+    #slide6,
+    #slide7 {
+        height: 500px;
+    }
+
+    .review__image {
+        width: 4%;
+        height: 4%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .review__text {
+        font-size: 14px;
+    }
+
+    #slide,
+    #slide1,
+    #slide2,
+    #slide3,
+    #slide4,
+    #slide5,
+    #slide6,
+    #slide7 {
+        height: 420px;
+    }
+
+    .review__image {
+        width: 3%;
+        height: 3%;
+    }
+}
+
+
+//  =VICTORIA
+.blog {
+    min-height: 70vh;
+}
+
+.button__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
 
 // FOOTER =VICTORIA
+.footer {
+    background-color: $color-bg-dark;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    @include phone;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+
+    .social-media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__phone-number {
+            color: $color-bg-main;
+
+            &:hover {
+                color: $color-dark;
+            }
+        }
+
+        &__whatsapp {
+            width: 50px;
+            margin: 0 40px;
+        }
+
+        &__telegram {
+            width: 50px;
+        }
+    }
+}
 
 
 

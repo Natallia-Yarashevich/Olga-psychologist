@@ -1,28 +1,122 @@
+/* здесь ваши стили для ноутбука */
 @media (max-width: 1500px) {
-    .container {
-        max-width: 800px;
-    }
 
-    /* здесь ваши стили для ноутбука */
+  // ОБЩИЕ СТИЛИ
+  .container {
+    max-width: 1024px;
+  }
+
+  .titleH2 {
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .subtitle {
+    font-size: 44px;
+    line-height: 53px;
+  }
+
+  .paragraf {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  // АЛИСА
+  // .intro {
+  //   прописать св-ва для картинки и шрифтов
+  // }
+  // АРИНА
+
+  // ТАНЯ
+
+  // ЛЮДА
+
+  // НАТАША
+
+  // АНЯ
+
+  // ВИКА
 }
 
-
+/* здесь ваши стили для планшета */
 @media (max-width: 900px) {
-    .container {
-        max-width: 600px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .container {
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    /* здесь ваши стили для планшета */
+  // .titleH2 {
+  //   font-size: 60px;
+  //   line-height: 73px;
+  // }
+
+  // .subtitle {
+  //   font-size: 44px;
+  //   line-height: 53px;
+  // }
+
+  // .paragraf {
+  //   font-size: 30px;
+  //   line-height: 50px;
+  // }
+
+  // АЛИСА
+  // .intro {
+  //   прописать св-ва для картинки и шрифтов
+  // }
+  // АРИНА
+
+  // ТАНЯ
+
+  // ЛЮДА
+
+  // НАТАША
+
+  // АНЯ
+
+  // ВИКА
 }
 
 @media (max-width: 640px) {
-    .container {
-        max-width: 480px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  .container {
+    max-width: 480px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-    /* здесь ваши стили для смартфона */
+  .container {
+    max-width: 1024px;
+  }
+
+  .titleH2 {
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .subtitle {
+    font-size: 44px;
+    line-height: 53px;
+  }
+
+  .paragraf {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  // АЛИСА
+  // .intro {
+  //   прописать св-ва для картинки и шрифтов
+  // }
+  // АРИНА
+
+  // ТАНЯ
+
+  // ЛЮДА
+
+  // НАТАША
+
+  // АНЯ
+
+  // ВИКА
 }
