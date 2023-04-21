@@ -51,14 +51,18 @@ a {
 // ABOUT ME =ARINA
 
 .about__photo {
-  max-width: 560px;
-  height: 100%;
-}
-
-.photo_2 {
+  width: 560px;
+  height: 687px;
   border-radius: 5px;
-  max-width: 560px;
-  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .photo_2 {
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
 .aboutme {
@@ -66,17 +70,18 @@ a {
 }
 
 .photo_2 {
-  width: 600px;
+  width: 560px;
   border-radius: 5px;
 }
 
 .about {
   display: flex;
   justify-content: center;
+}
 
-  &__text {
-    margin-left: 40px;
-  }
+.about__text {
+  margin-left: 40px;
+  width: 50%;
 }
 
 .about__paragraf {

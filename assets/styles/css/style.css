@@ -54,26 +54,31 @@ a {
   text-decoration: none; }
 
 .about__photo {
-  max-width: 560px;
-  height: 100%; }
-
-.photo_2 {
+  width: 560px;
+  height: 687px;
   border-radius: 5px;
-  max-width: 560px;
-  height: auto; }
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about__photo .photo_2 {
+    object-fit: cover;
+    width: 100%; }
 
 .aboutme {
   margin-top: 115px; }
 
 .photo_2 {
-  width: 600px;
+  width: 560px;
   border-radius: 5px; }
 
 .about {
   display: flex;
   justify-content: center; }
-  .about__text {
-    margin-left: 40px; }
+
+.about__text {
+  margin-left: 40px;
+  width: 50%; }
 
 .about__paragraf {
   font-size: 36px;
@@ -245,21 +250,21 @@ a {
     .contacts .social-media__telegram {
       width: 50px; }
 
+/* здесь ваши стили для ноутбука */
 @media (max-width: 1500px) {
   .container {
-    max-width: 800px; }
-  /* здесь ваши стили для ноутбука */ }
+    max-width: 800px; } }
 
+/* здесь ваши стили для планшета */
 @media (max-width: 900px) {
   .container {
     max-width: 600px;
     padding-left: 20px;
-    padding-right: 20px; }
-  /* здесь ваши стили для планшета */ }
+    padding-right: 20px; } }
 
+/* здесь ваши стили для смартфона */
 @media (max-width: 640px) {
   .container {
     max-width: 480px;
     padding-left: 16px;
-    padding-right: 16px; }
-  /* здесь ваши стили для смартфона */ }
+    padding-right: 16px; } }
