@@ -304,12 +304,14 @@ a {
 .review__text {
     @include p;
     color: $color-black;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
+
+
 }
 
 #slide,
@@ -341,6 +343,7 @@ a {
 .review-block {
     background-color: $color-bg-main;
     height: 100%;
+    margin-bottom: 34px;
 }
 
 .review__image {
@@ -356,7 +359,7 @@ a {
 
 @media screen and (max-width:900px) {
     .review__text {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     #slide,
