@@ -119,8 +119,8 @@
   }
 
   .titleH2 {
-    font-size: 60px;
-    line-height: 73px;
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .subtitle {
@@ -129,8 +129,8 @@
   }
 
   .paragraf {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 16px;
+    line-height: 25px;
   }
 
   // АЛИСА
@@ -138,6 +138,47 @@
   //   прописать св-ва для картинки и шрифтов
   // }
   // АРИНА
+
+  .aboutme {
+    margin-top: 115px;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    gap: 21px;
+
+    .about__photo {
+      width: 186px;
+      height: 239px;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      .photo_2 {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    .about__text {
+      width: 60%;
+    }
+    .about__titleH2 {
+      order: 1;
+    }
+
+    .about__paragraf {
+      font-size: 16px;
+      line-height: 23px;
+      margin: auto;
+    }
+  }
 
   // ТАНЯ
 
