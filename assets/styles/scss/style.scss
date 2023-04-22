@@ -186,9 +186,9 @@ a {
     line-height: 70px;
     margin-bottom: 117px;
 
-    .button-green {
-        float: right;
-        width: 420px;
+    &__button {
+        display: flex;
+        justify-content: end;
     }
 }
 

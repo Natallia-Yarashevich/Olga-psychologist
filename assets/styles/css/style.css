@@ -210,9 +210,9 @@ a:after {
   line-height: 70px;
   margin-bottom: 117px;
 }
-.info .button-green {
-  float: right;
-  width: 420px;
+.info__button {
+  display: flex;
+  justify-content: end;
 }
 
 .servise_part {
