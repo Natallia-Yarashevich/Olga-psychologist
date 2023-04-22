@@ -145,6 +145,13 @@
     text-align: center;
   }
 
+  .psycho-content__second {
+    text-align: center;
+    .psycho-content__hidden {
+      text-align: start;
+    }
+  }
+
   // АЛИСА
   // .intro {
   //   прописать св-ва для картинки и шрифтов

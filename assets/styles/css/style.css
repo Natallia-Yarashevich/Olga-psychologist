@@ -637,5 +637,11 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
   .detail {
     text-align: center;
   }
+  .psycho-content__second {
+    text-align: center;
+  }
+  .psycho-content__second .psycho-content__hidden {
+    text-align: start;
+  }
 }
 /*# sourceMappingURL=style.css.map */
