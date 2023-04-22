@@ -80,28 +80,69 @@
 
 @media (max-width: 640px) {
   .container {
-    max-width: 480px;
+    max-width: 375px;
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .container {
-    max-width: 1024px;
+  .psycho {
+    padding-bottom: 40px;
+  }
+  
+  .services {
+    box-sizing: border-box;
+    .titleH2 {
+      @include h2mobile;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      @include h3mobile;
+      text-align: center;
+      line-height: 53px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 0 auto;
+    }
+
+    .details {
+      @include p2;
+      font-weight: 600;
+    }
   }
 
-  .titleH2 {
-    font-size: 60px;
-    line-height: 73px;
+  .paragraf,
+  .price__more,
+  .servise__list {
+    @include p2;
+    span{
+      font-size: 20px;
+    }
   }
 
-  .subtitle {
-    font-size: 44px;
-    line-height: 53px;
-  }
+  .tariff {
+    flex-direction: column;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    min-width: 110px;
+    align-items: center;
+    justify-content: center;
 
-  .paragraf {
-    font-size: 30px;
-    line-height: 50px;
+    .price {
+      margin-right: auto;
+      padding-bottom: 20px;
+      min-height: 47px;
+    }
+
+    .button-green {
+      @include btnmobile;
+      width: 205px;
+    }
+  }
+  .detail {
+    text-align: center;
   }
 
   // АЛИСА

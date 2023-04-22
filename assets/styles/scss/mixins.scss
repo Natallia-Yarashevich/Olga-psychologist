@@ -126,3 +126,22 @@
     line-height: 39px;
     color: $color-dark;
 }
+
+@mixin p2 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@mixin h2mobile {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+@mixin h3mobile {
+    font-size: 28px;
+}
+
+@mixin btnmobile {
+    font-size: 14px;
+    line-height: 17px;
+}

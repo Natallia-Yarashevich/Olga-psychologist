@@ -248,8 +248,6 @@ input[type=checkbox] {
 input[type=checkbox]:checked ~ .psycho-content__hidden {
     display: block;
 }
-
-
 // / ENERGU =NATALIA
 .details {
     @include h4;
@@ -268,39 +266,6 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
 }
 
 // ENERGU =NATALIA
-.one {
-    text-indent: 42px;
-}
-.still {
-    @include h4;
-    color: $color-dark;
-    font-weight: bold;
-    max-width: min-content;
-    background-color: $color-light;
-    border-style: none;
-    border-bottom: 5px solid $color-green;
-    &:hover,
-    &:focus,
-    &:active {
-        color: $color-green; 
-    }
-}
-.psycho-content {
-    display: flex;
-    flex-direction: column;
-}
-.hidden {
-    display: none;
-    position: absolute;
-}
-.psycho-content__second {
-    position: relative;
-}
-.psycho-content__second:hover .hidden {
-    display: block;
-}
-
-
 
 // REVIEW =ANNA
 #swiper-button-prev,

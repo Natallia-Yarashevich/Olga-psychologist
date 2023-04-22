@@ -343,52 +343,6 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
   border-bottom: 3px solid #383838;
 }
 
-.one {
-  text-indent: 42px;
-}
-
-.still {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 60px;
-  font-size: 36px;
-  color: #383838;
-  color: #383838;
-  font-weight: bold;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  background-color: #EFECE8;
-  border-style: none;
-  border-bottom: 5px solid #9aa581;
-}
-.still:hover, .still:focus, .still:active {
-  color: #9aa581;
-}
-
-.psycho-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.hidden {
-  display: none;
-  position: absolute;
-}
-
-.psycho-content__second {
-  position: relative;
-}
-
-.psycho-content__second:hover .hidden {
-  display: block;
-}
-
 #swiper-button-prev,
 #swiper-button-next {
   color: #000;
@@ -613,24 +567,75 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
 }
 @media (max-width: 640px) {
   .container {
-    max-width: 480px;
+    max-width: 375px;
     padding-left: 16px;
     padding-right: 16px;
   }
-  .container {
-    max-width: 1024px;
+  .psycho {
+    padding-bottom: 40px;
   }
-  .titleH2 {
-    font-size: 60px;
-    line-height: 73px;
+  .services {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  .subtitle {
-    font-size: 44px;
+  .services .titleH2 {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .services .subtitle {
+    font-size: 28px;
+    text-align: center;
     line-height: 53px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 auto;
   }
-  .paragraf {
-    font-size: 30px;
-    line-height: 50px;
+  .services .details {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .paragraf,
+.price__more,
+.servise__list {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .paragraf span,
+.price__more span,
+.servise__list span {
+    font-size: 20px;
+  }
+  .tariff {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    min-width: 110px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tariff .price {
+    margin-right: auto;
+    padding-bottom: 20px;
+    min-height: 47px;
+  }
+  .tariff .button-green {
+    font-size: 14px;
+    line-height: 17px;
+    width: 205px;
+  }
+  .detail {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
