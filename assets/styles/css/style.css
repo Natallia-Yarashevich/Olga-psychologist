@@ -345,7 +345,7 @@ a:after {
   line-height: 160%;
   /* or 24px */
   color: #000;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .wrapper {
@@ -381,6 +381,7 @@ a:after {
 .review-block {
   background-color: #DEDBD6;
   height: 100%;
+  margin-bottom: 34px;
 }
 
 .review__image {
@@ -394,7 +395,7 @@ a:after {
 
 @media screen and (max-width: 900px) {
   .review__text {
-    font-size: 16px;
+    font-size: 15px;
   }
   #slide,
   #slide1,
@@ -448,6 +449,9 @@ a:after {
 
 .navigation {
   display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   font-family: "Montserrat";
   font-style: normal;
@@ -459,6 +463,15 @@ a:after {
 
 .contacts .social-media {
   display: flex;
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts .social-media {
+  display: flex;
+  justify-content: space-between;
+
   align-items: center;
 }
 .contacts .social-media__phone-number {
