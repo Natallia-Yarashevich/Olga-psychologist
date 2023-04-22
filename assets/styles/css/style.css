@@ -208,21 +208,11 @@ a:after {
   font-size: 36px;
   color: #383838;
   line-height: 70px;
+  margin-bottom: 117px;
 }
-.info__button {
-  text-align: right;
-}
-.info__button .button-green {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  border-radius: 15px;
-  border: none;
-  cursor: pointer;
-  padding: 17px 35px;
-  background-color: #9aa581;
-  color: #EFECE8;
+.info .button-green {
+  float: right;
+  width: 420px;
 }
 
 .servise_part {
@@ -535,3 +525,5 @@ a:after {
     line-height: 50px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

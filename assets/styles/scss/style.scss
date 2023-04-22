@@ -184,13 +184,11 @@ a {
 .info {
     @include h4;
     line-height: 70px;
+    margin-bottom: 117px;
 
-    &__button {
-        text-align: right;
-
-        .button-green {
-            @include button-green;
-        }
+    .button-green {
+        float: right;
+        width: 420px;
     }
 }
 
