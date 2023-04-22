@@ -237,38 +237,18 @@ a {
 }
 
 // / PSYCHO =LYUDMILA
-.one {
-    text-indent: 42px;
-}
-
-.still {
-    @include h4;
-    color: $color-dark;
-    font-weight: bold;
-    max-width: min-content;
-    background-color: $color-light;
-    border-style: none;
-    border-bottom: 5px solid $color-green;
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: $color-green;
-    }
-}
-
-.hidden {
+.psycho-content__hidden {
     display: none;
-    position: absolute;
 }
 
-.psycho-content__second {
-    position: relative;
+input[type=checkbox] {
+    display: none;
 }
 
-.psycho-content__second:hover .hidden {
+input[type=checkbox]:checked ~ .psycho-content__hidden {
     display: block;
 }
+
 
 // / ENERGU =NATALIA
 .details {

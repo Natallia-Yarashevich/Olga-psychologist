@@ -313,6 +313,36 @@ a:after {
   color: #383838;
 }
 
+.psycho-content__hidden {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ .psycho-content__hidden {
+  display: block;
+}
+
+.details {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+  color: #9aa581;
+  font-weight: bold;
+  border-bottom: 5px double #9aa581;
+}
+.details:hover, .details:active {
+  color: #383838;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #383838;
+}
+
 .one {
   text-indent: 42px;
 }
@@ -336,6 +366,16 @@ a:after {
   color: #9aa581;
 }
 
+.psycho-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .hidden {
   display: none;
   position: absolute;
@@ -347,24 +387,6 @@ a:after {
 
 .psycho-content__second:hover .hidden {
   display: block;
-}
-
-.details {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 60px;
-  font-size: 36px;
-  color: #383838;
-  color: #9aa581;
-  font-weight: bold;
-  border-bottom: 5px double #9aa581;
-}
-.details:hover, .details:active {
-  color: #383838;
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
-  padding-bottom: 5px;
-  border-bottom: 3px solid #383838;
 }
 
 #swiper-button-prev,
