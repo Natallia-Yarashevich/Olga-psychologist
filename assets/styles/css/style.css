@@ -158,10 +158,6 @@ a {
 .aboutme {
   margin-top: 115px; }
 
-.photo_2 {
-  width: 600px;
-  border-radius: 5px; }
-
 .about {
   display: flex;
   justify-content: center;
@@ -443,11 +439,40 @@ a {
     line-height: 50px; } }
 
 /* здесь ваши стили для планшета */
-@media (max-width: 900px) {
+@media (max-width: 968px) {
   .container {
-    max-width: 600px;
+    max-width: 620px;
+    margin: 0 auto;
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+  .aboutme {
+    margin-top: 115px; }
+  .about {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    gap: 34px; }
+    .about .about__photo {
+      width: 390px;
+      height: 548px;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center; }
+      .about .about__photo .photo_2 {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px; }
+    .about .aboutme {
+      margin-bottom: 115px; }
+    .about .about__text {
+      width: 50%; }
+    .about .about__paragraf {
+      font-size: 30px;
+      line-height: 50px;
+      margin: auto; }
+    .about .about__titleH2 {
+      margin: auto; } }
 
 @media (max-width: 640px) {
   .container {

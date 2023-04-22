@@ -24,6 +24,7 @@
   //   прописать св-ва для картинки и шрифтов
   // }
   // АРИНА
+
   // ТАНЯ
   // ЛЮДА
   // НАТАША
@@ -31,9 +32,10 @@
   // ВИКА
 }
 /* здесь ваши стили для планшета */
-@media (max-width: 900px) {
+@media (max-width: 968px) {
   .container {
-    max-width: 600px;
+    max-width: 620px;
+    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -58,6 +60,45 @@
   //   прописать св-ва для картинки и шрифтов
   // }
   // АРИНА
+
+  .aboutme {
+    margin-top: 115px;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    gap: 34px;
+
+    .about__photo {
+      width: 390px;
+      height: 548px;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      .photo_2 {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    .about__text {
+      width: 50%;
+    }
+
+    .about__paragraf {
+      font-size: 30px;
+      line-height: 50px;
+      margin: auto;
+    }
+    .about__titleH2 {
+      margin: auto;
+    }
+  }
 
   // ТАНЯ
 
