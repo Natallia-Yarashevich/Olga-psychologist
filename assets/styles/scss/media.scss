@@ -79,6 +79,9 @@
   // АРИНА
 
   // ТАНЯ
+  .info {
+    margin-bottom: 46px;
+  }
 
   // ЛЮДА
 
@@ -130,6 +133,17 @@
   // АРИНА
 
   // ТАНЯ
+  .info {
+    margin-bottom: 38px;
+
+    &__paragraf {
+      text-align: center;
+    }
+
+    &__button {
+      justify-content: center;
+    }
+  }
 
   // ЛЮДА
 

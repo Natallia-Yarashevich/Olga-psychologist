@@ -217,8 +217,11 @@ a {
 // INFO =TATIANA
 .info {
     @include h4;
-    line-height: 70px;
     margin-bottom: 117px;
+
+    &__paragraf {
+        line-height: 70px;
+    }
 
     &__button {
         display: flex;

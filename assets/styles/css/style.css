@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 *,
 * ::before,
 * ::after {
@@ -51,7 +50,6 @@ a {
   color: #EFECE8;
   position: relative;
 }
-
 a:after {
   content: "";
   position: absolute;
@@ -71,13 +69,10 @@ a:after {
   color: #EFECE8;
   text-align: center;
 }
-
 .button-green__help {
   color: #EFECE8;
 }
-
-.button-green__help:hover,
-.button-green__help:active {
+.button-green__help:hover, .button-green__help:active {
   color: #383838;
   transition: 0.7s;
 }
@@ -93,7 +88,6 @@ a:after {
   justify-content: space-between;
   color: #383838;
 }
-
 .navbar .logo__title {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
@@ -107,7 +101,6 @@ a:after {
   align-items: center;
   justify-content: space-between;
 }
-
 .nav__info {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -115,19 +108,16 @@ a:after {
   line-height: 29px;
   color: #EFECEB;
 }
-
 .nav__info:hover {
   color: #383838;
   transition: 0.9s;
   padding-bottom: 5px;
   border-bottom: 3px solid #383838;
 }
-
 .nav__info:active {
   color: #383838;
   transition: 0.7s;
 }
-
 .nav__info-call {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -141,11 +131,9 @@ a:after {
   color: #383838;
   background-color: #DEDBD6;
 }
-
 .nav__info-call:hover {
   transition: 0.7s;
 }
-
 .nav__info-call:hover {
   color: #383838;
   background-color: #9aa581;
@@ -158,12 +146,10 @@ a:after {
   margin-top: 40px;
   gap: 30px;
 }
-
 .intro__text {
   width: 60%;
   text-align: center;
 }
-
 .intro__title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -175,7 +161,6 @@ a:after {
   text-align: center;
   color: #383838;
 }
-
 .intro__job {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -184,7 +169,6 @@ a:after {
   color: #383838;
   line-height: 44px;
 }
-
 .intro__quote {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -195,12 +179,10 @@ a:after {
   line-height: 44px;
   font-weight: 300;
 }
-
 .intro__image {
   max-width: 560px;
   height: 100%;
 }
-
 .intro__image__pic {
   max-width: 100%;
   height: auto;
@@ -215,7 +197,6 @@ a:after {
   display: flex;
   justify-content: center;
 }
-
 .about .about__photo {
   width: 560px;
   height: 687px;
@@ -224,28 +205,22 @@ a:after {
   display: flex;
   justify-content: center;
 }
-
 .about .about__photo .photo_2 {
-  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   border-radius: 5px;
 }
-
 .about .aboutme {
   margin-bottom: 115px;
 }
-
 .about .about {
   display: flex;
   justify-content: center;
 }
-
 .about .about__text {
   margin-left: 40px;
   width: 50%;
 }
-
 .about .about__paragraf {
   font-size: 36px;
   line-height: 70px;
@@ -257,10 +232,11 @@ a:after {
   line-height: 60px;
   font-size: 36px;
   color: #383838;
-  line-height: 70px;
   margin-bottom: 117px;
 }
-
+.info__paragraf {
+  line-height: 70px;
+}
 .info__button {
   display: flex;
   justify-content: end;
@@ -272,7 +248,6 @@ a:after {
   border-radius: 30px;
   margin: 0 auto;
 }
-
 .servise_part span {
   color: #9aa581;
   font-weight: bold;
@@ -301,7 +276,6 @@ a:after {
   flex-direction: column;
   align-items: flex-start;
 }
-
 .price__more {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -332,16 +306,12 @@ a:after {
   color: #383838;
   color: #383838;
   font-weight: bold;
-  max-width: -moz-min-content;
   max-width: min-content;
   background-color: #EFECE8;
   border-style: none;
   border-bottom: 5px solid #9aa581;
 }
-
-.still:hover,
-.still:focus,
-.still:active {
+.still:hover, .still:focus, .still:active {
   color: #9aa581;
 }
 
@@ -368,9 +338,7 @@ a:after {
   font-weight: bold;
   border-bottom: 5px double #9aa581;
 }
-
-.details:hover,
-.details:active {
+.details:hover, .details:active {
   color: #383838;
   transition: 0.9s;
   padding-bottom: 5px;
@@ -447,7 +415,6 @@ a:after {
   .review__text {
     font-size: 15px;
   }
-
   #slide,
   #slide1,
   #slide2,
@@ -458,18 +425,15 @@ a:after {
   #slide7 {
     height: 500px;
   }
-
   .review__image {
     width: 4%;
     height: 4%;
   }
 }
-
 @media screen and (max-width: 640px) {
   .review__text {
     font-size: 14px;
   }
-
   #slide,
   #slide1,
   #slide2,
@@ -480,13 +444,11 @@ a:after {
   #slide7 {
     height: 420px;
   }
-
   .review__image {
     width: 3%;
     height: 3%;
   }
 }
-
 .button__wrapper {
   padding-left: 30px;
   padding-right: 30px;
@@ -514,7 +476,6 @@ a:after {
   display: flex;
   align-items: center;
 }
-
 .contacts .social-media__phone-number {
   margin: 0 40px;
   font-family: "Montserrat";
@@ -525,52 +486,40 @@ a:after {
   color: #383838;
   color: #DEDBD6;
 }
-
 .contacts .social-media__phone-number:hover {
   color: #383838;
 }
-
-.contacts .social-media__whatsapp,
-.contacts .social-media__telegram {
+.contacts .social-media__whatsapp, .contacts .social-media__telegram {
   width: 50px;
   margin: 0 15px;
 }
-
-.contacts .social-media__whatsapp:hover,
-.contacts .social-media__whatsapp:active,
-.contacts .social-media__telegram:hover,
-.contacts .social-media__telegram:active {
+.contacts .social-media__whatsapp:hover, .contacts .social-media__whatsapp:active, .contacts .social-media__telegram:hover, .contacts .social-media__telegram:active {
   background: rgba(0, 0, 0, 0);
   color: #EFECEB;
   box-shadow: inset 0 0 0 3px #EFECEB;
   border-radius: 10px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 1024px;
   }
-
   .screen {
     margin-bottom: 115px;
   }
-
   .titleH2 {
     font-size: 60px;
     line-height: 73px;
   }
-
   .subtitle {
     font-size: 44px;
     line-height: 53px;
   }
-
   .paragraf {
     font-size: 30px;
     line-height: 50px;
   }
 }
-
 /* здесь ваши стили для планшета */
 @media (max-width: 968px) {
   .container {
@@ -578,23 +527,55 @@ a:after {
     padding-left: 20px;
     padding-right: 20px;
   }
-
-  section {
+  .screen {
     margin-bottom: 46px;
   }
-
   .titleH2 {
     font-size: 38px;
     line-height: 25px;
   }
-
   .subtitle {
     font-size: 44px;
     line-height: 25px;
   }
-
   .paragraf {
     font-size: 18px;
     line-height: 25px;
   }
+  .info {
+    margin-bottom: 46px;
+  }
 }
+@media (max-width: 620px) {
+  .container {
+    max-width: 375px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .screen {
+    margin-bottom: 38px;
+  }
+  .titleH2 {
+    font-size: 36px;
+    line-height: 25рх;
+  }
+  .subtitle {
+    font-size: 34px;
+    line-height: 25рх;
+  }
+  .paragraf {
+    font-size: 16px;
+    line-height: 25рх;
+  }
+  .info {
+    margin-bottom: 38px;
+  }
+  .info__paragraf {
+    text-align: center;
+  }
+  .info__button {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
