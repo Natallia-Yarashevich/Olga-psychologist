@@ -1,11 +1,15 @@
-/* здесь ваши стили для ноутбука */
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
 
+  // еще не точно 1200
   // ОБЩИЕ СТИЛИ
   .container {
     max-width: 1024px;
   }
 
+  .screen {
+    margin-bottom: 115px;
+  }
+
   .titleH2 {
     font-size: 60px;
     line-height: 73px;
@@ -26,40 +30,47 @@
   //   прописать св-ва для картинки и шрифтов
   // }
   // АРИНА
-
   // ТАНЯ
-
   // ЛЮДА
-
   // НАТАША
-
   // АНЯ
-
   // ВИКА
 }
 
+// таблет медиа -968,контейнер - 620  Отступ между секциями: 46рх 
+// Заголовки: 38рх 
+// Текст : 18рх 
+// Лого и контакты с телефоном: 20рх 
+// Line-height - везде 25рх,
+// в aboutme - 30рх Отступы между абзацами: 18рх 
+// Отступ между фоткой и текстом: 15рх
+
 /* здесь ваши стили для планшета */
-@media (max-width: 900px) {
+@media (max-width: 968px) {
   .container {
-    max-width: 600px;
+    max-width: 620px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  // .titleH2 {
-  //   font-size: 60px;
-  //   line-height: 73px;
-  // }
+  .screen {
+    margin-bottom: 46px;
+  }
 
-  // .subtitle {
-  //   font-size: 44px;
-  //   line-height: 53px;
-  // }
+  .titleH2 {
+    font-size: 38px;
+    line-height: 25px;
+  }
 
-  // .paragraf {
-  //   font-size: 30px;
-  //   line-height: 50px;
-  // }
+  .subtitle {
+    font-size: 44px;
+    line-height: 25px;
+  }
+
+  .paragraf {
+    font-size: 18px;
+    line-height: 25px;
+  }
 
   // АЛИСА
   // .intro {
@@ -78,30 +89,38 @@
   // ВИКА
 }
 
-@media (max-width: 640px) {
+// мобилка медиа - 620px, контейнер - 375px
+// Мобилка на 375 тоже
+// Отступы между секциями: 38рх
+
+// Заголовки: 36рх
+// Текст: 16рх
+// Line-height - везде 25рх
+// Отступы между абзацами: 14рх
+@media (max-width: 620px) {
   .container {
-    max-width: 480px;
+    max-width: 375px;
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .container {
-    max-width: 1024px;
+  .screen {
+    margin-bottom: 38px;
   }
 
   .titleH2 {
-    font-size: 60px;
-    line-height: 73px;
+    font-size: 36px;
+    line-height: 25рх;
   }
 
   .subtitle {
-    font-size: 44px;
-    line-height: 53px;
+    font-size: 34px;
+    line-height: 25рх;
   }
 
   .paragraf {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 16px;
+    line-height: 25рх;
   }
 
   // АЛИСА

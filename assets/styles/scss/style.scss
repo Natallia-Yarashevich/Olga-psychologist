@@ -15,6 +15,10 @@
     padding-right: 30px;
 }
 
+.screen {
+    margin-bottom: 115px;
+}
+
 body {
     background-color: $color-bg-main;
 }
@@ -86,7 +90,7 @@ a {
 }
 
 .nav {
-    width: 80%;
+    width: 75%;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -125,7 +129,7 @@ a {
     display: flex;
     color: $color-dark;
     margin-top: 40px;
-    gap: 130px;
+    gap: 30px;
 
     &__text {
         width: 60%;
@@ -162,9 +166,9 @@ a {
 }
 
 // ABOUT ME =ARINA
-.aboutme {
-    margin-top: 115px;
-}
+// .aboutme {
+//     margin-top: 115px;
+// }
 
 .photo_2 {
     width: 600px;
@@ -175,8 +179,38 @@ a {
     display: flex;
     justify-content: center;
 
-    &__text {
+    .about__photo {
+        width: 560px;
+        height: 687px;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        .photo_2 {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    .aboutme {
+        margin-bottom: 115px;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__text {
         margin-left: 40px;
+        width: 50%;
+    }
+
+    .about__paragraf {
+        font-size: 36px;
+        line-height: 70px;
     }
 }
 
@@ -232,6 +266,7 @@ a {
 
 .servise__list {
     @include h4;
+    padding-left: 10px;
 }
 
 // / PSYCHO =LYUDMILA
@@ -287,7 +322,6 @@ a {
 
 // ENERGU =NATALIA
 
-
 // REVIEW =ANNA
 #swiper-button-prev,
 #swiper-button-next {
@@ -308,7 +342,6 @@ a {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-
 
 }
 
@@ -337,7 +370,6 @@ a {
     align-content: center;
 }
 
-
 .review-block {
     background-color: $color-bg-main;
     height: 100%;
@@ -352,7 +384,6 @@ a {
 .swiper-pagination-bullet-active {
     background-color: $color-dark;
 }
-
 
 
 @media screen and (max-width:900px) {
@@ -402,7 +433,7 @@ a {
 
 //  =VICTORIA
 .blog {
-    min-height: 70vh;
+    // margin-bottom: 416px;
 }
 
 .button__wrapper {
@@ -418,28 +449,21 @@ a {
     margin: 0 auto;
 }
 
-.footer-wrapper {
-    width: 100%;
-}
-
 .navigation {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     @include phone;
 }
 
 .contacts {
-    display: flex;
-    align-items: center;
 
     .social-media {
         display: flex;
-        justify-content: space-between;
         align-items: center;
 
         &__phone-number {
+            margin: 0 40px;
+            @include phone;
             color: $color-bg-main;
 
             &:hover {
@@ -447,20 +471,21 @@ a {
             }
         }
 
-        &__whatsapp {
-            width: 50px;
-            margin: 0 40px;
-        }
-
+        &__whatsapp,
         &__telegram {
             width: 50px;
+            margin: 0 15px;
+
+            &:hover,
+            &:active {
+                background: rgba(0, 0, 0, 0);
+                color: $color-nav;
+                box-shadow: inset 0 0 0 3px $color-nav;
+                border-radius: 10px;
+            }
         }
     }
 }
-
-
-
-
 
 
 @import "media";
