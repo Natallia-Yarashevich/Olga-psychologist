@@ -520,7 +520,7 @@ a:after {
   margin: 5px 0;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 968px) {
   .nav {
     display: none;
   }
