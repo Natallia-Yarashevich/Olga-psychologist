@@ -39,9 +39,9 @@
 }
 
 /* здесь ваши стили для планшета */
-@media (max-width: 900px) {
+@media (max-width: 968px) {
   .container {
-    max-width: 600px;
+    max-width: 620px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -78,19 +78,30 @@
   // ВИКА
 }
 
-@media (max-width: 640px) {
+@media (max-width: 620px) {
   .container {
     max-width: 375px;
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .psycho {
-    padding-bottom: 40px;
+  // АЛИСА
+  // .intro {
+  //   прописать св-ва для картинки и шрифтов
+  // }
+  // АРИНА
+
+  // ТАНЯ
+
+  // ЛЮДА
+  .psycho-content__second {
+    text-align: center;
+    .psycho-content__hidden {
+      text-align: start;
+    }
   }
-  
+  //ЛЮДА И НАТАША ОБЩИЕ
   .services {
-    box-sizing: border-box;
     .titleH2 {
       @include h2mobile;
       text-align: center;
@@ -111,6 +122,10 @@
       @include p2;
       font-weight: 600;
     }
+  }
+  
+  .psycho {
+    padding-bottom: 40px;
   }
 
   .paragraf,
@@ -141,29 +156,10 @@
       width: 205px;
     }
   }
+  // НАТАША
   .detail {
     text-align: center;
   }
-
-  .psycho-content__second {
-    text-align: center;
-    .psycho-content__hidden {
-      text-align: start;
-    }
-  }
-
-  // АЛИСА
-  // .intro {
-  //   прописать св-ва для картинки и шрифтов
-  // }
-  // АРИНА
-
-  // ТАНЯ
-
-  // ЛЮДА
-
-  // НАТАША
-
   // АНЯ
 
   // ВИКА

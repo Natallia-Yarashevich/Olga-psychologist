@@ -558,25 +558,24 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
   }
 }
 /* здесь ваши стили для планшета */
-@media (max-width: 900px) {
+@media (max-width: 968px) {
   .container {
-    max-width: 600px;
+    max-width: 620px;
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 620px) {
   .container {
     max-width: 375px;
     padding-left: 16px;
     padding-right: 16px;
   }
-  .psycho {
-    padding-bottom: 40px;
+  .psycho-content__second {
+    text-align: center;
   }
-  .services {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+  .psycho-content__second .psycho-content__hidden {
+    text-align: start;
   }
   .services .titleH2 {
     font-size: 36px;
@@ -597,6 +596,9 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
+  }
+  .psycho {
+    padding-bottom: 40px;
   }
   .paragraf,
 .price__more,
@@ -636,12 +638,6 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
   }
   .detail {
     text-align: center;
-  }
-  .psycho-content__second {
-    text-align: center;
-  }
-  .psycho-content__second .psycho-content__hidden {
-    text-align: start;
   }
 }
 /*# sourceMappingURL=style.css.map */
