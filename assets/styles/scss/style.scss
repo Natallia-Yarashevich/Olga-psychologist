@@ -15,6 +15,10 @@
     padding-right: 30px;
 }
 
+.screen {
+    margin-bottom: 115px;
+}
+
 body {
     background-color: $color-bg-main;
 }
@@ -162,9 +166,9 @@ a {
 }
 
 // ABOUT ME =ARINA
-.aboutme {
-    margin-top: 115px;
-}
+// .aboutme {
+//     margin-top: 115px;
+// }
 
 .photo_2 {
     width: 600px;
@@ -264,6 +268,7 @@ a {
 
 .servise__list {
     @include h4;
+    padding-left: 10px;
 }
 
 // / PSYCHO =LYUDMILA
@@ -430,8 +435,7 @@ a {
 
 //  =VICTORIA
 .blog {
-    margin-bottom: 416px;
-
+    // margin-bottom: 416px;
 }
 
 .button__wrapper {

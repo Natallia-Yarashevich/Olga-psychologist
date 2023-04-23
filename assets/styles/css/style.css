@@ -12,6 +12,10 @@
   padding-right: 30px;
 }
 
+.screen {
+  margin-bottom: 115px;
+}
+
 body {
   background-color: #DEDBD6;
 }
@@ -184,10 +188,6 @@ a:after {
   height: auto;
 }
 
-.aboutme {
-  margin-top: 115px;
-}
-
 .photo_2 {
   width: 600px;
   border-radius: 5px;
@@ -299,6 +299,7 @@ a:after {
   line-height: 60px;
   font-size: 36px;
   color: #383838;
+  padding-left: 10px;
 }
 
 .one {
@@ -456,10 +457,6 @@ a:after {
     height: 3%;
   }
 }
-.blog {
-  margin-bottom: 416px;
-}
-
 .button__wrapper {
   padding-left: 30px;
   padding-right: 30px;
@@ -511,9 +508,12 @@ a:after {
   border-radius: 10px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 1024px;
+  }
+  .screen {
+    margin-bottom: 115px;
   }
   .titleH2 {
     font-size: 60px;
@@ -529,29 +529,47 @@ a:after {
   }
 }
 /* здесь ваши стили для планшета */
-@media (max-width: 900px) {
+@media (max-width: 968px) {
   .container {
-    max-width: 600px;
+    max-width: 620px;
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-@media (max-width: 640px) {
-  .container {
-    max-width: 480px;
-    padding-left: 16px;
-    padding-right: 16px;
+  .screen {
+    margin-bottom: 46px;
   }
   .titleH2 {
-    font-size: 60px;
-    line-height: 73px;
+    font-size: 38px;
+    line-height: 25px;
   }
   .subtitle {
     font-size: 44px;
-    line-height: 53px;
+    line-height: 25px;
   }
   .paragraf {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    max-width: 375px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .screen {
+    margin-bottom: 38px;
+  }
+  .titleH2 {
+    font-size: 36px;
+    line-height: 25рх;
+  }
+  .subtitle {
+    font-size: 34px;
+    line-height: 25рх;
+  }
+  .paragraf {
+    font-size: 16px;
+    line-height: 25рх;
   }
 }
