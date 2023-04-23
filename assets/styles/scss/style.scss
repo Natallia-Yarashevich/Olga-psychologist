@@ -4,323 +4,320 @@
 *,
 * ::before,
 * ::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 // Обшие стили для всего документа, то что повторяется
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .screen {
-    margin-bottom: 115px;
+  margin-bottom: 115px;
 }
 
 body {
-    background-color: $color-bg-main;
+  background-color: $color-bg-main;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .titleH2 {
-    @include h2;
+  @include h2;
 }
 
 .paragraf {
-    @include h4;
+  @include h4;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: $color-light;
-    position: relative;
+  text-decoration: none;
+  color: $color-light;
+  position: relative;
 
-    &:after {
-        content: '';
-        position: absolute;
-        inset: -30px;
-    }
+  &:after {
+    content: "";
+    position: absolute;
+    inset: -30px;
+  }
 }
 
 // Проверить как себя ведет на моб экране
 // inset: -30p увеличивает область клика на ссылку
 
 .button-green {
-    @include button-green;
-    text-align: center;
+  @include button-green;
+  text-align: center;
 
-    &__help {
-        color: $color-light;
+  &__help {
+    color: $color-light;
 
-        &:hover,
-        &:active {
-            color: $color-dark;
-            transition: 0.7s;
-        }
+    &:hover,
+    &:active {
+      color: $color-dark;
+      transition: 0.7s;
     }
+  }
 }
 
 // разные разделы, смотрим, что вынесено в обший
 // ALISA
 .header {
-    background-color: $color-bg-dark;
+  background-color: $color-bg-dark;
 }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: $color-dark;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-dark;
 
-    .logo {
-        &__title {
-            @include logos;
-        }
+  .logo {
+    &__title {
+      @include logos;
     }
+  }
 }
 
 .nav {
-    width: 75%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 75%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 
-    &__info {
-        @include navigator;
-        color: $color-nav;
+  &__info {
+    @include navigator;
+    color: $color-nav;
 
-        &:hover {
-            color: $color-dark;
-            transition: 0.9s;
-            padding-bottom: 5px;
-            border-bottom: 3px solid $color-dark;
-        }
-
-        &:active {
-            color: $color-dark;
-            transition: 0.7s;
-        }
+    &:hover {
+      color: $color-dark;
+      transition: 0.9s;
+      padding-bottom: 5px;
+      border-bottom: 3px solid $color-dark;
     }
 
-    &__info-call {
-        @include button-light;
-        background-color: $color-bg-main;
-
-        &:hover {
-            color: $color-dark;
-            background-color: $color-green;
-        }
+    &:active {
+      color: $color-dark;
+      transition: 0.7s;
     }
+  }
+
+  &__info-call {
+    @include button-light;
+    background-color: $color-bg-main;
+
+    &:hover {
+      color: $color-dark;
+      background-color: $color-green;
+    }
+  }
 }
 
 // SECTION ONE
 .intro {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
+  color: $color-dark;
+  margin-top: 40px;
+  gap: 30px;
+
+  &__text {
+    width: 60%;
+    text-align: center;
+  }
+
+  &__title {
+    @include h1;
     color: $color-dark;
-    margin-top: 40px;
-    gap: 30px;
+  }
 
-    &__text {
-        width: 60%;
-        text-align: center;
+  &__job {
+    @include h4;
+    line-height: 44px;
+  }
+
+  &__quote {
+    @include h4;
+    font-size: 36px;
+    line-height: 44px;
+
+    font-weight: 300;
+  }
+
+  &__image {
+    max-width: 560px;
+    height: 100%;
+
+    &__pic {
+      max-width: 100%;
+      height: auto;
     }
-
-    &__title {
-        @include h1;
-        color: $color-dark;
-    }
-
-    &__job {
-        @include h4;
-        line-height: 44px;
-    }
-
-    &__quote {
-        @include h4;
-        font-size: 36px;
-        line-height: 44px;
-
-        font-weight: 300;
-    }
-
-    &__image {
-        max-width: 560px;
-        height: 100%;
-
-        &__pic {
-            max-width: 100%;
-            height: auto;
-        }
-    }
+  }
 }
 
 // ABOUT ME =ARINA
-// .aboutme {
-//     margin-top: 115px;
-// }
+.aboutme {
+  margin-top: 115px;
+}
 
 .photo_2 {
-    width: 600px;
-    border-radius: 5px;
+  width: 600px;
+  border-radius: 5px;
 }
 
 .about {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+
+  .about__photo {
+    width: 560px;
+    height: 687px;
+    border-radius: 5px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
 
-    .about__photo {
-        width: 560px;
-        height: 687px;
-        border-radius: 5px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-
-        .photo_2 {
-            object-fit: cover;
-            width: 100%;
-            border-radius: 5px;
-        }
+    .photo_2 {
+      object-fit: cover;
+      width: 100%;
+      border-radius: 5px;
     }
+  }
 
-    .aboutme {
-        margin-bottom: 115px;
-    }
+  .about-media__titleH2 {
+    display: none;
+  }
+  .about__titleH2 {
+    display: flex;
+  }
 
-    .about {
-        display: flex;
-        justify-content: center;
-    }
+  .about__text {
+    width: 60%;
+  }
 
-    .about__text {
-        margin-left: 40px;
-        width: 50%;
-    }
-
-    .about__paragraf {
-        font-size: 36px;
-        line-height: 70px;
-    }
+  .about__paragraf {
+    font-size: 36px;
+    line-height: 70px;
+  }
 }
 
 // INFO =TATIANA
 .info {
-    @include h4;
-    margin-bottom: 117px;
+  @include h4;
+  margin-bottom: 117px;
 
-    &__paragraf {
-        line-height: 70px;
-    }
+  &__paragraf {
+    line-height: 70px;
+  }
 
-    &__button {
-        display: flex;
-        justify-content: end;
-    }
+  &__button {
+    display: flex;
+    justify-content: end;
+  }
 }
 
 // SERVIS general
 .servise_part {
-    background: $color-light;
-    box-sizing: border-box;
-    border-radius: 30px;
-    margin: 0 auto;
+  background: $color-light;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin: 0 auto;
 
-    span {
-        color: $color-green;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        font-size: 50px;
-    }
+  span {
+    color: $color-green;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 50px;
+  }
 }
 
 .subtitle {
-    padding-top: 48px;
-    @include h3;
+  padding-top: 48px;
+  @include h3;
 }
 
 .tariff {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .price {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-    &__more {
-        margin: 0;
-        @include h4;
-    }
+  &__more {
+    margin: 0;
+    @include h4;
+  }
 }
 
 .servise__list {
-    @include h4;
-    padding-left: 10px;
+  @include h4;
+  padding-left: 10px;
 }
 
 // / PSYCHO =LYUDMILA
 .one {
-    text-indent: 42px;
+  text-indent: 42px;
 }
 
 .still {
-    @include h4;
-    color: $color-dark;
-    font-weight: bold;
-    max-width: min-content;
-    background-color: $color-light;
-    border-style: none;
-    border-bottom: 5px solid $color-green;
+  @include h4;
+  color: $color-dark;
+  font-weight: bold;
+  max-width: min-content;
+  background-color: $color-light;
+  border-style: none;
+  border-bottom: 5px solid $color-green;
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: $color-green;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-green;
+  }
 }
 
 .hidden {
-    display: none;
-    position: absolute;
+  display: none;
+  position: absolute;
 }
 
 .psycho-content__second {
-    position: relative;
+  position: relative;
 }
 
 .psycho-content__second:hover .hidden {
-    display: block;
+  display: block;
 }
 
 // / ENERGU =NATALIA
 .details {
-    @include h4;
-    color: $color-green;
-    font-weight: bold;
-    border-bottom: 5px double $color-green;
+  @include h4;
+  color: $color-green;
+  font-weight: bold;
+  border-bottom: 5px double $color-green;
 
-    &:hover,
-    &:active {
-        color: $color-dark;
-        transition: 0.9s;
-        padding-bottom: 5px;
-        border-bottom: 3px solid $color-dark;
-    }
-
+  &:hover,
+  &:active {
+    color: $color-dark;
+    transition: 0.9s;
+    padding-bottom: 5px;
+    border-bottom: 3px solid $color-dark;
+  }
 }
 
 // ENERGU =NATALIA
@@ -328,7 +325,7 @@ a {
 // REVIEW =ANNA
 #swiper-button-prev,
 #swiper-button-next {
-    color: $color-black;
+  color: $color-black;
 }
 
 /*.title {
@@ -337,15 +334,14 @@ a {
     height: 50px;
 }*/
 .review__text {
-    @include p;
-    color: $color-black;
-    font-size: 16px;
+  @include p;
+  color: $color-black;
+  font-size: 16px;
 }
 
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #slide,
@@ -356,191 +352,188 @@ a {
 #slide5,
 #slide6,
 #slide7 {
-    display: flex;
-    flex-direction: row;
-    height: 550px;
-    justify-content: start;
-    align-items: center;
-    margin: 10px;
-    padding: 50px;
-    gap: 5px;
-    background-color: $color-light;
-    border-radius: 10%;
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+  justify-content: start;
+  align-items: center;
+  margin: 10px;
+  padding: 50px;
+  gap: 5px;
+  background-color: $color-light;
+  border-radius: 10%;
 }
 
 .review__title {
-    display: flex;
-    align-content: center;
+  display: flex;
+  align-content: center;
 }
 
 .review-block {
-    background-color: $color-bg-main;
-    height: 100%;
-    margin-bottom: 34px;
+  background-color: $color-bg-main;
+  height: 100%;
+  margin-bottom: 34px;
 }
 
 .review__image {
-    width: 5%;
-    height: 5%;
+  width: 5%;
+  height: 5%;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: $color-dark;
+  background-color: $color-dark;
 }
 
+@media screen and (max-width: 900px) {
+  .review__text {
+    font-size: 15px;
+  }
 
-@media screen and (max-width:900px) {
-    .review__text {
-        font-size: 15px;
-    }
+  #slide,
+  #slide1,
+  #slide2,
+  #slide3,
+  #slide4,
+  #slide5,
+  #slide6,
+  #slide7 {
+    height: 500px;
+  }
 
-    #slide,
-    #slide1,
-    #slide2,
-    #slide3,
-    #slide4,
-    #slide5,
-    #slide6,
-    #slide7 {
-        height: 500px;
-    }
-
-    .review__image {
-        width: 4%;
-        height: 4%;
-    }
+  .review__image {
+    width: 4%;
+    height: 4%;
+  }
 }
 
-@media screen and (max-width:640px) {
-    .review__text {
-        font-size: 14px;
-    }
+@media screen and (max-width: 640px) {
+  .review__text {
+    font-size: 14px;
+  }
 
-    #slide,
-    #slide1,
-    #slide2,
-    #slide3,
-    #slide4,
-    #slide5,
-    #slide6,
-    #slide7 {
-        height: 420px;
-    }
+  #slide,
+  #slide1,
+  #slide2,
+  #slide3,
+  #slide4,
+  #slide5,
+  #slide6,
+  #slide7 {
+    height: 420px;
+  }
 
-    .review__image {
-        width: 3%;
-        height: 3%;
-    }
+  .review__image {
+    width: 3%;
+    height: 3%;
+  }
 }
-
 
 //  =VICTORIA
 .blog {
-    // margin-bottom: 416px;
+  // margin-bottom: 416px;
 }
 
 .button__wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    justify-content: flex-end;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 // FOOTER =VICTORIA
 .footer {
-    background-color: $color-bg-dark;
-    margin: 0 auto;
+  background-color: $color-bg-dark;
+  margin: 0 auto;
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    @include phone;
+  display: flex;
+  justify-content: space-between;
+  @include phone;
 }
 
 .contacts {
+  .social-media {
+    display: flex;
+    align-items: center;
 
-    .social-media {
-        display: flex;
-        align-items: center;
+    &__phone-number {
+      margin: 0 40px;
+      @include phone;
+      color: $color-bg-main;
 
-        &__phone-number {
-            margin: 0 40px;
-            @include phone;
-            color: $color-bg-main;
-
-            &:hover {
-                color: $color-dark;
-            }
-        }
-
-        &__whatsapp,
-        &__telegram {
-            width: 50px;
-            margin: 0 15px;
-
-            &:hover,
-            &:active {
-                background: rgba(0, 0, 0, 0);
-                color: $color-nav;
-                box-shadow: inset 0 0 0 3px $color-nav;
-                border-radius: 10px;
-            }
-        }
+      &:hover {
+        color: $color-dark;
+      }
     }
+
+    &__whatsapp,
+    &__telegram {
+      width: 50px;
+      margin: 0 15px;
+
+      &:hover,
+      &:active {
+        background: rgba(0, 0, 0, 0);
+        color: $color-nav;
+        box-shadow: inset 0 0 0 3px $color-nav;
+        border-radius: 10px;
+      }
+    }
+  }
 }
 
 // BURGER-MENU =TATIANA
 .navbar-toggle {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 
-    .bar {
-        display: block;
-        width: 36px;
-        height: 4px;
-        background-color: $color-nav;
-        margin: 5px 0;
-    }
+  .bar {
+    display: block;
+    width: 36px;
+    height: 4px;
+    background-color: $color-nav;
+    margin: 5px 0;
+  }
 }
 
 @media (max-width: 968px) {
-    .nav {
-        display: none;
+  .nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-toggle.active {
+    .bar:nth-child(2) {
+      opacity: 0;
     }
 
-    .navbar-toggle {
-        display: block;
+    .bar:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
     }
 
-    .navbar-toggle.active {
-        .bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        .bar:nth-child(1) {
-            transform: translateY(10px) rotate(45deg);
-        }
-
-        .bar:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
-        }
+    .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
     }
+  }
 
-    .nav.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: $color-bg-dark;
-        padding: 0px 0px 10px 0px;
+  .nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: $color-bg-dark;
+    padding: 0px 0px 10px 0px;
 
-        li {
-            margin: 11px 0;
-        }
+    li {
+      margin: 11px 0;
     }
+  }
 }
 
 @import "media";
