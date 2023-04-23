@@ -173,6 +173,10 @@ a {
       object-fit: cover;
       width: 100%;
       border-radius: 5px; }
+  .about .about-media__titleH2 {
+    display: none; }
+  .about .about__titleH2 {
+    display: flex; }
   .about .about__text {
     width: 60%; }
   .about .about__paragraf {
@@ -434,21 +438,12 @@ a {
     line-height: 53px; }
   .paragraf {
     font-size: 30px;
-    line-height: 50px; } }
-
-/* здесь ваши стили для планшета */
-@media (max-width: 968px) {
-  .container {
-    max-width: 620px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px; }
+    line-height: 50px; }
   .aboutme {
     margin-top: 115px; }
   .about {
     display: flex;
     justify-content: center;
-    justify-self: center;
     gap: 34px; }
     .about .about__photo {
       width: 390px;
@@ -461,18 +456,59 @@ a {
         object-fit: cover;
         width: 100%;
         border-radius: 5px; }
-    .about .about__text {
-      width: 50%; }
+    .about .about-media__titleH2 {
+      display: none; }
+    .about .about__titleH2 {
+      display: flex;
+      font-size: 60px;
+      line-height: 73px;
+      margin: auto; }
     .about .about__paragraf {
       font-size: 30px;
       line-height: 50px;
-      margin: auto; }
+      margin: auto;
+      width: 551px; } }
+
+/* здесь ваши стили для планшета */
+@media (max-width: 968px) {
+  .container {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .aboutme {
+    margin-top: 46px; }
+  .about {
+    display: flex;
+    justify-content: center;
+    gap: 36px; }
+    .about .about__photo {
+      width: 249px;
+      height: 311px;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center; }
+      .about .about__photo .photo_2 {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px; }
+    .about .about-media__titleH2 {
+      display: none; }
     .about .about__titleH2 {
-      margin: auto; } }
+      display: flex;
+      font-size: 38px;
+      line-height: 46px;
+      margin: auto; }
+    .about .about__text {
+      width: 60%; }
+    .about .about__paragraf {
+      font-size: 18px;
+      line-height: 30px; } }
 
 @media (max-width: 640px) {
   .container {
-    max-width: 480px;
+    max-width: 375px;
     padding-left: 16px;
     padding-right: 16px; }
   .titleH2 {
@@ -485,7 +521,9 @@ a {
     font-size: 16px;
     line-height: 25px; }
   .aboutme {
-    margin-top: 115px; }
+    margin-top: 38px;
+    display: flex;
+    justify-self: center; }
   .about {
     display: flex;
     align-items: center;
@@ -504,11 +542,14 @@ a {
         object-fit: cover;
         width: 100%;
         border-radius: 5px; }
+    .about .about-media__titleH2 {
+      display: flex;
+      margin: auto; }
     .about .about__text {
-      width: 60%; }
+      width: 83%; }
     .about .about__titleH2 {
-      order: 1; }
+      display: none; }
     .about .about__paragraf {
       font-size: 16px;
-      line-height: 23px;
-      margin: auto; } }
+      line-height: 25px;
+      text-align: center; } }

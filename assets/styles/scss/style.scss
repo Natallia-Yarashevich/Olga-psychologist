@@ -186,6 +186,13 @@ a {
     }
   }
 
+  .about-media__titleH2 {
+    display: none;
+  }
+  .about__titleH2 {
+    display: flex;
+  }
+
   .about__text {
     width: 60%;
   }
