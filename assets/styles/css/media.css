@@ -41,6 +41,9 @@
     font-size: 18px;
     line-height: 25px;
   }
+  .info {
+    margin-bottom: 46px;
+  }
 }
 @media (max-width: 620px) {
   .container {
@@ -63,6 +66,16 @@
     font-size: 16px;
     line-height: 25рх;
   }
+  .info {
+    margin-bottom: 38px;
+  }
+  .info__paragraf {
+    text-align: center;
+  }
+  .info__button {
+    justify-content: center;
+  }
+
 }
 
 /*# sourceMappingURL=media.css.map */
