@@ -490,5 +490,57 @@ a {
     }
 }
 
+// BURGER-MENU =TATIANA
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+
+    .bar {
+        display: block;
+        width: 36px;
+        height: 4px;
+        background-color: $color-nav;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 968px) {
+    .nav {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-toggle.active {
+        .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .bar:nth-child(1) {
+            transform: translateY(10px) rotate(45deg);
+        }
+
+        .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+
+    .nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: $color-bg-dark;
+        padding: 0px 0px 10px 0px;
+
+        li {
+            margin: 11px 0;
+        }
+    }
+}
 
 @import "media";
