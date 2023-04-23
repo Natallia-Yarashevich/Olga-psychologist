@@ -34,22 +34,35 @@ const swiper = new Swiper(".swiper", {
             slidesPerView: 1,
             spaceBetween: 10,
         },
-        //  when window width is >= 480px
         480: {
-            slidesPerView: 1,
-            spaceBetween: 20,
+            slidesPerView: 1.2,
+            spaceBetween: 10,
         },
-        640: {
+        //  when window width is >= 480px
+
+        620: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        750: {
             slidesPerView: 2,
             spaceBetween: 10,
         },
-        900: {
-            slidesPerView: 2,
-            spaceBetween: 5,
+        968: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        1300: {
+            slidesPerView: 3,
+            spaceBetween: 10,
         },
         // when window width is >= 800px
-        1024: {
-            slidesPerView: 3,
+        1500: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        1800: {
+            slidesPerView: 4,
             spaceBetween: 10,
         },
     },
