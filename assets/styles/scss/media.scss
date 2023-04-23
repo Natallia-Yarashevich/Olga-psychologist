@@ -16,9 +16,18 @@
     line-height: 53px;
   }
 
-  .paragraf {
+  .paragraf,
+  .price__more,
+  .servise__list,
+  .details {
     font-size: 30px;
     line-height: 50px;
+    span{
+      font-size: 20px;
+    }
+  }
+  .details {
+    font-weight: 600;
   }
 
   // АЛИСА
@@ -30,7 +39,15 @@
   // ТАНЯ
 
   // ЛЮДА
-
+  .psycho {
+    padding-bottom: 47px;
+  }
+  .servise_part {
+    padding-bottom: 30px;
+  }
+  .tariff {
+    margin-top: 38px;
+  }
   // НАТАША
 
   // АНЯ
@@ -70,7 +87,45 @@
   // ТАНЯ
 
   // ЛЮДА
-
+  .services {
+    .titleH2 {
+      font-size: 38px;
+      line-height: 46px;
+    }
+  }
+  .subtitle {
+    font-size: 28px;
+    line-height: 60px;
+    padding-top: 26px;
+    margin-top: 0;
+    margin-bottom: 0;    
+  }
+  .psycho {
+    padding-bottom: 28px;
+  }
+  .paragraf,
+  .price__more,
+  .servise__list,
+  .details{
+    font-size: 18px;
+    line-height: 25px;
+    span{
+      font-size: 20px;
+    }
+  }
+  .details {
+    font-weight: 600;
+  }
+  .tariff {
+    margin-top: 30px;
+    .button-green {
+      @include btnmobile;
+      width: 205px;
+    }
+  }
+  .servise_part {
+    padding-bottom: 19px;
+  }
   // НАТАША
 
   // АНЯ

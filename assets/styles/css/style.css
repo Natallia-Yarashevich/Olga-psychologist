@@ -254,6 +254,7 @@ a:after {
           box-sizing: border-box;
   border-radius: 30px;
   margin: 0 auto;
+  padding-bottom: 25px;
 }
 .servise_part span {
   color: #9aa581;
@@ -282,6 +283,7 @@ a:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 25px;
 }
 
 .price {
@@ -552,9 +554,30 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
     font-size: 44px;
     line-height: 53px;
   }
-  .paragraf {
+  .paragraf,
+.price__more,
+.servise__list,
+.details {
     font-size: 30px;
     line-height: 50px;
+  }
+  .paragraf span,
+.price__more span,
+.servise__list span,
+.details span {
+    font-size: 20px;
+  }
+  .details {
+    font-weight: 600;
+  }
+  .psycho {
+    padding-bottom: 47px;
+  }
+  .servise_part {
+    padding-bottom: 30px;
+  }
+  .tariff {
+    margin-top: 38px;
   }
 }
 /* здесь ваши стили для планшета */
@@ -563,6 +586,47 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
     max-width: 620px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .services .titleH2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .subtitle {
+    font-size: 28px;
+    line-height: 60px;
+    padding-top: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .psycho {
+    padding-bottom: 28px;
+  }
+  .paragraf,
+.price__more,
+.servise__list,
+.details {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .paragraf span,
+.price__more span,
+.servise__list span,
+.details span {
+    font-size: 20px;
+  }
+  .details {
+    font-weight: 600;
+  }
+  .tariff {
+    margin-top: 30px;
+  }
+  .tariff .button-green {
+    font-size: 14px;
+    line-height: 17px;
+    width: 205px;
+  }
+  .servise_part {
+    padding-bottom: 19px;
   }
 }
 @media (max-width: 620px) {
@@ -580,6 +644,7 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
   .services .titleH2 {
     font-size: 36px;
     line-height: 44px;
+    font-weight: 600;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;

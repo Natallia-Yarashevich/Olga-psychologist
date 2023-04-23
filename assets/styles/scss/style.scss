@@ -200,6 +200,7 @@ a {
     box-sizing: border-box;
     border-radius: 30px;
     margin: 0 auto;
+    padding-bottom: 25px;
 
     span {
         color: $color-green;
@@ -219,6 +220,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
 .price {
