@@ -206,8 +206,7 @@ a:after {
   justify-content: center;
 }
 .about .about__photo .photo_2 {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   border-radius: 5px;
 }
@@ -315,7 +314,6 @@ a:after {
   color: #383838;
   color: #383838;
   font-weight: bold;
-  max-width: -moz-min-content;
   max-width: min-content;
   background-color: #EFECE8;
   border-style: none;
@@ -510,7 +508,49 @@ a:after {
   border-radius: 10px;
 }
 
-@media (max-width: 1500px) {
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+.navbar-toggle .bar {
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #EFECEB;
+  margin: 5px 0;
+}
+
+@media (max-width: 1050px) {
+  .nav {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ABA39B;
+    padding: 0px 0px 10px 0px;
+  }
+  .nav.active li {
+    margin: 11px 0;
+  }
+}
+@media (max-width: 1200px) {
   .container {
     max-width: 1024px;
   }
@@ -537,7 +577,7 @@ a:after {
     padding-left: 20px;
     padding-right: 20px;
   }
-  section {
+  .screen {
     margin-bottom: 46px;
   }
   .titleH2 {
@@ -554,7 +594,12 @@ a:after {
   }
 }
 @media (max-width: 620px) {
-  section {
+  .container {
+    max-width: 375px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .screen {
     margin-bottom: 38px;
   }
   .titleH2 {
@@ -569,4 +614,6 @@ a:after {
     font-size: 16px;
     line-height: 25рх;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
