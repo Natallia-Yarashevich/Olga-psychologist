@@ -317,7 +317,6 @@ a {
 // ENERGU =NATALIA
 
 // REVIEW =ANNA
-<<<<<<< HEAD
 .review {
     background-color: $color-bg-main;
     height: 100%;
@@ -327,38 +326,10 @@ a {
         align-content: center;
     }
 
-=======
-
-
-.review {
-    background-color: $color-bg-main;
-    height: 100%;
-
-    &__title {
-        display: flex;
-        align-content: center;
-    }
-
->>>>>>> 1fd0abcaa20b6830c70a848e6e781d90d4a45675
     &__text {
         @include p;
         color: $color-black;
         font-size: 17px;
-<<<<<<< HEAD
-=======
-
-    }
-
-    /*&__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }*/
-
-    &__image {
-        width: 5%;
-        height: 5%;
-    }
->>>>>>> 1fd0abcaa20b6830c70a848e6e781d90d4a45675
 
     }
 
@@ -398,11 +369,7 @@ a {
 #swiper-button-prev,
 #swiper-button-next {
     color: $color-black;
-<<<<<<< HEAD
-    top: 90%;
-=======
     top: 50%;
->>>>>>> 1fd0abcaa20b6830c70a848e6e781d90d4a45675
 }
 
 .swiper-pagination-bullet-active {
@@ -411,12 +378,6 @@ a {
 }
 
 //  =VICTORIA
-<<<<<<< HEAD
-/*.blog {
-    // margin-bottom: 416px;
-}*/
-=======
->>>>>>> 1fd0abcaa20b6830c70a848e6e781d90d4a45675
 
 .button__wrapper {
     padding-left: 30px;
