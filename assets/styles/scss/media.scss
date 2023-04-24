@@ -20,7 +20,10 @@
     line-height: 53px;
   }
 
-  .paragraf {
+  .paragraf,
+  .price__more,
+  .servise__list,
+  .details {
     font-size: 30px;
     line-height: 50px;
   }
@@ -58,6 +61,28 @@
 
   // ТАНЯ
   // ЛЮДА
+  .details {
+    font-weight: 600;
+  }
+
+  .psycho {
+    padding-bottom: 47px;
+  }
+
+  .servise_part {
+    padding-bottom: 30px;
+  }
+
+  .tariff {
+    margin-top: 38px;
+  }
+
+  .services {
+    span{
+      font-size: 20px;
+    }
+  }
+
   // НАТАША
   // АНЯ
   .review {
@@ -118,7 +143,10 @@
     line-height: 25px;
   }
 
-  .paragraf {
+  .paragraf,
+  .price__more,
+  .servise__list,
+  .details {
     font-size: 18px;
     line-height: 25px;
   }
@@ -161,6 +189,37 @@
   // }
 
   // ЛЮДА
+  .services {
+    .subtitle {
+      font-size: 28px;
+      line-height: 60px;
+      padding-top: 26px;
+      margin-top: 0;
+      margin-bottom: 0;   
+    }
+    span{
+      font-size: 20px;
+    }
+  }
+
+  .psycho {
+    padding-bottom: 28px;
+  }
+
+  .details {
+    font-weight: 600;
+  }
+  .tariff {
+    margin-top: 30px;
+    .button-green {
+      @include btnmobile;
+      width: 205px;
+    }
+  }
+  .servise_part {
+    padding-bottom: 19px;
+  }
+
 
   // НАТАША
 
@@ -223,7 +282,9 @@
     line-height: 25рх;
   }
 
-  .paragraf {
+  .paragraf,
+  .price__more,
+  .servise__list {
     font-size: 16px;
     line-height: 25рх;
   }
@@ -286,8 +347,63 @@
   }
 
   // ЛЮДА
+  .psycho-content__second {
+    text-align: center;
+    .psycho-content__hidden {
+      text-align: start;
+    }
+  }
+
+  .services {
+    .titleH2 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .subtitle {
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 0 auto;
+    }
+    .details {
+      font-weight: 600;
+    }
+    span{
+      font-size: 20px;
+    }
+
+  }
+
+  .psycho {
+    padding-bottom: 40px;
+  }
+
+  .tariff {
+    flex-direction: column;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    min-width: 110px;
+    align-items: center;
+    justify-content: center;
+
+    .price {
+      margin-right: auto;
+      padding-bottom: 20px;
+      min-height: 47px;
+    }
+
+    .button-green {
+      @include btnmobile;
+      width: 205px;
+    }
+  }
+
 
   // НАТАША
+  .detail {
+    text-align: center;
+  }
 
   // АНЯ
   .review {
