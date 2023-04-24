@@ -323,25 +323,34 @@ a {
 // ENERGU =NATALIA
 
 // REVIEW =ANNA
-#swiper-button-prev,
-#swiper-button-next {
-  color: $color-black;
-}
 
-/*.title {
-    @include title;
-    color: $color-dark;
-    height: 50px;
-}*/
-.review__text {
-  @include p;
-  color: $color-black;
-  font-size: 16px;
-}
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
+.review {
+    background-color: $color-bg-main;
+    height: 100%;
+
+    &__title {
+        display: flex;
+        align-content: center;
+    }
+
+    &__text {
+        @include p;
+        color: $color-black;
+        font-size: 17px;
+
+    }
+
+    /*&__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }*/
+
+    &__image {
+        width: 5%;
+        height: 5%;
+    }
+
 }
 
 #slide,
@@ -352,86 +361,32 @@ a {
 #slide5,
 #slide6,
 #slide7 {
-  display: flex;
-  flex-direction: row;
-  height: 550px;
-  justify-content: start;
-  align-items: center;
-  margin: 10px;
-  padding: 50px;
-  gap: 5px;
-  background-color: $color-light;
-  border-radius: 10%;
+
+
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    padding: 45px;
+    gap: 5px;
+    background-color: $color-light;
+    border-radius: 10%;
 }
 
-.review__title {
-  display: flex;
-  align-content: center;
-}
-
-.review-block {
-  background-color: $color-bg-main;
-  height: 100%;
-  margin-bottom: 34px;
-}
-
-.review__image {
-  width: 5%;
-  height: 5%;
+#swiper-button-prev,
+#swiper-button-next {
+    color: $color-black;
+    top: 50%;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: $color-dark;
-}
+    background-color: $color-dark;
 
-@media screen and (max-width: 900px) {
-  .review__text {
-    font-size: 15px;
-  }
-
-  #slide,
-  #slide1,
-  #slide2,
-  #slide3,
-  #slide4,
-  #slide5,
-  #slide6,
-  #slide7 {
-    height: 500px;
-  }
-
-  .review__image {
-    width: 4%;
-    height: 4%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .review__text {
-    font-size: 14px;
-  }
-
-  #slide,
-  #slide1,
-  #slide2,
-  #slide3,
-  #slide4,
-  #slide5,
-  #slide6,
-  #slide7 {
-    height: 420px;
-  }
-
-  .review__image {
-    width: 3%;
-    height: 3%;
-  }
 }
 
 //  =VICTORIA
-.blog {
-  // margin-bottom: 416px;
-}
 
 .button__wrapper {
   padding-left: 30px;

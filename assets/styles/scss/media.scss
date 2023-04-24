@@ -74,6 +74,31 @@
   // ЛЮДА
   // НАТАША
   // АНЯ
+  .review {
+    &__text {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    &__image {
+      width: 4%;
+      height: 4%;
+    }
+  }
+
+  #slide,
+  #slide1,
+  #slide2,
+  #slide3,
+  #slide4,
+  #slide5,
+  #slide6,
+  #slide7 {
+    padding: 40px;
+    margin: 8px;
+  }
+
+
   // ВИКА
 }
 
@@ -173,6 +198,31 @@
   // НАТАША
 
   // АНЯ
+  .review {
+    &__text {
+      font-size: 15px;
+    }
+
+    &__image {
+      width: 4%;
+      height: 4%;
+    }
+  }
+
+  #slide,
+  #slide1,
+  #slide2,
+  #slide3,
+  #slide4,
+  #slide5,
+  #slide6,
+  #slide7 {
+    height: 500px;
+    padding: 35px;
+    margin: 7px;
+  }
+
+
 
   // ВИКА
 }
@@ -283,6 +333,30 @@
   // НАТАША
 
   // АНЯ
+  .review {
+    &__text {
+      font-size: 14px;
+
+    }
+
+    &__image {
+      width: 3%;
+      height: 3%;
+    }
+  }
+
+  #slide,
+  #slide1,
+  #slide2,
+  #slide3,
+  #slide4,
+  #slide5,
+  #slide6,
+  #slide7 {
+    height: 480px;
+    padding: 30px;
+    margin: 5px;
+  }
 
   // ВИКА
 }
