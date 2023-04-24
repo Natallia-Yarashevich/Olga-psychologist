@@ -64,14 +64,16 @@
   }
 
   // .titleH2 {
-  //   font-size: 60px;
-  //   line-height: 73px;
-  // }
+  .titleH2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
 
   // .subtitle {
-  //   font-size: 44px;
-  //   line-height: 53px;
-  // }
+  .subtitle {
+    font-size: 28px;
+    line-height: 60px;
+  }
 
   // .paragraf {
   //   font-size: 30px;
@@ -88,17 +90,11 @@
 
   // ЛЮДА
   .services {
-    .titleH2 {
-      font-size: 38px;
-      line-height: 46px;
+    .subtitle {
+      padding-top: 26px;
+      margin-top: 0;
+      margin-bottom: 0;    
     }
-  }
-  .subtitle {
-    font-size: 28px;
-    line-height: 60px;
-    padding-top: 26px;
-    margin-top: 0;
-    margin-bottom: 0;    
   }
   .psycho {
     padding-bottom: 28px;
