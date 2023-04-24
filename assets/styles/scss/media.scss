@@ -1,5 +1,4 @@
 @media (max-width: 1200px) {
-
   // еще не точно 1200
   // ОБЩИЕ СТИЛИ
   .container {
@@ -29,6 +28,7 @@
   // .intro {
   //   прописать св-ва для картинки и шрифтов
   // }
+
   // АРИНА
   .about {
     display: flex;
@@ -49,7 +49,6 @@
         border-radius: 5px;
       }
     }
-
   }
 
   .about-media__titleH2 {
@@ -83,7 +82,6 @@
     padding: 40px;
     margin: 8px;
   }
-
 
   // ВИКА
 }
@@ -189,8 +187,6 @@
     margin: 7px;
   }
 
-
-
   // ВИКА
 }
 
@@ -232,6 +228,41 @@
   // .intro {
   //   прописать св-ва для картинки и шрифтов
   // }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+
+    &__quote {
+      display: none;
+    }
+    &__1 {
+      display: flex;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      line-height: 60px;
+      font-size: 36px;
+      height: 60px;
+    }
+
+    &__job {
+      font-size: 28px;
+    }
+    &__title {
+      font-size: 50px;
+    }
+    &__text {
+      font-size: 28px;
+    }
+    &__image {
+      max-width: 300px;
+
+      &__pic {
+        max-width: 300px;
+      }
+    }
+  }
+
   // АРИНА
   .aboutme {
     display: flex;
@@ -264,7 +295,6 @@
     &__titleH2 {
       display: none;
     }
-
   }
 
   .about-media {
@@ -293,7 +323,6 @@
   .review {
     &__text {
       font-size: 14px;
-
     }
 
     &__image {
