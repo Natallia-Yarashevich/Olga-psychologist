@@ -30,6 +30,32 @@
   //   прописать св-ва для картинки и шрифтов
   // }
   // АРИНА
+  .about {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+
+    &__photo {
+      width: 390px;
+      height: 548px;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      &__photo_2 {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+  }
+
+  .about-media__titleH2 {
+    display: none;
+  }
+
   // ТАНЯ
   // ЛЮДА
   // НАТАША
@@ -62,12 +88,12 @@
   // ВИКА
 }
 
-// таблет медиа -968,контейнер - 620  Отступ между секциями: 46рх 
-// Заголовки: 38рх 
-// Текст : 18рх 
-// Лого и контакты с телефоном: 20рх 
+// таблет медиа -968,контейнер - 620  Отступ между секциями: 46рх
+// Заголовки: 38рх
+// Текст : 18рх
+// Лого и контакты с телефоном: 20рх
 // Line-height - везде 25рх,
-// в aboutme - 30рх Отступы между абзацами: 18рх 
+// в aboutme - 30рх Отступы между абзацами: 18рх
 // Отступ между фоткой и текстом: 15рх
 
 /* здесь ваши стили для планшета */
@@ -102,11 +128,37 @@
   //   прописать св-ва для картинки и шрифтов
   // }
   // АРИНА
+  .about {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+
+    &__photo {
+      width: 249px;
+      height: 311px;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      .photo_2 {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .about-media {
+    &__titleH2 {
+      display: none;
+    }
+  }
 
   // ТАНЯ
-  .info {
-    margin-bottom: 46px;
-  }
+  // .info {
+  //   margin-bottom: 46px;
+  // }
 
   // ЛЮДА
 
@@ -181,11 +233,49 @@
   //   прописать св-ва для картинки и шрифтов
   // }
   // АРИНА
+  .aboutme {
+    display: flex;
+    justify-self: center;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    gap: 21px;
+
+    &__photo {
+      width: 186px;
+      height: 239px;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      .photo_2 {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    &__titleH2 {
+      display: none;
+    }
+
+  }
+
+  .about-media {
+    &__titleH2 {
+      display: flex;
+      margin: auto;
+    }
+  }
 
   // ТАНЯ
   .info {
-    margin-bottom: 38px;
-
     &__paragraf {
       text-align: center;
     }

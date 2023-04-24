@@ -45,7 +45,7 @@ a {
     position: relative;
 
     &:after {
-        content: '';
+        content: "";
         position: absolute;
         inset: -30px;
     }
@@ -166,9 +166,6 @@ a {
 }
 
 // ABOUT ME =ARINA
-// .aboutme {
-//     margin-top: 115px;
-// }
 
 .photo_2 {
     width: 600px;
@@ -178,8 +175,9 @@ a {
 .about {
     display: flex;
     justify-content: center;
+    gap: 36px;
 
-    .about__photo {
+    &__photo {
         width: 560px;
         height: 687px;
         border-radius: 5px;
@@ -194,24 +192,18 @@ a {
         }
     }
 
-    .aboutme {
-        margin-bottom: 115px;
-    }
-
-    .about {
+    &__titleH2 {
         display: flex;
-        justify-content: center;
     }
 
-    .about__text {
-        margin-left: 40px;
+    &__text {
         width: 50%;
     }
 
-    .about__paragraf {
-        font-size: 36px;
-        line-height: 70px;
-    }
+}
+
+.about-media__titleH2 {
+    display: none;
 }
 
 // INFO =TATIANA
@@ -320,12 +312,12 @@ a {
         padding-bottom: 5px;
         border-bottom: 3px solid $color-dark;
     }
-
 }
 
 // ENERGU =NATALIA
 
 // REVIEW =ANNA
+<<<<<<< HEAD
 .review {
     background-color: $color-bg-main;
     height: 100%;
@@ -335,10 +327,38 @@ a {
         align-content: center;
     }
 
+=======
+
+
+.review {
+    background-color: $color-bg-main;
+    height: 100%;
+
+    &__title {
+        display: flex;
+        align-content: center;
+    }
+
+>>>>>>> 1fd0abcaa20b6830c70a848e6e781d90d4a45675
     &__text {
         @include p;
         color: $color-black;
         font-size: 17px;
+<<<<<<< HEAD
+=======
+
+    }
+
+    /*&__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }*/
+
+    &__image {
+        width: 5%;
+        height: 5%;
+    }
+>>>>>>> 1fd0abcaa20b6830c70a848e6e781d90d4a45675
 
     }
 
@@ -361,6 +381,8 @@ a {
 #slide5,
 #slide6,
 #slide7 {
+
+
     display: flex;
     flex-direction: row;
     height: 550px;
@@ -376,7 +398,11 @@ a {
 #swiper-button-prev,
 #swiper-button-next {
     color: $color-black;
+<<<<<<< HEAD
     top: 90%;
+=======
+    top: 50%;
+>>>>>>> 1fd0abcaa20b6830c70a848e6e781d90d4a45675
 }
 
 .swiper-pagination-bullet-active {
@@ -385,9 +411,12 @@ a {
 }
 
 //  =VICTORIA
+<<<<<<< HEAD
 /*.blog {
     // margin-bottom: 416px;
 }*/
+=======
+>>>>>>> 1fd0abcaa20b6830c70a848e6e781d90d4a45675
 
 .button__wrapper {
     padding-left: 30px;
@@ -409,7 +438,6 @@ a {
 }
 
 .contacts {
-
     .social-media {
         display: flex;
         align-items: center;
