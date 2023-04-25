@@ -544,6 +544,27 @@ a:after {
     padding: 40px;
     margin: 8px;
   }
+  .navigation {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .navigation__text {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .contacts .social-media {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+    padding: 0px;
+  }
+  .contacts .social-media__phone-number {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 /* здесь ваши стили для планшета */
 @media (max-width: 968px) {
@@ -871,5 +892,11 @@ a:after {
     align-content: center;
     justify-content: space-between;
     margin-bottom: 14px;
+  }
+  .contacts .social-media__whatsapp:hover, .contacts .social-media__whatsapp:active, .contacts .social-media__telegram:hover, .contacts .social-media__telegram:active {
+    background: rgba(0, 0, 0, 0);
+    color: #EFECEB;
+    box-shadow: inset 0 0 0 3px #EFECEB;
+    border-radius: 2px;
   }
 }
