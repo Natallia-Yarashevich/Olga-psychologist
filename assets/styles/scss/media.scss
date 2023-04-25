@@ -1,13 +1,8 @@
 @media (max-width: 1200px) {
 
-  // еще не точно 1200
   // ОБЩИЕ СТИЛИ
   .container {
     max-width: 1024px;
-  }
-
-  .screen {
-    margin-bottom: 115px;
   }
 
   .titleH2 {
@@ -21,8 +16,7 @@
   }
 
   .paragraf,
-  .price__more,
-  .servise__list,
+  .more,
   .details {
     font-size: 30px;
     line-height: 50px;
@@ -34,55 +28,36 @@
   // }
   // АРИНА
   .about {
-    display: flex;
-    justify-content: center;
     gap: 34px;
 
     &__photo {
       width: 390px;
       height: 548px;
-      border-radius: 5px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-
-      &__photo_2 {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 5px;
-      }
     }
-
   }
 
-  .about-media__titleH2 {
-    display: none;
+  .about-media {
+    &__titleH2 {
+      display: none;
+    }
   }
 
   // ТАНЯ
-  // ЛЮДА
-  .details {
-    font-weight: 600;
-  }
+  // УСЛУГИ
+  .servise {
 
-  .psycho {
-    padding-bottom: 47px;
-  }
+    &__list {
+      font-size: 30px;
+      line-height: 50px;
+    }
 
-  .servise_part {
-    padding-bottom: 30px;
-  }
-
-  .tariff {
-    margin-top: 38px;
-  }
-
-  .services {
-    span{
-      font-size: 20px;
+    &__circle {
+      width: 0.8em;
+      font-size: 40px;
     }
   }
 
+  // ЛЮДА
   // НАТАША
   // АНЯ
   .review {
@@ -135,45 +110,75 @@
 
   .titleH2 {
     font-size: 38px;
-    line-height: 25px;
   }
 
   .subtitle {
-    font-size: 44px;
+    font-size: 28px;
     line-height: 25px;
   }
 
   .paragraf,
   .price__more,
-  .servise__list,
-  .details {
+  .details,
+    {
     font-size: 18px;
     line-height: 25px;
   }
 
+  .button-green {
+    @include btnmobile;
+  }
+
+  // BURGER-MENU =TATIANA
+  .nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-toggle.active {
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .bar:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+
+    .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  .nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: $color-bg-dark;
+    padding: 0px 0px 10px 0px;
+
+    li {
+      margin: 11px 0;
+    }
+  }
+
+  // BURGER-MENU-END =TATIANA
   // АЛИСА
   // .intro {
   //   прописать св-ва для картинки и шрифтов
   // }
   // АРИНА
   .about {
-    display: flex;
-    justify-content: center;
-    gap: 36px;
+    gap: 32px;
 
     &__photo {
       width: 249px;
       height: 311px;
-      border-radius: 5px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-
-      .photo_2 {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 5px;
-      }
     }
   }
 
@@ -184,42 +189,23 @@
   }
 
   // ТАНЯ
-  // .info {
-  //   margin-bottom: 46px;
-  // }
-
   // ЛЮДА
-  .services {
-    .subtitle {
+  .servise {
+
+    &__list {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &__circle {
+      width: 0.8em;
       font-size: 28px;
-      line-height: 60px;
-      padding-top: 26px;
-      margin-top: 0;
-      margin-bottom: 0;   
-    }
-    span{
-      font-size: 20px;
     }
   }
 
-  .psycho {
-    padding-bottom: 28px;
-  }
-
-  .details {
-    font-weight: 600;
-  }
   .tariff {
-    margin-top: 30px;
-    .button-green {
-      @include btnmobile;
-      width: 205px;
-    }
+    padding: 30px 0;
   }
-  .servise_part {
-    padding-bottom: 19px;
-  }
-
 
   // НАТАША
 
@@ -251,6 +237,15 @@
 
 
   // ВИКА
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .social-media {
+    display: flex;
+  }
 }
 
 // мобилка медиа - 620px, контейнер - 375px
@@ -274,17 +269,19 @@
 
   .titleH2 {
     font-size: 36px;
-    line-height: 25рх;
   }
 
   .subtitle {
     font-size: 34px;
-    line-height: 25рх;
+  }
+
+
+  .button-green {
+    @include btnmobile;
   }
 
   .paragraf,
-  .price__more,
-  .servise__list {
+  .price__more {
     font-size: 16px;
     line-height: 25рх;
   }
@@ -294,44 +291,30 @@
   //   прописать св-ва для картинки и шрифтов
   // }
   // АРИНА
-  .aboutme {
-    display: flex;
-    justify-self: center;
-  }
-
   .about {
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    justify-items: center;
-    gap: 21px;
+    gap: 0;
+
+    &__text {
+      width: 100%;
+      text-align: center;
+    }
 
     &__photo {
       width: 186px;
       height: 239px;
-      border-radius: 5px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-
-      .photo_2 {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 5px;
-      }
     }
 
     &__titleH2 {
       display: none;
     }
-
   }
 
   .about-media {
     &__titleH2 {
       display: flex;
-      margin: auto;
     }
   }
 
@@ -346,59 +329,43 @@
     }
   }
 
-  // ЛЮДА
-  .psycho-content__second {
-    text-align: center;
-    .psycho-content__hidden {
-      text-align: start;
+  // ЛЮДА&NATALIA
+  .servise {
+    &__list {
+      font-size: 16px;
+      line-height: 25рх;
+      margin-left: -20px;
     }
-  }
 
-  .services {
-    .titleH2 {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    .subtitle {
-      text-align: center;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      margin: 0 auto;
-    }
-    .details {
-      font-weight: 600;
-    }
-    span{
+    &__circle {
       font-size: 20px;
     }
-
   }
 
-  .psycho {
-    padding-bottom: 40px;
-  }
 
   .tariff {
     flex-direction: column;
-    padding-bottom: 26px;
-    padding-top: 26px;
-    min-width: 110px;
+    padding: 20px 0;
     align-items: center;
     justify-content: center;
 
     .price {
-      margin-right: auto;
+      width: 100%;
+      align-items: start;
       padding-bottom: 20px;
-      min-height: 47px;
-    }
-
-    .button-green {
-      @include btnmobile;
-      width: 205px;
     }
   }
 
+  // ЛЮДА
+  .psycho-content {
+    &__second {
+      text-align: center;
+    }
+
+    &__hidden {
+      text-align: start;
+    }
+  }
 
   // НАТАША
   .detail {
