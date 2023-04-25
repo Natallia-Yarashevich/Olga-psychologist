@@ -139,8 +139,10 @@ a {
         color: $color-dark;
     }
 
+
     &__title {
         @include h1;
+        white-space: nowrap;
     }
 
     &__job {
@@ -179,6 +181,10 @@ a {
 }
 
 // ABOUT ME =ARINA
+/*#aboutme {
+    margin-top: -38px;
+}*/
+
 .about {
     display: flex;
     justify-content: center;

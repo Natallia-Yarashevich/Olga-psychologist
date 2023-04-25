@@ -160,6 +160,7 @@ a:after {
   color: #000;
   letter-spacing: 0.04em;
   text-align: center;
+  white-space: nowrap;
 }
 .intro__job {
   font-family: "Montserrat", sans-serif;
@@ -197,6 +198,9 @@ a:after {
   display: none;
 }
 
+/*#aboutme {
+    margin-top: -38px;
+}*/
 .about {
   display: flex;
   justify-content: center;
@@ -484,7 +488,7 @@ a:after {
     gap: 30px;
   }
   .intro__text {
-    width: 60%;
+    /* width: 60%;*/
     text-align: center;
   }
   .intro__title {
@@ -605,7 +609,7 @@ a:after {
     gap: 15px;
   }
   .intro__title {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 49px;
   }
   .intro__job {
@@ -626,7 +630,7 @@ a:after {
     gap: 32px;
   }
   .about__photo {
-    width: 249px;
+    width: 230px;
     height: 311px;
   }
   .about-media__titleH2 {
@@ -722,6 +726,9 @@ a:after {
     padding-top: 0;
     margin-top: 40px;
   }
+  /* #aboutme {
+    margin-top: -38px;
+  }*/
   .about {
     display: flex;
     align-items: center;
@@ -733,8 +740,8 @@ a:after {
     text-align: center;
   }
   .about__photo {
-    width: 186px;
-    height: 239px;
+    width: 230px;
+    height: 311px;
   }
   .about__titleH2 {
     display: none;
