@@ -1,11 +1,4 @@
 @charset "UTF-8";
-*,
-* ::before,
-* ::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -207,11 +200,6 @@ a:after {
   height: auto;
 }
 
-.photo_2 {
-  width: 600px;
-  border-radius: 5px;
-}
-
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,12 +207,15 @@ a:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 36px;
 }
 .about__photo {
   width: 560px;
   height: 687px;
-  border-radius: 5px;
+  border-radius: 15px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,7 +228,6 @@ a:after {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  border-radius: 5px;
 }
 .about__titleH2 {
   display: -webkit-box;
@@ -272,23 +262,19 @@ a:after {
           justify-content: end;
 }
 
-.servise_part {
-  background: #EFECE8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 30px;
+.container-app {
+  max-width: 1390px;
   margin: 0 auto;
-}
-.servise_part span {
-  color: #9aa581;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  font-size: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #EFECE8;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .subtitle {
-  padding-top: 48px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 48px;
@@ -296,7 +282,23 @@ a:after {
   color: #9aa581;
 }
 
+.servise__list {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 36px;
+  color: #383838;
+}
+.servise__circle {
+  color: #9aa581;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  font-size: 50px;
+}
+
 .tariff {
+  padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,24 +331,17 @@ a:after {
   color: #383838;
 }
 
-.servise__list {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 60px;
-  font-size: 36px;
-  color: #383838;
-  padding-left: 10px;
+.psycho {
+  padding-bottom: 48px;
 }
 
 .psycho-content__hidden {
   display: none;
 }
-
-input[type=checkbox] {
+.psycho-content input[type=checkbox] {
   display: none;
 }
-
-input[type=checkbox]:checked ~ .psycho-content__hidden {
+.psycho-content input[type=checkbox]:checked ~ .psycho-content__hidden {
   display: block;
 }
 
@@ -357,7 +352,7 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
   font-size: 36px;
   color: #383838;
   color: #9aa581;
-  font-weight: bold;
+  font-weight: 600;
   border-bottom: 5px double #9aa581;
 }
 .details:hover, .details:active {
@@ -371,10 +366,6 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
 .review {
   background-color: #DEDBD6;
   height: 100%;
-  /*&__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-  }*/
 }
 .review__title {
   display: -webkit-box;
@@ -513,7 +504,89 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
   margin: 5px 0;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+  .titleH2 {
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .subtitle {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .paragraf,
+.more,
+.details {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .about {
+    gap: 34px;
+  }
+  .about__photo {
+    width: 390px;
+    height: 548px;
+  }
+  .about-media__titleH2 {
+    display: none;
+  }
+  .servise__list {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .servise__circle {
+    width: 0.8em;
+    font-size: 40px;
+  }
+  .review__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .review__image {
+    width: 4%;
+    height: 4%;
+  }
+  #slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+    padding: 40px;
+    margin: 8px;
+  }
+}
+/* здесь ваши стили для планшета */
 @media (max-width: 968px) {
+  .container {
+    max-width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .screen {
+    margin-bottom: 46px;
+  }
+  .titleH2 {
+    font-size: 38px;
+  }
+  .subtitle {
+    font-size: 28px;
+    line-height: 25px;
+  }
+  .paragraf,
+.price__more,
+.details {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .button-green {
+    font-size: 14px;
+    line-height: 17px;
+  }
   .nav {
     display: none;
   }
@@ -549,175 +622,26 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
   .nav.active li {
     margin: 11px 0;
   }
-}
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1024px;
-  }
-  .screen {
-    margin-bottom: 115px;
-  }
-  .titleH2 {
-    font-size: 60px;
-    line-height: 73px;
-  }
-  .subtitle {
-    font-size: 44px;
-    line-height: 53px;
-  }
-  .paragraf,
-.price__more,
-.servise__list,
-.details {
-    font-size: 30px;
-    line-height: 50px;
-  }
   .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 34px;
-  }
-  .about__photo {
-    width: 390px;
-    height: 548px;
-    border-radius: 5px;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .about__photo__photo_2 {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    border-radius: 5px;
-  }
-  .about-media__titleH2 {
-    display: none;
-  }
-  .details {
-    font-weight: 600;
-  }
-  .psycho {
-    padding-bottom: 47px;
-  }
-  .servise_part {
-    padding-bottom: 30px;
-  }
-  .tariff {
-    margin-top: 38px;
-  }
-  .services span {
-    font-size: 20px;
-  }
-  .review__text {
-    font-size: 16px;
-    line-height: 25px;
-  }
-  .review__image {
-    width: 4%;
-    height: 4%;
-  }
-  #slide,
-#slide1,
-#slide2,
-#slide3,
-#slide4,
-#slide5,
-#slide6,
-#slide7 {
-    padding: 40px;
-    margin: 8px;
-  }
-}
-/* здесь ваши стили для планшета */
-@media (max-width: 968px) {
-  .container {
-    max-width: 620px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .screen {
-    margin-bottom: 46px;
-  }
-  .titleH2 {
-    font-size: 38px;
-    line-height: 25px;
-  }
-  .subtitle {
-    font-size: 44px;
-    line-height: 25px;
-  }
-  .paragraf,
-.price__more,
-.servise__list,
-.details {
-    font-size: 18px;
-    line-height: 25px;
-  }
-  .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 36px;
+    gap: 32px;
   }
   .about__photo {
     width: 249px;
     height: 311px;
-    border-radius: 5px;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .about__photo .photo_2 {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    border-radius: 5px;
   }
   .about-media__titleH2 {
     display: none;
   }
-  .services .subtitle {
+  .servise__list {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .servise__circle {
+    width: 0.8em;
     font-size: 28px;
-    line-height: 60px;
-    padding-top: 26px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .services span {
-    font-size: 20px;
-  }
-  .psycho {
-    padding-bottom: 28px;
-  }
-  .details {
-    font-weight: 600;
   }
   .tariff {
-    margin-top: 30px;
-  }
-  .tariff .button-green {
-    font-size: 14px;
-    line-height: 17px;
-    width: 205px;
-  }
-  .servise_part {
-    padding-bottom: 19px;
+    padding: 30px 0;
   }
   .review__text {
     font-size: 15px;
@@ -738,6 +662,21 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
     padding: 35px;
     margin: 7px;
   }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 @media (max-width: 620px) {
   .container {
@@ -750,24 +689,18 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
   }
   .titleH2 {
     font-size: 36px;
-    line-height: 25рх;
   }
   .subtitle {
     font-size: 34px;
-    line-height: 25рх;
+  }
+  .button-green {
+    font-size: 14px;
+    line-height: 17px;
   }
   .paragraf,
-.price__more,
-.servise__list {
+.price__more {
     font-size: 16px;
     line-height: 25рх;
-  }
-  .aboutme {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-grid-column-align: center;
-        justify-self: center;
   }
   .about {
     display: -webkit-box;
@@ -780,27 +713,15 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 0;
+  }
+  .about__text {
+    width: 100%;
     text-align: center;
-    justify-items: center;
-    gap: 21px;
   }
   .about__photo {
     width: 186px;
     height: 239px;
-    border-radius: 5px;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .about__photo .photo_2 {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    border-radius: 5px;
   }
   .about__titleH2 {
     display: none;
@@ -809,7 +730,6 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: auto;
   }
   .info__paragraf {
     text-align: center;
@@ -819,40 +739,20 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .psycho-content__second {
-    text-align: center;
+  .servise__list {
+    font-size: 16px;
+    line-height: 25рх;
+    margin-left: -20px;
   }
-  .psycho-content__second .psycho-content__hidden {
-    text-align: start;
-  }
-  .services .titleH2 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .services .subtitle {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 0 auto;
-  }
-  .services .details {
-    font-weight: 600;
-  }
-  .services span {
+  .servise__circle {
     font-size: 20px;
-  }
-  .psycho {
-    padding-bottom: 40px;
   }
   .tariff {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 26px;
-    padding-top: 26px;
-    min-width: 110px;
+    padding: 20px 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -861,14 +761,17 @@ input[type=checkbox]:checked ~ .psycho-content__hidden {
             justify-content: center;
   }
   .tariff .price {
-    margin-right: auto;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding-bottom: 20px;
-    min-height: 47px;
   }
-  .tariff .button-green {
-    font-size: 14px;
-    line-height: 17px;
-    width: 205px;
+  .psycho-content__second {
+    text-align: center;
+  }
+  .psycho-content__hidden {
+    text-align: start;
   }
   .detail {
     text-align: center;

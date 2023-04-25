@@ -4,7 +4,7 @@
 *,
 * ::before,
 * ::after {
-    box-sizing: inherit;
+    // box-sizing: inherit;
 }
 
 // Обшие стили для всего документа, то что повторяется
@@ -57,20 +57,17 @@ a {
 .button-green {
     @include button-green;
     text-align: center;
-    color: $color-light;
 
     &__help {
+        color: $color-light;
 
         &:hover,
         &:active {
             color: $color-dark;
-            transition: 0.5s;
-            padding: 10px 25px;
+            transition: 0.7s;
         }
     }
 }
-
-
 
 // разные разделы, смотрим, что вынесено в обший
 // ALISA
@@ -123,20 +120,6 @@ a {
             color: $color-dark;
             background-color: $color-green;
         }
-    }
-}
-
-// BURGER-MENU =TATIANA
-.navbar-toggle {
-    display: none;
-    cursor: pointer;
-
-    .bar {
-        display: block;
-        width: 36px;
-        height: 4px;
-        background-color: $color-nav;
-        margin: 5px 0;
     }
 }
 
@@ -244,6 +227,7 @@ a {
 }
 
 .subtitle {
+    // padding-top: 48px;
     @include h3;
 }
 
@@ -318,6 +302,8 @@ a {
 // ENERGU =NATALIA
 
 // REVIEW =ANNA
+
+
 .review {
     background-color: $color-bg-main;
     height: 100%;
@@ -348,6 +334,8 @@ a {
 #slide5,
 #slide6,
 #slide7 {
+
+
     display: flex;
     flex-direction: row;
     height: 550px;
@@ -422,5 +410,21 @@ a {
         }
     }
 }
+
+// BURGER-MENU =TATIANA
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+
+    .bar {
+        display: block;
+        width: 36px;
+        height: 4px;
+        background-color: $color-nav;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 968px) {}
 
 @import "media";
