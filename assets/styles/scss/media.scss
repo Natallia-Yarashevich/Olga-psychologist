@@ -23,9 +23,61 @@
   }
 
   // АЛИСА
-  // .intro {
-  //   прописать св-ва для картинки и шрифтов
-  // }
+  .header {
+    .logo {
+      &__title {
+        font-size: 26px;
+        line-height: 32px;
+      }
+    }
+
+    .nav {
+      width: 65%;
+
+      &__info {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+    }
+  }
+
+  // ====СОВМЕСТНАЯ РАБОТА
+  .intro {
+    margin-top: 29px;
+    gap: 30px;
+
+    &__text {
+      width: 60%;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 63px;
+      line-height: 77px;
+      letter-spacing: 0.04em;
+    }
+
+    &__job {
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    &__quote {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    &__quote-mobile {
+      display: none;
+    }
+
+    &__photo {
+      width: 390px;
+      height: 548px;
+    }
+  }
+
   // АРИНА
   .about {
     gap: 34px;
@@ -168,9 +220,34 @@
 
   // BURGER-MENU-END =TATIANA
   // АЛИСА
-  // .intro {
-  //   прописать св-ва для картинки и шрифтов
-  // }
+  // ====СОВМЕСТНАЯ РАБОТА
+  .intro {
+    margin-top: 25px;
+    gap: 15px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    &__job {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__quote {
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 0;
+      margin-top: 40px;
+    }
+
+    &__photo {
+      width: 230px;
+      height: 311px;
+    }
+  }
+
   // АРИНА
   .about {
     gap: 32px;
@@ -285,9 +362,43 @@
   }
 
   // АЛИСА
-  // .intro {
-  //   прописать св-ва для картинки и шрифтов
-  // }
+  // ====СОВМЕСТНАЯ РАБОТА
+  .intro {
+    margin-top: 0px;
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__text {
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 38px;
+      line-height: 46px;
+    }
+
+    &__quote {
+      display: none;
+    }
+
+    &__photo {
+      width: 230px;
+      height: 311px;
+    }
+
+  }
+
+  .intro-mobile {
+    &__quote {
+      display: flex;
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 0;
+      margin-top: 40px;
+    }
+  }
+
   // АРИНА
   .about {
     display: flex;

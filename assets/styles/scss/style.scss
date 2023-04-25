@@ -90,7 +90,7 @@ a {
 }
 
 .nav {
-    width: 75%;
+    width: 70%;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -130,15 +130,17 @@ a {
     color: $color-dark;
     margin-top: 40px;
     gap: 30px;
+    justify-content: space-between;
+    // flex-wrap: wrap;
 
     &__text {
-        width: 60%;
+        // width: 60%;
         text-align: center;
+        color: $color-dark;
     }
 
     &__title {
         @include h1;
-        color: $color-dark;
     }
 
     &__job {
@@ -150,18 +152,29 @@ a {
         @include h4;
         font-size: 36px;
         line-height: 44px;
-
         font-weight: 300;
+
+        margin-top: 100px;
     }
 
-    &__image {
-        max-width: 560px;
-        height: 100%;
+    &__photo {
+        width: 560px;
+        height: 687px;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
 
-        &__pic {
-            max-width: 100%;
-            height: auto;
+        .photo_1 {
+            object-fit: cover;
+            width: 100%;
         }
+    }
+}
+
+.intro-mobile {
+    &__quote {
+        display: none;
     }
 }
 
