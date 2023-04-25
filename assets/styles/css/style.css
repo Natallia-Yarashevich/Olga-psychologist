@@ -338,39 +338,15 @@ a:after {
   padding-left: 10px;
 }
 
-.one {
-  text-indent: 42px;
-}
-
-.still {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 60px;
-  font-size: 36px;
-  color: #383838;
-  color: #383838;
-  font-weight: bold;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  background-color: #EFECE8;
-  border-style: none;
-  border-bottom: 5px solid #9aa581;
-}
-.still:hover, .still:focus, .still:active {
-  color: #9aa581;
-}
-
-.hidden {
+.psycho-content__hidden {
   display: none;
-  position: absolute;
 }
 
-.psycho-content__second {
-  position: relative;
+input[type=checkbox] {
+  display: none;
 }
 
-.psycho-content__second:hover .hidden {
+input[type=checkbox]:checked ~ .psycho-content__hidden {
   display: block;
 }
 
@@ -589,7 +565,10 @@ a:after {
     font-size: 44px;
     line-height: 53px;
   }
-  .paragraf {
+  .paragraf,
+.price__more,
+.servise__list,
+.details {
     font-size: 30px;
     line-height: 50px;
   }
@@ -622,6 +601,21 @@ a:after {
   }
   .about-media__titleH2 {
     display: none;
+  }
+  .details {
+    font-weight: 600;
+  }
+  .psycho {
+    padding-bottom: 47px;
+  }
+  .servise_part {
+    padding-bottom: 30px;
+  }
+  .tariff {
+    margin-top: 38px;
+  }
+  .services span {
+    font-size: 20px;
   }
   .review__text {
     font-size: 16px;
@@ -661,7 +655,10 @@ a:after {
     font-size: 44px;
     line-height: 25px;
   }
-  .paragraf {
+  .paragraf,
+.price__more,
+.servise__list,
+.details {
     font-size: 18px;
     line-height: 25px;
   }
@@ -694,6 +691,33 @@ a:after {
   }
   .about-media__titleH2 {
     display: none;
+  }
+  .services .subtitle {
+    font-size: 28px;
+    line-height: 60px;
+    padding-top: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .services span {
+    font-size: 20px;
+  }
+  .psycho {
+    padding-bottom: 28px;
+  }
+  .details {
+    font-weight: 600;
+  }
+  .tariff {
+    margin-top: 30px;
+  }
+  .tariff .button-green {
+    font-size: 14px;
+    line-height: 17px;
+    width: 205px;
+  }
+  .servise_part {
+    padding-bottom: 19px;
   }
   .review__text {
     font-size: 15px;
@@ -732,7 +756,9 @@ a:after {
     font-size: 34px;
     line-height: 25рх;
   }
-  .paragraf {
+  .paragraf,
+.price__more,
+.servise__list {
     font-size: 16px;
     line-height: 25рх;
   }
@@ -792,6 +818,60 @@ a:after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .psycho-content__second {
+    text-align: center;
+  }
+  .psycho-content__second .psycho-content__hidden {
+    text-align: start;
+  }
+  .services .titleH2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .services .subtitle {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+  }
+  .services .details {
+    font-weight: 600;
+  }
+  .services span {
+    font-size: 20px;
+  }
+  .psycho {
+    padding-bottom: 40px;
+  }
+  .tariff {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    min-width: 110px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tariff .price {
+    margin-right: auto;
+    padding-bottom: 20px;
+    min-height: 47px;
+  }
+  .tariff .button-green {
+    font-size: 14px;
+    line-height: 17px;
+    width: 205px;
+  }
+  .detail {
+    text-align: center;
   }
   .review__text {
     font-size: 14px;
