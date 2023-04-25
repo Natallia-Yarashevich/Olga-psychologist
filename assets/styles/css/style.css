@@ -1,4 +1,11 @@
 @charset "UTF-8";
+*,
+* ::before,
+* ::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -338,6 +345,9 @@ a:after {
 .psycho-content__hidden {
   display: none;
 }
+.psycho-content ul {
+  margin-left: -20px;
+}
 .psycho-content input[type=checkbox] {
   display: none;
 }
@@ -361,6 +371,10 @@ a:after {
   transition: 0.9s;
   padding-bottom: 5px;
   border-bottom: 3px solid #383838;
+}
+
+.energy-content ul {
+  margin-left: -20px;
 }
 
 .review {
@@ -767,6 +781,9 @@ a:after {
             align-items: start;
     padding-bottom: 20px;
   }
+  .psycho-content ul {
+    margin-left: -10px;
+  }
   .psycho-content__second {
     text-align: center;
   }
@@ -775,6 +792,9 @@ a:after {
   }
   .detail {
     text-align: center;
+  }
+  .energy-content ul {
+    margin-left: -10px;
   }
   .review__text {
     font-size: 14px;

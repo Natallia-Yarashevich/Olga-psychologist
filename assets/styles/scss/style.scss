@@ -4,7 +4,7 @@
 *,
 * ::before,
 * ::after {
-    // box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 // Обшие стили для всего документа, то что повторяется
@@ -274,6 +274,10 @@ a {
         display: none;
     }
 
+    ul {
+        margin-left: -20px;
+    }
+
     input[type=checkbox] {
         display: none;
     }
@@ -284,6 +288,7 @@ a {
 }
 
 // / ENERGU =NATALIA
+
 .details {
     @include h4;
     color: $color-green;
@@ -296,6 +301,12 @@ a {
         transition: 0.9s;
         padding-bottom: 5px;
         border-bottom: 3px solid $color-dark;
+    }
+}
+
+.energy-content {
+    ul {
+        margin-left: -20px;
     }
 }
 

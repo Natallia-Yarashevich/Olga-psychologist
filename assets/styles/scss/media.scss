@@ -119,8 +119,7 @@
 
   .paragraf,
   .price__more,
-  .details,
-    {
+  .details {
     font-size: 18px;
     line-height: 25px;
   }
@@ -275,7 +274,6 @@
     font-size: 34px;
   }
 
-
   .button-green {
     @include btnmobile;
   }
@@ -342,7 +340,6 @@
     }
   }
 
-
   .tariff {
     flex-direction: column;
     padding: 20px 0;
@@ -358,6 +355,10 @@
 
   // ЛЮДА
   .psycho-content {
+    ul {
+      margin-left: -10px;
+    }
+
     &__second {
       text-align: center;
     }
@@ -370,6 +371,12 @@
   // НАТАША
   .detail {
     text-align: center;
+  }
+
+  .energy-content {
+    ul {
+      margin-left: -10px;
+    }
   }
 
   // АНЯ
