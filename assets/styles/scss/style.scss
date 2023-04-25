@@ -90,7 +90,7 @@ a {
 }
 
 .nav {
-    width: 75%;
+    width: 70%;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -130,15 +130,17 @@ a {
     color: $color-dark;
     margin-top: 40px;
     gap: 30px;
+    justify-content: space-between;
+    // flex-wrap: wrap;
 
     &__text {
-        width: 60%;
+        // width: 60%;
         text-align: center;
+        color: $color-dark;
     }
 
     &__title {
         @include h1;
-        color: $color-dark;
     }
 
     &__job {
@@ -150,37 +152,43 @@ a {
         @include h4;
         font-size: 36px;
         line-height: 44px;
-
         font-weight: 300;
+
+        margin-top: 100px;
     }
 
-    &__image {
-        max-width: 560px;
-        height: 100%;
+    &__photo {
+        width: 560px;
+        height: 687px;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
 
-        &__pic {
-            max-width: 100%;
-            height: auto;
+        .photo_1 {
+            object-fit: cover;
+            width: 100%;
         }
     }
 }
 
-// ABOUT ME =ARINA
-
-.photo_2 {
-    width: 600px;
-    border-radius: 5px;
+.intro-mobile {
+    &__quote {
+        display: none;
+    }
 }
 
+// ABOUT ME =ARINA
 .about {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 36px;
 
     &__photo {
         width: 560px;
         height: 687px;
-        border-radius: 5px;
+        border-radius: 15px;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -188,7 +196,6 @@ a {
         .photo_2 {
             object-fit: cover;
             width: 100%;
-            border-radius: 5px;
         }
     }
 
@@ -222,13 +229,27 @@ a {
 }
 
 // SERVIS general
-.servise_part {
-    background: $color-light;
-    box-sizing: border-box;
-    border-radius: 30px;
+.container-app {
+    max-width: 1390px;
     margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: $color-light;
+    border-radius: 30px;
+    display: flex;
+}
 
-    span {
+.subtitle {
+    // padding-top: 48px;
+    @include h3;
+}
+
+.servise {
+    &__list {
+        @include h4;
+    }
+
+    &__circle {
         color: $color-green;
         font-weight: bold;
         display: inline-block;
@@ -237,12 +258,8 @@ a {
     }
 }
 
-.subtitle {
-    padding-top: 48px;
-    @include h3;
-}
-
 .tariff {
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -259,50 +276,36 @@ a {
     }
 }
 
-.servise__list {
-    @include h4;
-    padding-left: 10px;
-}
 
 // / PSYCHO =LYUDMILA
-.one {
-    text-indent: 42px;
+.psycho {
+    padding-bottom: 48px;
 }
 
-.still {
-    @include h4;
-    color: $color-dark;
-    font-weight: bold;
-    max-width: min-content;
-    background-color: $color-light;
-    border-style: none;
-    border-bottom: 5px solid $color-green;
+.psycho-content {
+    &__hidden {
+        display: none;
+    }
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: $color-green;
+    ul {
+        margin-left: -20px;
+    }
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    input[type=checkbox]:checked~.psycho-content__hidden {
+        display: block;
     }
 }
 
-.hidden {
-    display: none;
-    position: absolute;
-}
-
-.psycho-content__second {
-    position: relative;
-}
-
-.psycho-content__second:hover .hidden {
-    display: block;
-}
-
 // / ENERGU =NATALIA
+
 .details {
     @include h4;
     color: $color-green;
-    font-weight: bold;
+    font-weight: 600;
     border-bottom: 5px double $color-green;
 
     &:hover,
@@ -311,6 +314,12 @@ a {
         transition: 0.9s;
         padding-bottom: 5px;
         border-bottom: 3px solid $color-dark;
+    }
+}
+
+.energy-content {
+    ul {
+        margin-left: -20px;
     }
 }
 
@@ -330,13 +339,7 @@ a {
         @include p;
         color: $color-black;
         font-size: 17px;
-
     }
-
-    /*&__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }*/
 
     &__image {
         width: 5%;
@@ -443,43 +446,6 @@ a {
     }
 }
 
-@media (max-width: 968px) {
-    .nav {
-        display: none;
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
-
-    .navbar-toggle.active {
-        .bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        .bar:nth-child(1) {
-            transform: translateY(10px) rotate(45deg);
-        }
-
-        .bar:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
-        }
-    }
-
-    .nav.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: $color-bg-dark;
-        padding: 0px 0px 10px 0px;
-
-        li {
-            margin: 11px 0;
-        }
-    }
-}
+@media (max-width: 968px) {}
 
 @import "media";
