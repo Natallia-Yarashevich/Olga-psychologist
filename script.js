@@ -21,7 +21,7 @@ const swiper = new Swiper(".swiper", {
 
     // And if we need scrollbar
     // scrollbar: {
-    //   el: ".swiper-scrollbar",
+    // el: ".swiper-scrollbar",
     // },
 
     // Default parameters
@@ -30,40 +30,47 @@ const swiper = new Swiper(".swiper", {
     // Responsive breakpoints
     breakpoints: {
         // when window width is >= 320px
-        320: {
+        300: {
             slidesPerView: 1,
             spaceBetween: 10,
         },
-        480: {
-            slidesPerView: 1.2,
-            spaceBetween: 10,
+        400: {
+            slidesPerView: 1,
+            spaceBetween: 15,
         },
-        //  when window width is >= 480px
+        500: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+        },
 
         620: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 40,
         },
-        750: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-        },
-        968: {
+        /*800: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        },*/
+        969: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 15,
         },
-        1300: {
+        1024: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 13,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
         },
         // when window width is >= 800px
         1500: {
-            slidesPerView: 4,
-            spaceBetween: 10,
+            slidesPerView: 3,
+            spaceBetween: 20,
         },
         1800: {
-            slidesPerView: 4,
-            spaceBetween: 10,
+            slidesPerView: 3,
+            spaceBetween: 20,
         },
     },
 });
