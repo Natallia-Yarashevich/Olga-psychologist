@@ -47,7 +47,7 @@ a {
     &:after {
         content: "";
         position: absolute;
-        inset: -30px;
+        inset: -20px;
     }
 }
 
@@ -56,17 +56,6 @@ a {
 
 .button-green {
     @include button-green;
-    text-align: center;
-
-    &__help {
-        color: $color-light;
-
-        &:hover,
-        &:active {
-            color: $color-dark;
-            transition: 0.7s;
-        }
-    }
 }
 
 // разные разделы, смотрим, что вынесено в обший
@@ -111,15 +100,19 @@ a {
             transition: 0.7s;
         }
     }
+}
 
-    &__info-call {
-        @include button-light;
-        background-color: $color-bg-main;
+// BURGER-MENU =TATIANA
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
 
-        &:hover {
-            color: $color-dark;
-            background-color: $color-green;
-        }
+    .bar {
+        display: block;
+        width: 36px;
+        height: 4px;
+        background-color: $color-nav;
+        margin: 5px 0;
     }
 }
 
@@ -131,16 +124,16 @@ a {
     margin-top: 40px;
     gap: 30px;
     justify-content: space-between;
-    // flex-wrap: wrap;
 
     &__text {
-        // width: 60%;
         text-align: center;
         color: $color-dark;
     }
 
     &__title {
         @include h1;
+        // white-space: nowrap;
+
     }
 
     &__job {
@@ -181,9 +174,9 @@ a {
 // ABOUT ME =ARINA
 .about {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 36px;
+    gap: 80px;
 
     &__photo {
         width: 560px;
@@ -206,7 +199,6 @@ a {
     &__text {
         width: 50%;
     }
-
 }
 
 .about-media__titleH2 {
@@ -225,7 +217,12 @@ a {
     &__button {
         display: flex;
         justify-content: end;
+
     }
+
+    // .button-green-shadow {
+    //     @include button-green-shadow;
+    // }
 }
 
 // SERVIS general
@@ -240,7 +237,6 @@ a {
 }
 
 .subtitle {
-    // padding-top: 48px;
     @include h3;
 }
 
@@ -409,46 +405,40 @@ a {
         display: flex;
         align-items: center;
 
-        &__phone-number {
-            margin: 0 40px;
-            @include phone;
-            color: $color-bg-main;
-
-            &:hover {
-                color: $color-dark;
-            }
-        }
-
+        //     &:hover,
+        //     &:active {
+        //         background: rgba(0, 0, 0, 0);
+        //         color: $color-nav;
+        //         box-shadow: inset 0 0 0 3px $color-nav;
+        //         border-radius: 10px;
+        //     }
+        // }
         &__whatsapp,
         &__telegram {
-            width: 50px;
+            width: 60px;
+            height: 60px;
             margin: 0 15px;
+
 
             &:hover,
             &:active {
-                background: rgba(0, 0, 0, 0);
+                background: rgba(220, 228, 224, 0.6);
                 color: $color-nav;
-                box-shadow: inset 0 0 0 3px $color-nav;
-                border-radius: 10px;
+                border: 2px $color-nav;
+                border-style: none;
+                box-shadow: 15px 0px 50px 0 rgba(247, 245, 245, 0.979);
+                border-radius: 100%;
             }
+        }
+
+        .socialicon {
+            border: 2px solid $color-nav;
+            border-radius: 50px;
+            border-style: none;
+            // box-shadow: 1px 5px 5px 0 rgba(247, 245, 245, 0.979);
         }
     }
 }
 
-// BURGER-MENU =TATIANA
-.navbar-toggle {
-    display: none;
-    cursor: pointer;
-
-    .bar {
-        display: block;
-        width: 36px;
-        height: 4px;
-        background-color: $color-nav;
-        margin: 5px 0;
-    }
-}
-
-@media (max-width: 968px) {}
 
 @import "media";

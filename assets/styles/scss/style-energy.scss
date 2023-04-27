@@ -8,16 +8,17 @@
 }
 
 // Обшие стили для всего документа, то что повторяется
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+
 
 body {
     background-color: $color-bg-main;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 ul {
@@ -34,7 +35,7 @@ a {
     &:after {
         content: '';
         position: absolute;
-        inset: -10px;
+        inset: -15px;
     }
 }
 
@@ -49,10 +50,8 @@ a {
     justify-content: space-between;
     color: $color-dark;
 
-    .logo {
-        &__title {
-            @include logos;
-        }
+    .logo-title {
+        @include logos;
     }
 }
 
@@ -65,6 +64,7 @@ a {
     &__info {
         @include navigator;
         color: $color-nav;
+        line-height: 25px;
 
         &:hover {
             color: $color-dark;
@@ -78,29 +78,9 @@ a {
             transition: 0.7s;
         }
     }
-
-    &__info-call {
-        @include button-light;
-        background-color: $color-bg-main;
-
-        &:hover {
-            color: $color-dark;
-            background-color: $color-green;
-        }
-    }
-}
-
-span {
-    color: $color-green;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    font-size: 40px;
 }
 
 .energy {
-    list-style: none;
-    margin-bottom: 50px;
 
     &__title {
         @include h1;
@@ -110,46 +90,45 @@ span {
 
     &__paragraf {
         @include h4;
-        color: $color-dark;
 
         &_bold {
-            font-weight: 500;
+            font-weight: 600;
         }
     }
 
     &__list {
         @include h4;
         font-weight: 600;
-        text-align: justify;
     }
 
     &__item {
         @include h4;
-        padding-left: 40px;
+        text-align: justify;
     }
 
-    &__subtitle {}
-}
+    &__circle {
+        color: $color-green;
+        font-weight: bold;
+        display: inline-block;
+        width: 0.8em;
+        font-size: 50px;
+    }
 
-.span {
-    width: 1.5em;
 }
 
 .list {
     &__item {
         @include h4;
-        // padding-left: 40px;
     }
 }
 
 .tariff {
+    padding: 40px 0;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: end;
 
     &__price {
-        margin: 30px 0;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -162,31 +141,17 @@ span {
 
     &__button-green {
         @include button-green;
-        text-align: center;
+        // text-align: center;
 
-        &__help {
-            color: $color-light;
+        // &__help {
+        //     color: $color-light;
 
-            &:hover,
-            &:active {
-                color: $color-dark;
-                transition: 0.7s;
-            }
-        }
-    }
-}
-
-
-
-
-
-.help {
-    color: $color-light;
-
-    &:hover,
-    &:active {
-        color: $color-dark;
-        transition: 0.7s;
+        //     &:hover,
+        //     &:active {
+        //         color: $color-dark;
+        //         transition: 0.7s;
+        //     }
+        // }
     }
 }
 
@@ -195,11 +160,10 @@ span {
     margin: 0 auto;
     width: 100%;
     bottom: 0;
-    // height: auto;
     @include phone;
 
     &__nav {
-        // min-height: 120px;
+        min-height: 90px;
         bottom: 0;
     }
 }
@@ -207,148 +171,188 @@ span {
 .contacts {
     display: flex;
     justify-content: flex-end;
-    width: 20%;
 
     .social-media {
         display: flex;
         flex-direction: row;
+        margin-top: 15px;
 
         &__whatsapp,
         &__telegram {
-            width: 50px;
-            padding: 10px 0;
+            // width: 60px;
+            // height: 60px;
+            // margin: 5px;
 
-            &:hover,
+            &:hover {
+                background: rgba(220, 228, 224, 0.4);
+                color: $color-nav;
+                padding: 10px 5px 0 8px;
+                border: 2px $color-nav;
+                border-radius: 100px;
+            }
+
             &:active {
-                color: $color-green;
+                // border: 2px $color-nav;
+                border-style: none;
+                box-shadow: 50px 50px 50px 10px rgba(247, 245, 245, 0.979);
+                border-radius: 100px;
             }
         }
 
         &__whatsapp {
-            margin: 0 40px;
+            margin-right: 40px;
         }
     }
 }
 
 /* здесь ваши стили для ноутбука */
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
 
     // ОБЩИЕ СТИЛИ
     .container {
         max-width: 1024px;
-    }
-
-    .titleH2 {
-        font-size: 60px;
-        line-height: 73px;
-    }
-
-    .subtitle {
-        font-size: 44px;
-        line-height: 53px;
-    }
-
-    .paragraf {
         font-size: 30px;
         line-height: 50px;
     }
 
-    // АЛИСА
-    // .intro {
-    //   прописать св-ва для картинки и шрифтов
-    // }
-    // АРИНА
+    .energy {
+        &__title {
+            font-size: 63px;
+            line-height: 77px;
+            letter-spacing: 0.04em;
+        }
 
-    // ТАНЯ
-
-    // ЛЮДА
-
-    // НАТАША
-
-    // АНЯ
-
-    // ВИКА
+    }
 }
 
 /* здесь ваши стили для планшета */
-@media (max-width: 900px) {
+@media (max-width: 968px) {
     .container {
-        max-width: 600px;
+        max-width: 620px;
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    // .titleH2 {
-    //   font-size: 60px;
-    //   line-height: 73px;
-    // }
+    .navbar {
 
-    // .subtitle {
-    //   font-size: 44px;
-    //   line-height: 53px;
-    // }
+        .logo-title {
+            font-size: 23px;
+            line-height: 25px;
+        }
 
-    // .paragraf {
-    //   font-size: 30px;
-    //   line-height: 50px;
-    // }
+    }
 
-    // АЛИСА
-    // .intro {
-    //   прописать св-ва для картинки и шрифтов
-    // }
-    // АРИНА
+    .energy {
+        font-size: 18px;
+        line-height: 25px;
 
-    // ТАНЯ
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+        }
 
-    // ЛЮДА
+        &__paragraf,
+        &__list,
+        &__item {
+            font-size: 18px;
+            line-height: 25px;
+        }
 
-    // НАТАША
+        &__circle {
+            width: 0.8em;
+            font-size: 28px;
+        }
+    }
 
-    // АНЯ
+    .list {
+        &__item {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
 
-    // ВИКА
+
+    .tariff {
+        margin: 30px 0 40px;
+        flex-wrap: wrap;
+
+        &__price {
+            padding-bottom: 30px;
+        }
+
+        &__more {
+            margin: 0;
+            font-size: 23px;
+            line-height: 25px;
+        }
+
+        &__button-green {
+            @include btnmobile;
+            display: flex;
+            text-align: center;
+        }
+
+    }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 620px) {
     .container {
-        max-width: 480px;
+        max-width: 375px;
         padding-left: 16px;
         padding-right: 16px;
     }
 
-    .container {
-        max-width: 1024px;
+    .energy {
+        font-size: 16px;
+        // line-height: 25рх;
+
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+            text-align: center;
+        }
+
+        // &__paragraf,
+        // &__list,
+        // &__item {
+        //     font-size: 18px;
+        //     // line-height: 35px;
+        // }
+
+        &__circle {
+            color: $color-green;
+            font-weight: bold;
+            display: inline-block;
+            width: 0.8em;
+            font-size: 25px;
+        }
+
+
+        .tariff {
+            flex-direction: column;
+            padding: 20px 0;
+            align-items: center;
+            justify-content: center;
+
+            &__price {
+                width: 100%;
+                align-items: start;
+                // padding-bottom: 20px;
+            }
+        }
     }
 
-    .titleH2 {
-        font-size: 60px;
-        line-height: 73px;
+    .contacts {
+
+        .social-media {
+
+            &__whatsapp,
+            &__telegram {
+                width: 40px;
+                height: 40px;
+                // margin: 5px;
+
+            }
+        }
     }
-
-    .subtitle {
-        font-size: 44px;
-        line-height: 53px;
-    }
-
-    .paragraf {
-        font-size: 30px;
-        line-height: 50px;
-    }
-
-    // АЛИСА
-    // .intro {
-    //   прописать св-ва для картинки и шрифтов
-    // }
-    // АРИНА
-
-    // ТАНЯ
-
-    // ЛЮДА
-
-    // НАТАША
-
-    // АНЯ
-
-    // ВИКА
 }

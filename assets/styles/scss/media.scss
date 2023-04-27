@@ -42,7 +42,7 @@
     }
   }
 
-  // ====СОВМЕСТНАЯ РАБОТА
+  // АЛИСА
   .intro {
     margin-top: 29px;
     gap: 30px;
@@ -95,6 +95,8 @@
   }
 
   // ТАНЯ
+
+
   // УСЛУГИ
   .servise {
 
@@ -142,30 +144,30 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
-    
+
     &__text {
       display: flex;
       align-items: center;
       font-size: 26px;
       line-height: 32px;
+    }
   }
-}
-  
+
   .contacts {
-  
+
     .social-media {
-        display: flex;
-        align-items: center;
-        margin: 0 30px;
-        padding: 0px;
-  
-        &__phone-number {
-            font-size: 20px;
-            line-height: 24px;
-        }
+      display: flex;
+      align-items: center;
+      margin: 0 30px;
+      padding: 0px;
+
+      &__phone-number {
+        font-size: 20px;
+        line-height: 24px;
       }
     }
   }
+}
 
 // таблет медиа -968,контейнер - 620  Отступ между секциями: 46рх
 // Заголовки: 38рх
@@ -247,7 +249,6 @@
 
   // BURGER-MENU-END =TATIANA
   // АЛИСА
-  // ====СОВМЕСТНАЯ РАБОТА
   .intro {
     margin-top: 25px;
     gap: 15px;
@@ -292,6 +293,13 @@
   }
 
   // ТАНЯ
+  // .info {
+  //   .button-green-shadow {
+  //     font-size: 14px;
+  //     line-height: 17px;
+  //   }
+  // }
+
   // ЛЮДА
   .servise {
 
@@ -344,44 +352,45 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
-    
+
     &__text {
       display: flex;
       align-items: center;
       font-size: 20px;
-  }
-  
+    }
 
-  .contacts {
-  
-    .social-media {
+
+    .contacts {
+
+      .social-media {
         display: flex;
         align-items: center;
         margin: 0 30px;
         padding: 0px;
-  
+
         &__phone-number {
-            font-size: 20px;
-            line-height: 25px;
+          font-size: 20px;
+          line-height: 25px;
         }
       }
 
-      .whatsapp-icon, .telegram-icon {
+      .whatsapp-icon,
+      .telegram-icon {
         max-width: 25px;
         max-height: 25px;
       }
 
-        &__whatsapp,
-        &__telegram {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-            max-width: 20px;
-            max-height: 20px;
-        }
+      &__whatsapp,
+      &__telegram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 20px;
+        max-height: 20px;
       }
     }
   }
+}
 
 // мобилка медиа - 620px, контейнер - 375px
 // Мобилка на 375 тоже
@@ -421,7 +430,10 @@
   }
 
   // АЛИСА
-  // ====СОВМЕСТНАЯ РАБОТА
+  .names {
+    margin-bottom: 1px;
+  }
+
   .intro {
     margin-top: 0px;
     gap: 0px;
@@ -450,7 +462,8 @@
 
   .intro-mobile {
     &__quote {
-      display: flex;
+      @include h4;
+      display: inline;
       font-size: 16px;
       line-height: 20px;
       padding-top: 0;
@@ -482,7 +495,8 @@
 
   .about-media {
     &__titleH2 {
-      display: flex;
+      display: inline-flex;
+      line-height: 50px;
     }
   }
 
@@ -593,51 +607,52 @@
       font-size: 16px;
       line-height: 25px;
       margin: 10px;
+    }
   }
-}
-    
-    .contacts {
+
+  .contacts {
     display: flex;
     align-items: flex-start;
     margin: -70px;
 
-        .social-media {
-          display: flex;
-        align-items: flex-start;
-        margin: 0px;
-    
-          &__phone-number {
-            font-size: 14px;
-            max-height: 20px;
-            margin: 0 -5px;
-            padding: 15px;
-            align-content: center;
-            justify-content: space-between;
-          }
+    .social-media {
+      display: flex;
+      align-items: flex-start;
+      margin: 0px;
 
-          .whatsapp-icon, .telegram-icon {
-            max-height: 25px;
-            margin: 0 -10px;
-          }
+      &__phone-number {
+        font-size: 14px;
+        max-height: 20px;
+        margin: 0 -5px;
+        padding: 15px;
+        align-content: center;
+        justify-content: space-between;
+      }
 
-          &__whatsapp,
-          &__telegram {
-    display: flex;
-    max-height: 20px;
-    margin: 0 -12px;
-    padding: 7px;
-    align-content: center;
-    justify-content: space-between;
-    margin-bottom: 14px;
+      .whatsapp-icon,
+      .telegram-icon {
+        max-height: 25px;
+        margin: 0 -10px;
+      }
 
-    &:hover,
-    &:active {
-        background: rgba(0, 0, 0, 0);
-        color: $color-nav;
-        box-shadow: inset 0 0 0 3px $color-nav;
-        border-radius: 2px;
-          }
+      &__whatsapp,
+      &__telegram {
+        display: flex;
+        max-height: 20px;
+        margin: 0 -12px;
+        padding: 7px;
+        align-content: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
+
+        &:hover,
+        &:active {
+          background: rgba(0, 0, 0, 0);
+          color: $color-nav;
+          box-shadow: inset 0 0 0 3px $color-nav;
+          border-radius: 2px;
         }
       }
     }
   }
+}
