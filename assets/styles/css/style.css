@@ -365,8 +365,7 @@ a:after {
   height: 560px;
   justify-content: center;
   align-items: center;
-  /*padding: 20px;
-  gap: 5px;*/
+
   background-color: #EFECE8;
   border-radius: 10%;
   overflow: hidden;
