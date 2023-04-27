@@ -365,7 +365,6 @@ a:after {
   height: 560px;
   justify-content: center;
   align-items: center;
-
   background-color: #EFECE8;
   border-radius: 10%;
   overflow: hidden;
@@ -393,9 +392,12 @@ a:after {
   margin: 0 auto;
 }
 
-.navigation {
+.navbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.navbar__text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -404,9 +406,14 @@ a:after {
   color: #383838;
 }
 
+.contacts {
+  display: flex;
+  justify-content: flex-end;
+}
 .contacts .social-media {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
 }
 .contacts .social-media__whatsapp, .contacts .social-media__telegram {
   width: 60px;
@@ -415,16 +422,22 @@ a:after {
 }
 .contacts .social-media__whatsapp:hover, .contacts .social-media__whatsapp:active, .contacts .social-media__telegram:hover, .contacts .social-media__telegram:active {
   background: rgba(220, 228, 224, 0.6);
+  transform: scale(0.9);
   color: #EFECEB;
   border: 2px #EFECEB;
   border-style: none;
   box-shadow: 15px 0px 50px 0 rgba(247, 245, 245, 0.979);
   border-radius: 100%;
+  border: 2px solid #EFECEB;
+  border-radius: 25px 25px 25px 0;
+  border-style: none;
+  box-shadow: 2px 2px 0 0 rgba(247, 245, 245, 0.979);
 }
 .contacts .social-media .socialicon {
   border: 2px solid #EFECEB;
-  border-radius: 50px;
+  border-radius: 25px 25px 25px 0;
   border-style: none;
+  box-shadow: 2px 2px 0 0 rgba(247, 245, 245, 0.979);
 }
 
 @media (max-width: 1200px) {
@@ -520,12 +533,12 @@ a:after {
   #slide7 {
     padding: 0px;
   }
-  .navigation {
+  .navbar {
     display: flex;
     align-items: center;
     white-space: nowrap;
   }
-  .navigation__text {
+  .navbar__text {
     display: flex;
     align-items: center;
     font-size: 26px;
@@ -536,10 +549,6 @@ a:after {
     align-items: center;
     margin: 0 30px;
     padding: 0px;
-  }
-  .contacts .social-media__phone-number {
-    font-size: 20px;
-    line-height: 24px;
   }
 }
 /* здесь ваши стили для планшета */
@@ -659,32 +668,28 @@ a:after {
     padding: 35px;
     margin: 7px;
   }*/
-  .navigation {
+  .navbar {
     display: flex;
     align-items: center;
     white-space: nowrap;
   }
-  .navigation__text {
+  .navbar__text {
     display: flex;
     align-items: center;
     font-size: 20px;
   }
-  .navigation .contacts .social-media {
+  .navbar .contacts .social-media {
     display: flex;
     align-items: center;
     margin: 0 30px;
     padding: 0px;
   }
-  .navigation .contacts .social-media__phone-number {
-    font-size: 20px;
-    line-height: 25px;
-  }
-  .navigation .contacts .whatsapp-icon,
-  .navigation .contacts .telegram-icon {
+  .navbar .contacts .socialicon {
     max-width: 25px;
     max-height: 25px;
+    margin-top: 20px;
   }
-  .navigation .contacts__whatsapp, .navigation .contacts__telegram {
+  .navbar .contacts__whatsapp, .navbar .contacts__telegram {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -833,14 +838,14 @@ a:after {
     display: flex;
     justify-content: center;
   }
-  .navigation {
+  .navbar {
     margin: 0px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
   }
-  .navigation__text {
+  .navbar__text {
     max-width: 170px;
     font-size: 16px;
     line-height: 25px;
@@ -856,18 +861,9 @@ a:after {
     align-items: flex-start;
     margin: 0px;
   }
-  .contacts .social-media__phone-number {
-    font-size: 14px;
-    max-height: 20px;
-    margin: 0 -5px;
-    padding: 15px;
-    align-content: center;
-    justify-content: space-between;
-  }
-  .contacts .social-media .whatsapp-icon,
-  .contacts .social-media .telegram-icon {
+  .contacts .social-media .socialicon {
     max-height: 25px;
-    margin: 0 -10px;
+    margin-top: 5px;
   }
   .contacts .social-media__whatsapp, .contacts .social-media__telegram {
     display: flex;
