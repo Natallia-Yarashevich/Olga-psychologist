@@ -130,15 +130,10 @@ a {
         color: $color-dark;
     }
 
-
     &__title {
         @include h1;
-<<<<<<< HEAD
-        white-space: nowrap;
-=======
         // white-space: nowrap;
 
->>>>>>> main
     }
 
     &__job {
@@ -177,10 +172,6 @@ a {
 }
 
 // ABOUT ME =ARINA
-/*#aboutme {
-    margin-top: -38px;
-}*/
-
 .about {
     display: flex;
     justify-content: space-between;
@@ -369,7 +360,7 @@ a {
     align-items: center;
 
     /*padding: 20px;
-    gap: 5px;*/
+gap: 5px;*/
     background-color: $color-light;
     border-radius: 10%;
     overflow: hidden;

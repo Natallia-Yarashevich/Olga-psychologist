@@ -21,7 +21,7 @@ const swiper = new Swiper(".swiper", {
 
     // And if we need scrollbar
     // scrollbar: {
-    //   el: ".swiper-scrollbar",
+    // el: ".swiper-scrollbar",
     // },
 
     // Default parameters
@@ -48,8 +48,8 @@ const swiper = new Swiper(".swiper", {
             spaceBetween: 40,
         },
         /*800: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+        slidesPerView: 2,
+        spaceBetween: 20,
         },*/
         969: {
             slidesPerView: 3,

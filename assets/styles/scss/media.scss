@@ -48,7 +48,7 @@
     gap: 30px;
 
     &__text {
-      /* width: 60%;*/
+      width: 60%;
       text-align: center;
     }
 
@@ -116,8 +116,8 @@
   // АНЯ
   .review {
     &__text {
-      font-size: 15px;
-
+      font-size: 16px;
+      line-height: 25px;
     }
 
     &__image {
@@ -135,10 +135,8 @@
   #slide6,
   #slide7 {
     padding: 0px;
-    gap: 0px;
+
   }
-<<<<<<< HEAD
-=======
 
 
   // ВИКА
@@ -169,11 +167,7 @@
       }
     }
   }
->>>>>>> main
 }
-
-// ВИКА
-
 
 // таблет медиа -968,контейнер - 620  Отступ между секциями: 46рх
 // Заголовки: 38рх
@@ -260,7 +254,7 @@
     gap: 15px;
 
     &__title {
-      font-size: 38px;
+      font-size: 40px;
       line-height: 49px;
     }
 
@@ -287,7 +281,7 @@
     gap: 32px;
 
     &__photo {
-      width: 230px;
+      width: 249px;
       height: 311px;
     }
   }
@@ -327,12 +321,9 @@
   // НАТАША
 
   // АНЯ
-
-
   .review {
     &__text {
-      font-size: 14px;
-      text-align: 25px;
+      font-size: 15px;
     }
 
     &__image {
@@ -341,7 +332,7 @@
     }
   }
 
-  #slide,
+  /*#slide,
   #slide1,
   #slide2,
   #slide3,
@@ -350,10 +341,9 @@
   #slide6,
   #slide7 {
     height: 500px;
-    padding: 0px;
-    gap: 0px;
-
-  }
+    padding: 35px;
+    margin: 7px;
+  }*/
 
 
 
@@ -482,10 +472,6 @@
   }
 
   // АРИНА
-  /* #aboutme {
-    margin-top: -38px;
-  }*/
-
   .about {
     display: flex;
     align-items: center;
@@ -498,8 +484,8 @@
     }
 
     &__photo {
-      width: 230px;
-      height: 311px;
+      width: 186px;
+      height: 239px;
     }
 
     &__titleH2 {
@@ -578,10 +564,6 @@
   }
 
   // АНЯ
-  /*#cont {
-    max-width: 400px;
-  }*/
-
   .review {
     &__text {
       font-size: 14px;
@@ -603,7 +585,6 @@
   #slide6,
   #slide7 {
     height: 500px;
-    padding: 0px;
   }
 
   // ВИКА
