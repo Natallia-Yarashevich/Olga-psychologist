@@ -114,8 +114,8 @@
   // АНЯ
   .review {
     &__text {
-      font-size: 16px;
-      line-height: 25px;
+      font-size: 15px;
+
     }
 
     &__image {
@@ -132,13 +132,13 @@
   #slide5,
   #slide6,
   #slide7 {
-    padding: 40px;
-    margin: 8px;
+    padding: 0px;
+    gap: 0px;
   }
-
-
-  // ВИКА
 }
+
+// ВИКА
+
 
 // таблет медиа -968,контейнер - 620  Отступ между секциями: 46рх
 // Заголовки: 38рх
@@ -286,9 +286,12 @@
   // НАТАША
 
   // АНЯ
+
+
   .review {
     &__text {
-      font-size: 15px;
+      font-size: 14px;
+      text-align: 25px;
     }
 
     &__image {
@@ -306,8 +309,9 @@
   #slide6,
   #slide7 {
     height: 500px;
-    padding: 35px;
-    margin: 7px;
+    padding: 0px;
+    gap: 0px;
+
   }
 
 
@@ -495,6 +499,10 @@
   }
 
   // АНЯ
+  /*#cont {
+    max-width: 400px;
+  }*/
+
   .review {
     &__text {
       font-size: 14px;
@@ -515,9 +523,8 @@
   #slide5,
   #slide6,
   #slide7 {
-    height: 480px;
-    padding: 30px;
-    margin: 5px;
+    height: 500px;
+    padding: 0px;
   }
 
   // ВИКА

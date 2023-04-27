@@ -371,14 +371,14 @@ a:after {
 #slide7 {
   display: flex;
   flex-direction: row;
-  height: 550px;
-  justify-content: start;
+  height: 560px;
+  justify-content: center;
   align-items: center;
-  margin: 10px;
-  padding: 45px;
-  gap: 5px;
+  /*padding: 20px;
+  gap: 5px;*/
   background-color: #EFECE8;
   border-radius: 10%;
+  overflow: hidden;
 }
 
 #swiper-button-prev,
@@ -530,8 +530,7 @@ a:after {
     font-size: 40px;
   }
   .review__text {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 15px;
   }
   .review__image {
     width: 4%;
@@ -545,8 +544,8 @@ a:after {
   #slide5,
   #slide6,
   #slide7 {
-    padding: 40px;
-    margin: 8px;
+    padding: 0px;
+    gap: 0px;
   }
 }
 /* здесь ваши стили для планшета */
@@ -648,7 +647,8 @@ a:after {
     padding: 30px 0;
   }
   .review__text {
-    font-size: 15px;
+    font-size: 14px;
+    text-align: 25px;
   }
   .review__image {
     width: 4%;
@@ -663,8 +663,8 @@ a:after {
   #slide6,
   #slide7 {
     height: 500px;
-    padding: 35px;
-    margin: 7px;
+    padding: 0px;
+    gap: 0px;
   }
   .navigation {
     display: flex;
@@ -789,6 +789,9 @@ a:after {
   .energy-content ul {
     margin-left: -10px;
   }
+  /*#cont {
+    max-width: 400px;
+  }*/
   .review__text {
     font-size: 14px;
   }
@@ -804,8 +807,7 @@ a:after {
   #slide5,
   #slide6,
   #slide7 {
-    height: 480px;
-    padding: 30px;
-    margin: 5px;
+    height: 500px;
+    padding: 0px;
   }
 }

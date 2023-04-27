@@ -365,14 +365,16 @@ a {
 
     display: flex;
     flex-direction: row;
-    height: 550px;
-    justify-content: start;
+    height: 560px;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
-    padding: 45px;
-    gap: 5px;
+
+    /*padding: 20px;
+    gap: 5px;*/
     background-color: $color-light;
     border-radius: 10%;
+    overflow: hidden;
+
 }
 
 #swiper-button-prev,
