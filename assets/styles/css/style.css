@@ -509,16 +509,6 @@ a:after {
     width: 4%;
     height: 4%;
   }
-  #slide,
-  #slide1,
-  #slide2,
-  #slide3,
-  #slide4,
-  #slide5,
-  #slide6,
-  #slide7 {
-    padding: 0px;
-  }
   .navigation {
     display: flex;
     align-items: center;
@@ -646,18 +636,6 @@ a:after {
     width: 4%;
     height: 4%;
   }
-  /*#slide,
-  #slide1,
-  #slide2,
-  #slide3,
-  #slide4,
-  #slide5,
-  #slide6,
-  #slide7 {
-    height: 500px;
-    padding: 35px;
-    margin: 7px;
-  }*/
   .navigation {
     display: flex;
     align-items: center;
