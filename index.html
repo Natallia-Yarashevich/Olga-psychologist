@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ольга Танотина</title>
-    <!-- <link rel="shortcut icon" href="#" type="image/png" /> -->
-    <link rel="stylesheet" href="./assets/styles/css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./assets/styles/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ольга Танотина</title>
+  <!-- <link rel="shortcut icon" href="#" type="image/png" /> -->
+  <link rel="stylesheet" href="./assets/styles/css/normalize.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/styles/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
 
 <body>
   <!-- ALISA -->
@@ -61,7 +56,7 @@
           <div class="intro__photo">
             <img class="photo_1" src="./assets/images/photo_1.jpg" alt="photo of the psychologist" />
           </div>
-          <p class="intro-mobile__quote">
+          <p class="intro__quote-mobile">
             "Лучшее время выбрать себя-<span class="bold">сейчас</span>"
           </p>
         </div>
@@ -71,7 +66,7 @@
     <section class="aboutme screen" id="aboutme">
       <div class="container">
         <div class="about">
-          <h2 class="about-media__titleH2 titleH2">Обо мне</h2>
+          <h2 class="about__titleH2-media titleH2">Обо мне</h2>
           <div class="about__photo">
             <img class="photo_2" src="assets/images/photo_2.jpg" alt="Ольга Танотина" />
           </div>
@@ -107,7 +102,7 @@
               сессию</a>
           </div>
         </div>
-      </section>
+    </section>
 
     <!--LUDA&NATA-->
     <section class="services container screen" id="services">
@@ -255,211 +250,136 @@
               </div>
             </div>
           </div>
-        </article>
-      </section>
+      </article>
+    </section>
 
-      <!-- REVIEW =ANNA -->
-      <section class="review screen" id="review">
-        <div class="container">
-          <div class="review__title">
-            <h2 class="titleH2">Отзывы</h2>
-          </div>
+    <!-- REVIEW =ANNA -->
+    <section class="review screen" id="review">
+      <div class="container">
+        <h2 class=" review__titleH2 titleH2">Отзывы</h2>
+        <div class="review__wrapper">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
 
-          <div class="review__wrapper">
-            <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-
-                <div class="swiper-slide" id="slide">
-                  <p class="review__text">
-                    Благодарю тебя, что стала моим проводником
-                    <img
-                      src="assets/images/wink.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    вообще о хрониках акаши, впервые, я узнала от тебя, а как ты
-                    знаешь меня привлекает все новое и тем более мистическое,
-                    после твоего рассказа о них сразу пришло осознание: это мне
-                    надо, я хочу! Очень интересный инструмент самопознания, не
-                    такой как астрология, нумерология или матрица, информация
-                    понятная и увлекательная. Твои голосовые это как аудиокнига
-                    про меня практически все моменты совпали, инструкции по
-                    дальнейшим действиям тоже понятны. Ну а твой обволакивающий
-                    голос это как особый вид медитации
-                    <img
-                      src="assets/images/smiling.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    ведёт нежно и с заботой. Исписала 5 листов,
-                    систематизировала, в некоторых моментах узнала что-то новое,
-                    буду работать. Спасибо, милая, за это путешествие в глубь
-                    моего внутреннего Я.<img
-                      src="assets/images/blush.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                  </p>
-                </div>
-                <div class="swiper-slide" id="slide1">
-                  <p class="review__text">
-                    Хотела тебе завтра сказать, нo не могу терпеть
-                    <img
-                      src="assets/images/joy.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    девАчки мы упали Как ты помнишь я в хроники приходила с
-                    запросом о персональной реализации. Очень долго искала
-                    работу, не было движения по карьерной лестнице, на своей
-                    старой работе я уже выгорела - перегорела и изжила себя. Так
-                    вот изучив твои рекомендации, проработав блоки в чакрах -
-                    МНЕ ПРЕДЛОЖИЛИ РАБОТУ
-                    <img
-                      src="assets/images/joy.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    это какая-то мистика, я сама до сих пор не верю совпадения?!
-                    Не думаю В общем спасибо ещё раз, мой проводник<img
-                      src="assets/images/kiss.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    <br />При чем так легко устроилась на хорошую должность как
-                    будто все так и задумано было. без переживаний
-                  </p>
-                </div>
-                <div class="swiper-slide" id="slide2">
-                  <p class="review__text">
-                    Оля, видимо не зря меня мотало так последний год! И здоровье
-                    и работа, как американские горки «сегодня хорошо, завтра уже
-                    все плохо». Это ужас был какой-то!! И со здоровьем дно
-                    хапнула и по работе. Сегодня проснулась и появилось много
-                    энергии! Продуктивность какая-то начала просыпаться
-                    <img
-                      src="assets/images/muscle.png"
-                      alt="review-image"
-                      class="review__image"
-                    />Раньше сил и намерения к действиям не было совсем. А
-                    сегодня уже переделала кучу дел и энергии вагон! Помимо
-                    домашних дел, купила все для новой работы, распечатала карту
-                    по бизнес стратегии, посмотрела вебинар :восхищение:
-                    Ощущение как будто я летаю!!! Мне надо что-то делать и
-                    появился как спортивный интерес ко всему. Я уже что и как
-                    хочу делать
-                    <img
-                      src="assets/images/in-love.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                  </p>
-                </div>
-                <div class="swiper-slide" id="slide3">
-                  <p class="review__text">
-                    Привет. Оля, хотела ещё раз написать тебе огромное спасибо
-                    за твой труд
-                    <img
-                      src="assets/images/heart.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    Cегодня проснувшись в первый раз за много лет почувствовала
-                    себя легко и свободно и в отличном настроении. я так
-                    привыкла чувствовать в себе этот груз и гнет внутри, который
-                    не понимала откуда берется в моей жизни, но после сеанса все
-                    разложилось по полочкам и стали понятны взаимосвязи, откуда
-                    брались определенные чувства, и теперь даже как-то не
-                    понятно, что с этой легкостью то делать, настолько привыкла
-                    к тяжести внутри, что она мне как родная стала
-                    <img
-                      src="assets/images/joy.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    Пространство вокруг меня также трансформируется под эту
-                    легкость и свободу, я прям это чувствую. спасибо, ты
-                    волшебница
-                    <img
-                      src="assets/images/fairy.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                  </p>
-                </div>
-                <div class="swiper-slide" id="slide4">
-                  <p class="review__text">
-                    Привет. Хочу поделиться своими ощущениями после встречи. Мне
-                    стало намного легче, и цвета вокруг стала видеть ярче,
-                    существенно ярче, чем было, внутри появился трепет, такое
-                    интересное и странное чувство, предвкушение чего-то хорошего
-                    и радостного.
-                  </p>
-                </div>
-                <div class="swiper-slide" id="slide5">
-                  <p class="review__text">
-                    Я так тебе благодарна! У меня за эти годы и душа и тело
-                    устали! Видимо я была готова, чтобы разорвать эту связь.
-                    Спасибо тебе большое, дорогая!<img
-                      src="assets/images/heart.png"
-                      alt="review-image"
-                      class="review__image"
-                    /><img
-                      src="assets/images/heart.png"
-                      alt="review-image"
-                      class="review__image"
-                    /><img
-                      src="assets/images/heart.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                  </p>
-                </div>
-                <div class="swiper-slide" id="slide6">
-                  <p class="review__text">
-                    Оля, благодарю тебя за это откровение!!!!
-                    <img
-                      src="assets/images/hands.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    Ты расширила мое сознание…Я разбор наш переслушиваю 3 дня,
-                    как мантру… убедилась, что делаю все правильно
-                  </p>
-                </div>
-                <div class="swiper-slide" id="slide7">
-                  <p class="review__text">
-                    И сегодняшний твой опыт как-то так наложился - у меня такая
-                    цепочка инсайтов, складываются… я не знаю как это работает..
-                    Просто БЛАГОДАРЮ!!!!
-                    <img
-                      src="assets/images/heart.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    <img
-                      src="assets/images/heart.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                    <img
-                      src="assets/images/heart.png"
-                      alt="review-image"
-                      class="review__image"
-                    />
-                  </p>
-                </div>
+              <div class="swiper-slide" id="slide">
+                <p class="review__text">
+                  Благодарю тебя, что стала моим проводником
+                  <img src="assets/images/wink.png" alt="review-image" class="review__image" />
+                  О хрониках акаши, впервые, я узнала от тебя . Меня привлекает все новое и тем более мистическое. И
+                  после твоего рассказа о них сразу пришло осознание: это мне надо, я хочу! Очень интересный инструмент
+                  самопознания, не такой как астрология, нумерология или матрица. Информация понятная и увлекательная.
+                  Твои голосовые как аудиокнига про меня практически все моменты совпали, инструкции по дальнейшим
+                  действиям тоже понятны. Ну а твой обволакивающий голос <img src="assets/images/smiling.png"
+                    alt="review-image" class="review__image" /> ведёт нежно и с заботой. Исписала 5 листов,
+                  систематизировала, в некоторых моментах узнала что-то новое, буду работать. Спасибо, милая, за это
+                  путешествие в глубь моего внутреннего Я.
+                  <img src="assets/images/blush.png" alt="review-image" class="review__image" />
+                </p>
               </div>
+              <div class="swiper-slide" id="slide1">
+                <p class="review__text">
+                  Хотела тебе завтра сказать, нo не могу терпеть
+                  <img src="assets/images/joy.png" alt="review-image" class="review__image" />
+                  девАчки мы упали Как ты помнишь я в хроники приходила с
+                  запросом о персональной реализации. Очень долго искала
+                  работу, не было движения по карьерной лестнице, на своей
+                  старой работе я уже выгорела - перегорела и изжила себя. Так
+                  вот изучив твои рекомендации, проработав блоки в чакрах -
+                  МНЕ ПРЕДЛОЖИЛИ РАБОТУ
+                  <img src="assets/images/joy.png" alt="review-image" class="review__image" />
+                  это какая-то мистика, я сама до сих пор не верю совпадения?!
+                  Не думаю В общем спасибо ещё раз, мой проводник<img src="assets/images/kiss.png" alt="review-image"
+                    class="review__image" />
+                  <br />При чем так легко устроилась на хорошую должность как
+                  будто все так и задумано было. без переживаний
+                </p>
+              </div>
+              <div class="swiper-slide" id="slide2">
+                <p class="review__text">
+                  Оля, видимо не зря меня мотало так последний год! И здоровье
+                  и работа, как американские горки «сегодня хорошо, завтра уже
+                  все плохо». Это ужас был какой-то!! И со здоровьем дно
+                  хапнула и по работе. Сегодня проснулась и появилось много
+                  энергии! Продуктивность какая-то начала просыпаться
+                  <img src="assets/images/muscle.png" alt="review-image" class="review__image" />Раньше сил и намерения
+                  к действиям не было совсем. А
+                  сегодня уже переделала кучу дел и энергии вагон! Помимо
+                  домашних дел, купила все для новой работы, распечатала карту
+                  по бизнес стратегии, посмотрела вебинар :восхищение:
+                  Ощущение как будто я летаю!!! Мне надо что-то делать и
+                  появился как спортивный интерес ко всему. Я уже что и как
+                  хочу делать
+                  <img src="assets/images/in-love.png" alt="review-image" class="review__image" />
+                </p>
+              </div>
+              <div class="swiper-slide" id="slide3">
+                <p class="review__text">
+                  Привет. Оля, хотела ещё раз написать тебе огромное спасибо
+                  за твой труд
+                  <img src="assets/images/heart.png" alt="review-image" class="review__image" />
+                  Cегодня проснувшись в первый раз за много лет почувствовала
+                  себя легко и свободно и в отличном настроении. я так
+                  привыкла чувствовать в себе этот груз и гнет внутри, который
+                  не понимала откуда берется в моей жизни, но после сеанса все
+                  разложилось по полочкам и стали понятны взаимосвязи, откуда
+                  брались определенные чувства, и теперь даже как-то не
+                  понятно, что с этой легкостью то делать, настолько привыкла
+                  к тяжести внутри, что она мне как родная стала
+                  <img src="assets/images/joy.png" alt="review-image" class="review__image" />
+                  Пространство вокруг меня также трансформируется под эту
+                  легкость и свободу, я прям это чувствую. спасибо, ты
+                  волшебница
+                  <img src="assets/images/fairy.png" alt="review-image" class="review__image" />
+                </p>
+              </div>
+              <div class="swiper-slide" id="slide4">
+                <p class="review__text">
+                  Привет. Хочу поделиться своими ощущениями после встречи. Мне
+                  стало намного легче, и цвета вокруг стала видеть ярче,
+                  существенно ярче, чем было, внутри появился трепет, такое
+                  интересное и странное чувство, предвкушение чего-то хорошего
+                  и радостного.
+                </p>
+              </div>
+              <div class="swiper-slide" id="slide5">
+                <p class="review__text">
+                  Я так тебе благодарна! У меня за эти годы и душа и тело
+                  устали! Видимо я была готова, чтобы разорвать эту связь.
+                  Спасибо тебе большое, дорогая!<img src="assets/images/heart.png" alt="review-image"
+                    class="review__image" /><img src="assets/images/heart.png" alt="review-image"
+                    class="review__image" /><img src="assets/images/heart.png" alt="review-image"
+                    class="review__image" />
+                </p>
+              </div>
+              <div class="swiper-slide" id="slide6">
+                <p class="review__text">
+                  Оля, благодарю тебя за это откровение!!!!
+                  <img src="assets/images/hands.png" alt="review-image" class="review__image" />
+                  Ты расширила мое сознание…Я разбор наш переслушиваю 3 дня,
+                  как мантру… убедилась, что делаю все правильно
+                </p>
+              </div>
+              <div class="swiper-slide" id="slide7">
+                <p class="review__text">
+                  И сегодняшний твой опыт как-то так наложился - у меня такая
+                  цепочка инсайтов, складываются… я не знаю как это работает..
+                  Просто БЛАГОДАРЮ!!!!
+                  <img src="assets/images/heart.png" alt="review-image" class="review__image" />
+                  <img src="assets/images/heart.png" alt="review-image" class="review__image" />
+                  <img src="assets/images/heart.png" alt="review-image" class="review__image" />
+                </p>
+              </div>
+            </div>
 
-              <!-- If we need pagination -->
-              <div class="swiper-pagination" id="swiper-pagination"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination" id="swiper-pagination"></div>
 
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev" id="swiper-button-prev"></div>
-              <div class="swiper-button-next" id="swiper-button-next"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div>
 
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
@@ -476,34 +396,31 @@
           которые помогут Вам лучше узнать себя и раскрыть, а также своими
           личными заметками из жизни.
         </p>
-        <div class="button__wrapper">
+        <div class="blog__button">
           <div class="button-green">
-
             <a class="button-green__help" href="https://t.me/olgatanotina13">Подписаться</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="container ">
-        <nav class="navbar">
-            <p class="navbar__text">Контакты</p>
-            <div class="contacts">
-                <ul class="social-media">
-                    <li class="social-media__whatsapp">
-                        <a href="https://api.whatsapp.com/send/?phone=79697128833" target="#_blank">
-                            <img class="socialicon" src="assets/images/whatsapp.svg" alt="whatsapp-icon"></a>
-                    </li>
-                    <li class="social-media__telegram">
-                        <a href="https://t.me/+79697128833" target="#_blank">
-                            <img class="socialicon" src="assets/images/telegram.svg" alt="telegram-icon"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <p class="navbar__text">Контакты</p>
+        <ul class="social-network">
+          <li class="social-network__whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=79697128833" target="#_blank">
+              <img class="socialicon" src="assets/images/whatsapp.svg" alt="whatsapp-icon"></a>
+          </li>
+          <li class="social-network__telegram">
+            <a href="https://t.me/+79697128833" target="#_blank">
+              <img class="socialicon" src="assets/images/telegram.svg" alt="telegram-icon"></a>
+          </li>
+        </ul>
+      </nav>
     </div>
-</footer>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>

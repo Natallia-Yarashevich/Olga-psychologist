@@ -8,8 +8,6 @@
 }
 
 // Обшие стили для всего документа, то что повторяется
-
-
 body {
     background-color: $color-bg-main;
 }
@@ -90,6 +88,7 @@ a {
 
     &__paragraf {
         @include h4;
+        line-height: 70px;
 
         &_bold {
             font-weight: 600;
@@ -99,11 +98,15 @@ a {
     &__list {
         @include h4;
         font-weight: 600;
+        line-height: 70px;
+        padding-bottom: 10px;
     }
+
 
     &__item {
         @include h4;
         text-align: justify;
+        line-height: 70px;
     }
 
     &__circle {
@@ -113,17 +116,17 @@ a {
         width: 0.8em;
         font-size: 50px;
     }
-
 }
 
 .list {
     &__item {
         @include h4;
+        line-height: 70px;
     }
 }
 
 .tariff {
-    padding: 40px 0;
+    margin: 40px 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -141,66 +144,48 @@ a {
 
     &__button-green {
         @include button-green;
-        // text-align: center;
-
-        // &__help {
-        //     color: $color-light;
-
-        //     &:hover,
-        //     &:active {
-        //         color: $color-dark;
-        //         transition: 0.7s;
-        //     }
-        // }
     }
 }
 
 .footer {
     background-color: $color-bg-dark;
-    margin: 0 auto;
-    width: 100%;
-    bottom: 0;
-    @include phone;
+}
 
-    &__nav {
-        min-height: 90px;
-        bottom: 0;
+.navbar {
+    min-height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+
+    &__text {
+        @include phone;
     }
 }
 
-.contacts {
+.social-network {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
 
-    .social-media {
-        display: flex;
-        flex-direction: row;
-        margin-top: 15px;
+    &__whatsapp {
+        margin-right: 40px;
+    }
 
-        &__whatsapp,
-        &__telegram {
-            // width: 60px;
-            // height: 60px;
-            // margin: 5px;
+    &__whatsapp,
+    &__telegram {
+        width: 60px;
+        height: 60px;
 
-            &:hover {
-                background: rgba(220, 228, 224, 0.4);
-                color: $color-nav;
-                padding: 10px 5px 0 8px;
-                border: 2px $color-nav;
-                border-radius: 100px;
-            }
-
-            &:active {
-                // border: 2px $color-nav;
+        &:hover,
+        &:active {
+            .socialicon {
+                border: 2px solid $color-nav;
+                border-radius: 25px 25px 25px 0;
                 border-style: none;
-                box-shadow: 50px 50px 50px 10px rgba(247, 245, 245, 0.979);
-                border-radius: 100px;
+                box-shadow: 2px 2px 0 0 rgba(247, 245, 245, 0.979);
             }
-        }
-
-        &__whatsapp {
-            margin-right: 40px;
         }
     }
 }
@@ -211,8 +196,6 @@ a {
     // ОБЩИЕ СТИЛИ
     .container {
         max-width: 1024px;
-        font-size: 30px;
-        line-height: 50px;
     }
 
     .energy {
@@ -222,6 +205,37 @@ a {
             letter-spacing: 0.04em;
         }
 
+        &__paragraf,
+        &__list,
+        &__item {
+            font-size: 30px;
+            line-height: 60px;
+        }
+    }
+
+    .list {
+        &__item {
+            font-size: 30px;
+            line-height: 60px;
+        }
+    }
+
+    .navbar {
+
+        &__text {
+            font-size: 26px;
+            line-height: 32px;
+        }
+    }
+
+    .social-network {
+
+        &__whatsapp,
+        &__telegram {
+            width: 44px;
+            height: 41px;
+
+        }
     }
 }
 
@@ -239,7 +253,6 @@ a {
             font-size: 23px;
             line-height: 25px;
         }
-
     }
 
     .energy {
@@ -251,11 +264,15 @@ a {
             line-height: 49px;
         }
 
+        &__list {
+            padding-bottom: 10px;
+        }
+
         &__paragraf,
         &__list,
         &__item {
             font-size: 18px;
-            line-height: 25px;
+            line-height: 35px;
         }
 
         &__circle {
@@ -267,31 +284,52 @@ a {
     .list {
         &__item {
             font-size: 18px;
-            line-height: 25px;
+            line-height: 35px;
         }
     }
 
 
     .tariff {
-        margin: 30px 0 40px;
         flex-wrap: wrap;
-
-        &__price {
-            padding-bottom: 30px;
-        }
+        margin: 30px 0 50px;
 
         &__more {
             margin: 0;
-            font-size: 23px;
-            line-height: 25px;
+            font-size: 18px;
+            line-height: 35px;
         }
 
         &__button-green {
-            @include btnmobile;
-            display: flex;
-            text-align: center;
+            line-height: 17px;
+            font-size: 18px;
+            padding: 12px 16px;
+            border-radius: 8px;
+        }
+    }
+
+    .navbar {
+
+        &__text {
+            font-size: 26px;
+            line-height: 32px;
+        }
+    }
+
+    .social-network {
+
+        &__whatsapp {
+            margin-right: 43px;
         }
 
+        &__whatsapp,
+        &__telegram {
+            width: 44px;
+            height: 44px;
+
+            .socialicon {
+                max-width: 44px;
+            }
+        }
     }
 }
 
@@ -302,22 +340,26 @@ a {
         padding-right: 16px;
     }
 
-    .energy {
-        font-size: 16px;
-        // line-height: 25рх;
+    .nav {
 
+        &__info {
+            font-size: 20px;
+        }
+    }
+
+    .energy {
         &__title {
             font-size: 38px;
             line-height: 46px;
             text-align: center;
         }
 
-        // &__paragraf,
-        // &__list,
-        // &__item {
-        //     font-size: 18px;
-        //     // line-height: 35px;
-        // }
+        &__paragraf,
+        &__list,
+        &__item {
+            font-size: 18px;
+            line-height: 35px;
+        }
 
         &__circle {
             color: $color-green;
@@ -327,31 +369,46 @@ a {
             font-size: 25px;
         }
 
-
         .tariff {
             flex-direction: column;
-            padding: 20px 0;
-            align-items: center;
-            justify-content: center;
+            margin: 30px 0 70px;
 
             &__price {
                 width: 100%;
-                align-items: start;
-                // padding-bottom: 20px;
+                padding-bottom: 30px;
             }
         }
     }
 
-    .contacts {
+    .list {
+        &__item {
+            line-height: 35px;
+        }
+    }
 
-        .social-media {
+    // ФУТЕР
+    .navbar {
+        justify-content: space-around;
 
-            &__whatsapp,
-            &__telegram {
-                width: 40px;
-                height: 40px;
-                // margin: 5px;
+        &__text {
+            font-size: 20px;
+        }
+    }
 
+    .social-network {
+
+        &__whatsapp {
+            margin-right: 20px;
+        }
+
+        &__whatsapp,
+        &__telegram {
+            width: 30px;
+            height: 33.8px;
+
+            .socialicon {
+                width: 30px;
+                height: 33.8px;
             }
         }
     }
