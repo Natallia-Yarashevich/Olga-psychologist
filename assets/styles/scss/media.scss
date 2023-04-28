@@ -140,7 +140,7 @@
 
 
   // ВИКА
-  .navigation {
+  .navbar {
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -160,13 +160,9 @@
       align-items: center;
       margin: 0 30px;
       padding: 0px;
-
-      &__phone-number {
-        font-size: 20px;
-        line-height: 24px;
-      }
     }
   }
+  
 }
 
 // таблет медиа -968,контейнер - 620  Отступ между секциями: 46рх
@@ -348,7 +344,7 @@
 
 
   // ВИКА
-  .navigation {
+  .navbar {
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -367,17 +363,12 @@
         align-items: center;
         margin: 0 30px;
         padding: 0px;
-
-        &__phone-number {
-          font-size: 20px;
-          line-height: 25px;
-        }
       }
 
-      .whatsapp-icon,
-      .telegram-icon {
+      .socialicon {
         max-width: 25px;
         max-height: 25px;
+        margin-top: 20px;
       }
 
       &__whatsapp,
@@ -593,7 +584,7 @@
     justify-content: center;
   }
 
-  .navigation {
+  .navbar {
     margin: 0px;
     display: flex;
     flex-wrap: nowrap;
@@ -618,19 +609,10 @@
       align-items: flex-start;
       margin: 0px;
 
-      &__phone-number {
-        font-size: 14px;
-        max-height: 20px;
-        margin: 0 -5px;
-        padding: 15px;
-        align-content: center;
-        justify-content: space-between;
-      }
 
-      .whatsapp-icon,
-      .telegram-icon {
+      .socialicon {
         max-height: 25px;
-        margin: 0 -10px;
+        margin-top: 5px;
       }
 
       &__whatsapp,
