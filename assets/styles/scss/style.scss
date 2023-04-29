@@ -20,6 +20,7 @@
 }
 
 body {
+    min-height: 100vh;
     background-color: $color-bg-main;
 }
 
@@ -53,7 +54,6 @@ a {
 
 // Проверить как себя ведет на моб экране
 // inset: -30p увеличивает область клика на ссылку
-
 .button-green {
     @include button-green;
 }
@@ -132,8 +132,6 @@ a {
 
     &__title {
         @include h1;
-        // white-space: nowrap;
-
     }
 
     &__job {
@@ -146,7 +144,6 @@ a {
         font-size: 36px;
         line-height: 44px;
         font-weight: 300;
-
         margin-top: 100px;
     }
 
@@ -163,16 +160,15 @@ a {
             width: 100%;
         }
     }
-}
 
-.intro-mobile {
-    &__quote {
+    &__quote-mobile {
         display: none;
     }
 }
 
 // ABOUT ME =ARINA
 .about {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,17 +188,13 @@ a {
         }
     }
 
-    &__titleH2 {
-        display: flex;
-    }
-
     &__text {
         width: 50%;
     }
-}
 
-.about-media__titleH2 {
-    display: none;
+    &__titleH2-media {
+        display: none;
+    }
 }
 
 // INFO =TATIANA
@@ -217,12 +209,7 @@ a {
     &__button {
         display: flex;
         justify-content: end;
-
     }
-
-    // .button-green-shadow {
-    //     @include button-green-shadow;
-    // }
 }
 
 // SERVIS general
@@ -272,7 +259,6 @@ a {
     }
 }
 
-
 // / PSYCHO =LYUDMILA
 .psycho {
     padding-bottom: 48px;
@@ -297,7 +283,6 @@ a {
 }
 
 // / ENERGU =NATALIA
-
 .details {
     @include h4;
     color: $color-green;
@@ -318,8 +303,6 @@ a {
         margin-left: -20px;
     }
 }
-
-// ENERGU =NATALIA
 
 // REVIEW =ANNA
 .review {
@@ -351,8 +334,6 @@ a {
 #slide5,
 #slide6,
 #slide7 {
-
-
     display: flex;
     flex-direction: row;
     height: 560px;
@@ -361,7 +342,6 @@ a {
     background-color: $color-light;
     border-radius: 10%;
     overflow: hidden;
-
 }
 
 #swiper-button-prev,
@@ -376,65 +356,55 @@ a {
 }
 
 //  =VICTORIA
-
-.button__wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    justify-content: flex-end;
+.blog {
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 // FOOTER =VICTORIA
 .footer {
     background-color: $color-bg-dark;
-    margin: 0 auto;
 }
 
-.navigation {
+.navbar {
+    min-height: 80px;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    @include phone;
-}
+    bottom: 0;
 
-.contacts {
-    .social-media {
-        display: flex;
-        align-items: center;
-
-        //     &:hover,
-        //     &:active {
-        //         background: rgba(0, 0, 0, 0);
-        //         color: $color-nav;
-        //         box-shadow: inset 0 0 0 3px $color-nav;
-        //         border-radius: 10px;
-        //     }
-        // }
-        &__whatsapp,
-        &__telegram {
-            width: 60px;
-            height: 60px;
-            margin: 0 15px;
-
-
-            &:hover,
-            &:active {
-                background: rgba(220, 228, 224, 0.6);
-                color: $color-nav;
-                border: 2px $color-nav;
-                border-style: none;
-                box-shadow: 15px 0px 50px 0 rgba(247, 245, 245, 0.979);
-                border-radius: 100%;
-            }
-        }
-
-        .socialicon {
-            border: 2px solid $color-nav;
-            border-radius: 50px;
-            border-style: none;
-            // box-shadow: 1px 5px 5px 0 rgba(247, 245, 245, 0.979);
-        }
+    &__text {
+        @include phone;
     }
 }
 
+.social-network {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__whatsapp {
+        margin-right: 40px;
+    }
+
+    &__whatsapp,
+    &__telegram {
+        width: 60px;
+        height: 60px;
+
+        &:hover,
+        &:active {
+            .socialicon {
+                border: 2px solid $color-nav;
+                border-radius: 25px 25px 25px 0;
+                border-style: none;
+                box-shadow: 2px 2px 0 0 rgba(247, 245, 245, 0.979);
+            }
+        }
+    }
+}
 
 @import "media";

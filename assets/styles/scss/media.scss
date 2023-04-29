@@ -1,3 +1,6 @@
+@import "colors";
+@import "mixins";
+
 @media (max-width: 1200px) {
 
   // ОБЩИЕ СТИЛИ
@@ -38,7 +41,6 @@
         font-size: 20px;
         line-height: 24px;
       }
-
     }
   }
 
@@ -48,13 +50,14 @@
     gap: 30px;
 
     &__text {
-      width: 60%;
+      width: 50%;
       text-align: center;
     }
 
     &__title {
       font-size: 63px;
       line-height: 77px;
+      letter-spacing: 4%;
       letter-spacing: 0.04em;
     }
 
@@ -67,36 +70,15 @@
       font-size: 24px;
       line-height: 29px;
     }
-
-    &__quote-mobile {
-      display: none;
-    }
-
-    &__photo {
-      width: 390px;
-      height: 548px;
-    }
   }
 
-  // АРИНА
+  // // АРИНА
   .about {
     gap: 34px;
 
-    &__photo {
-      width: 390px;
-      height: 548px;
-    }
-  }
-
-  .about-media {
-    &__titleH2 {
-      display: none;
-    }
   }
 
   // ТАНЯ
-
-
   // УСЛУГИ
   .servise {
 
@@ -126,47 +108,39 @@
     }
   }
 
-
+<<<<<<< HEAD
+=======
+  #slide,
+  #slide1,
+  #slide2,
+  #slide3,
+  #slide4,
+  #slide5,
+  #slide6,
+  #slide7 {
+    padding: 0px;
+  }
+>>>>>>> 397ae99b04cc0f6000cb22e4c011a1cbcd070a72
 
   // ВИКА
-  .navigation {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+  .navbar {
 
     &__text {
-      display: flex;
-      align-items: center;
       font-size: 26px;
       line-height: 32px;
     }
   }
 
-  .contacts {
+  .social-network {
 
-    .social-media {
-      display: flex;
-      align-items: center;
-      margin: 0 30px;
-      padding: 0px;
-
-      &__phone-number {
-        font-size: 20px;
-        line-height: 24px;
-      }
+    &__whatsapp,
+    &__telegram {
+      width: 44px;
+      height: 41px;
     }
   }
 }
 
-// таблет медиа -968,контейнер - 620  Отступ между секциями: 46рх
-// Заголовки: 38рх
-// Текст : 18рх
-// Лого и контакты с телефоном: 20рх
-// Line-height - везде 25рх,
-// в aboutme - 30рх Отступы между абзацами: 18рх
-// Отступ между фоткой и текстом: 15рх
-
-/* здесь ваши стили для планшета */
 @media (max-width: 968px) {
   .container {
     max-width: 620px;
@@ -180,6 +154,7 @@
 
   .titleH2 {
     font-size: 38px;
+    line-height: 40px;
   }
 
   .subtitle {
@@ -195,7 +170,9 @@
   }
 
   .button-green {
-    @include btnmobile;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 17px 30px;
   }
 
   // BURGER-MENU =TATIANA
@@ -260,7 +237,7 @@
     }
 
     &__photo {
-      width: 230px;
+      width: 249px;
       height: 311px;
     }
   }
@@ -275,20 +252,7 @@
     }
   }
 
-  .about-media {
-    &__titleH2 {
-      display: none;
-    }
-  }
-
   // ТАНЯ
-  // .info {
-  //   .button-green-shadow {
-  //     font-size: 14px;
-  //     line-height: 17px;
-  //   }
-  // }
-
   // ЛЮДА
   .servise {
 
@@ -308,7 +272,6 @@
   }
 
   // НАТАША
-
   // АНЯ
   .review {
     &__text {
@@ -321,60 +284,37 @@
     }
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 397ae99b04cc0f6000cb22e4c011a1cbcd070a72
   // ВИКА
-  .navigation {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+  .navbar {
 
     &__text {
-      display: flex;
-      align-items: center;
-      font-size: 20px;
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+
+  .social-network {
+
+    &__whatsapp {
+      margin-right: 43px;
     }
 
+    &__whatsapp,
+    &__telegram {
+      width: 44px;
+      height: 44px;
 
-    .contacts {
-
-      .social-media {
-        display: flex;
-        align-items: center;
-        margin: 0 30px;
-        padding: 0px;
-
-        &__phone-number {
-          font-size: 20px;
-          line-height: 25px;
-        }
-      }
-
-      .whatsapp-icon,
-      .telegram-icon {
-        max-width: 25px;
-        max-height: 25px;
-      }
-
-      &__whatsapp,
-      &__telegram {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 20px;
-        max-height: 20px;
+      .socialicon {
+        max-width: 44px;
       }
     }
   }
 }
 
-// мобилка медиа - 620px, контейнер - 375px
-// Мобилка на 375 тоже
-// Отступы между секциями: 38рх
-
-// Заголовки: 36рх
-// Текст: 16рх
-// Line-height - везде 25рх
-// Отступы между абзацами: 14рх
 @media (max-width: 620px) {
   .container {
     max-width: 375px;
@@ -388,14 +328,21 @@
 
   .titleH2 {
     font-size: 36px;
+    line-height: 60px;
+    text-align: center;
   }
 
   .subtitle {
-    font-size: 34px;
+    font-size: 28px;
+    line-height: 25px;
+    text-align: center;
   }
 
   .button-green {
-    @include btnmobile;
+    line-height: 17px;
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 8px;
   }
 
   .paragraf,
@@ -429,22 +376,21 @@
     }
 
     &__photo {
-      width: 230px;
-      height: 311px;
+      width: 214px;
+      height: 262px;
     }
 
-  }
-
-  .intro-mobile {
-    &__quote {
+    &__quote-mobile {
       @include h4;
-      display: inline;
+      display: flex;
       font-size: 16px;
       line-height: 20px;
       padding-top: 0;
       margin-top: 40px;
+      text-align: center;
     }
   }
+
 
   // АРИНА
   .about {
@@ -459,17 +405,15 @@
     }
 
     &__photo {
-      width: 186px;
-      height: 239px;
+      width: 214px;
+      height: 262px;
     }
 
     &__titleH2 {
       display: none;
     }
-  }
 
-  .about-media {
-    &__titleH2 {
+    &__titleH2-media {
       display: inline-flex;
       line-height: 50px;
     }
@@ -487,6 +431,11 @@
   }
 
   // ЛЮДА&NATALIA
+  .container-app {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .servise {
     &__list {
       font-size: 16px;
@@ -501,11 +450,13 @@
 
   .tariff {
     flex-direction: column;
-    padding: 20px 0;
+    padding: 25px 0;
     align-items: center;
     justify-content: center;
 
     .price {
+      font-size: 16px;
+      line-height: 22px;
       width: 100%;
       align-items: start;
       padding-bottom: 20px;
@@ -542,7 +493,6 @@
   .review {
     &__text {
       font-size: 14px;
-
     }
 
     &__image {
@@ -559,72 +509,41 @@
   #slide5,
   #slide6,
   #slide7 {
-    height: 500px;
+    height: 550px;
   }
 
-  // ВИКА
-  .button__wrapper {
-    display: flex;
-    justify-content: center;
-  }
+  .blog {
+    &__paragraf {
+      text-align: center;
+    }
 
-  .navigation {
-    margin: 0px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-
-    &__text {
-      max-width: 170px;
-      font-size: 16px;
-      line-height: 25px;
-      margin: 10px;
+    &__button {
+      justify-content: center;
     }
   }
 
-  .contacts {
-    display: flex;
-    align-items: flex-start;
-    margin: -70px;
+  .navbar {
+    justify-content: space-around;
 
-    .social-media {
-      display: flex;
-      align-items: flex-start;
-      margin: 0px;
+    &__text {
+      font-size: 20px;
+    }
+  }
 
-      &__phone-number {
-        font-size: 14px;
-        max-height: 20px;
-        margin: 0 -5px;
-        padding: 15px;
-        align-content: center;
-        justify-content: space-between;
-      }
+  .social-network {
 
-      .whatsapp-icon,
-      .telegram-icon {
-        max-height: 25px;
-        margin: 0 -10px;
-      }
+    &__whatsapp {
+      margin-right: 20px;
+    }
 
-      &__whatsapp,
-      &__telegram {
-        display: flex;
-        max-height: 20px;
-        margin: 0 -12px;
-        padding: 7px;
-        align-content: center;
-        justify-content: space-between;
-        margin-bottom: 14px;
+    &__whatsapp,
+    &__telegram {
+      width: 30px;
+      height: 33.8px;
 
-        &:hover,
-        &:active {
-          background: rgba(0, 0, 0, 0);
-          color: $color-nav;
-          box-shadow: inset 0 0 0 3px $color-nav;
-          border-radius: 2px;
-        }
+      .socialicon {
+        width: 30px;
+        height: 33.8px;
       }
     }
   }

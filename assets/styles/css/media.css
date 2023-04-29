@@ -3,9 +3,6 @@
   .container {
     max-width: 1024px;
   }
-  .screen {
-    margin-bottom: 115px;
-  }
   .titleH2 {
     font-size: 60px;
     line-height: 73px;
@@ -14,12 +11,83 @@
     font-size: 44px;
     line-height: 53px;
   }
-  .paragraf {
+  .paragraf,
+.more,
+.details {
     font-size: 30px;
     line-height: 50px;
   }
+  .header .logo__title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .header .nav {
+    width: 65%;
+  }
+  .header .nav__info {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .intro {
+    margin-top: 29px;
+    gap: 30px;
+  }
+  .intro__text {
+    width: 50%;
+    text-align: center;
+  }
+  .intro__title {
+    font-size: 63px;
+    line-height: 77px;
+    letter-spacing: 4%;
+    letter-spacing: 0.04em;
+  }
+  .intro__job {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .intro__quote {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .about {
+    gap: 34px;
+  }
+  .servise__list {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .servise__circle {
+    width: 0.8em;
+    font-size: 40px;
+  }
+  .review__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .review__image {
+    width: 4%;
+    height: 4%;
+  }
+  #slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+    padding: 0px;
+  }
+  .navbar__text {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .social-network__whatsapp, .social-network__telegram {
+    width: 44px;
+    height: 41px;
+  }
 }
-/* здесь ваши стили для планшета */
 @media (max-width: 968px) {
   .container {
     max-width: 620px;
@@ -31,18 +99,118 @@
   }
   .titleH2 {
     font-size: 38px;
-    line-height: 25px;
+    line-height: 40px;
   }
   .subtitle {
-    font-size: 44px;
+    font-size: 28px;
     line-height: 25px;
   }
-  .paragraf {
+  .paragraf,
+.price__more,
+.details {
     font-size: 18px;
     line-height: 25px;
   }
-  .info {
-    margin-bottom: 46px;
+  .button-green {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 17px 30px;
+  }
+  .nav {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar-toggle.active .bar:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(45deg);
+            transform: translateY(10px) rotate(45deg);
+  }
+  .navbar-toggle.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ABA39B;
+    padding: 0px 0px 10px 0px;
+  }
+  .nav.active li {
+    margin: 11px 0;
+  }
+  .intro {
+    margin-top: 25px;
+    gap: 15px;
+  }
+  .intro__title {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .intro__job {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .intro__quote {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 0;
+    margin-top: 40px;
+  }
+  .intro__photo {
+    width: 249px;
+    height: 311px;
+  }
+  .about {
+    gap: 32px;
+  }
+  .about__photo {
+    width: 249px;
+    height: 311px;
+  }
+  .servise__list {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .servise__circle {
+    width: 0.8em;
+    font-size: 28px;
+  }
+  .tariff {
+    padding: 30px 0;
+  }
+  .review__text {
+    font-size: 15px;
+  }
+  .review__image {
+    width: 4%;
+    height: 4%;
+  }
+  .navbar__text {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .social-network__whatsapp {
+    margin-right: 43px;
+  }
+  .social-network__whatsapp, .social-network__telegram {
+    width: 44px;
+    height: 44px;
+  }
+  .social-network__whatsapp .socialicon, .social-network__telegram .socialicon {
+    max-width: 44px;
   }
 }
 @media (max-width: 620px) {
@@ -56,26 +224,195 @@
   }
   .titleH2 {
     font-size: 36px;
-    line-height: 25рх;
+    line-height: 60px;
+    text-align: center;
   }
   .subtitle {
-    font-size: 34px;
-    line-height: 25рх;
+    font-size: 28px;
+    line-height: 25px;
+    text-align: center;
   }
-  .paragraf {
+  .button-green {
+    line-height: 17px;
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 8px;
+  }
+  .paragraf,
+.price__more {
     font-size: 16px;
     line-height: 25рх;
   }
-  .info {
-    margin-bottom: 38px;
+  .names {
+    margin-bottom: 1px;
+  }
+  .intro {
+    margin-top: 0px;
+    gap: 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro__text {
+    width: 100%;
+  }
+  .intro__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .intro__quote {
+    display: none;
+  }
+  .intro__photo {
+    width: 214px;
+    height: 262px;
+  }
+  .intro__quote-mobile {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 60px;
+    font-size: 36px;
+    color: #383838;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .about__text {
+    width: 100%;
+    text-align: center;
+  }
+  .about__photo {
+    width: 214px;
+    height: 262px;
+  }
+  .about__titleH2 {
+    display: none;
+  }
+  .about__titleH2-media {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    line-height: 50px;
   }
   .info__paragraf {
     text-align: center;
   }
   .info__button {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
+  .container-app {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .servise__list {
+    font-size: 16px;
+    line-height: 25рх;
+    margin-left: -20px;
+  }
+  .servise__circle {
+    font-size: 20px;
+  }
+  .tariff {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 25px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tariff .price {
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-bottom: 20px;
+  }
+  .psycho-content ul {
+    margin-left: -10px;
+  }
+  .psycho-content__second {
+    text-align: center;
+  }
+  .psycho-content__hidden {
+    text-align: start;
+  }
+  .detail {
+    text-align: center;
+  }
+  .energy-content ul {
+    margin-left: -10px;
+  }
+  .review__text {
+    font-size: 14px;
+  }
+  .review__image {
+    width: 3%;
+    height: 3%;
+  }
+  #slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+    height: 550px;
+  }
+  .blog__paragraf {
+    text-align: center;
+  }
+  .blog__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .navbar__text {
+    font-size: 20px;
+  }
+  .social-network__whatsapp {
+    margin-right: 20px;
+  }
+  .social-network__whatsapp, .social-network__telegram {
+    width: 30px;
+    height: 33.8px;
+  }
+  .social-network__whatsapp .socialicon, .social-network__telegram .socialicon {
+    width: 30px;
+    height: 33.8px;
+  }
 }
-
 /*# sourceMappingURL=media.css.map */

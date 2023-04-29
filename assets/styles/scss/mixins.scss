@@ -18,8 +18,7 @@
     font-weight: 400;
     // line-height: 109px;
     font-size: 90px;
-    color: $color-black;
-    letter-spacing: 0.04em;
+    color: $color-dark;
     text-align: center;
 }
 
@@ -77,14 +76,6 @@
     cursor: pointer;
 }
 
-// кнопка зеленая
-// @mixin button-green {
-//     @include btn;
-//     padding: 17px 35px;
-//     background-color: $color-green;
-//     color: $color-light;
-// }
-
 @mixin button-green {
     @include btn;
     padding: 17px 35px;
@@ -92,6 +83,14 @@
     color: $color-light;
     box-shadow: 8px 10px 10px 1px #7a8b6fb3;
 
+    &:hover {
+        background-color: $color-green-light;
+        transform: scale(1, 1.1);
+        transition: 0.7s;
+        color: $color-dark;
+    }
+
+    // &__help= то как ведет себя ссылка в кнопке
     &__help {
 
         &:hover,
@@ -100,18 +99,4 @@
             transition: 0.7s;
         }
     }
-
-    // &__help= то как ведет себя ссылка в кнопке
-
-    &:hover {
-        background-color: $color-green-light;
-        transform: scale(1, 1.1);
-        transition: 0.7s;
-        color: $color-dark;
-    }
-}
-
-@mixin btnmobile {
-    font-size: 14px;
-    line-height: 17px;
 }
