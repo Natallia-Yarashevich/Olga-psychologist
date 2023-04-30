@@ -343,7 +343,11 @@ a:after {
   line-height: 160%;
   /* or 24px */
   color: #000;
+  text-align: center;
   font-size: 17px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 25px;
 }
 .review__image {
   width: 5%;
@@ -371,7 +375,8 @@ a:after {
 #swiper-button-prev,
 #swiper-button-next {
   color: #000;
-  top: 50%;
+  top: 93%;
+  opacity: 15%;
 }
 
 .swiper-pagination-bullet-active {
@@ -830,6 +835,19 @@ a:after {
   .social-network__whatsapp .socialicon, .social-network__telegram .socialicon {
     width: 30px;
     height: 33.8px;
+  }
+}
+@media (max-width: 319px) {
+  #slide,
+  #slide1,
+  #slide2,
+  #slide3,
+  #slide4,
+  #slide5,
+  #slide6,
+  #slide7 {
+    align-items: flex-start;
+    overflow-y: scroll;
   }
 }
 
