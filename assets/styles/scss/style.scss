@@ -62,6 +62,9 @@ a {
 // ALISA
 .header {
     background-color: $color-bg-dark;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 
 .navbar {
