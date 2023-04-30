@@ -152,12 +152,12 @@ a {
 }
 
 .navbar {
-    min-height: 90px;
+    height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    bottom: 0;
+    // bottom: 0;
 
     &__text {
         @include phone;
@@ -247,6 +247,14 @@ a {
         padding-right: 20px;
     }
 
+    .button-green {
+        font-size: 17px;
+        line-height: 17px;
+        padding: 12px 20px;
+        border-radius: 12px;
+    }
+
+
     .navbar {
 
         .logo-title {
@@ -296,7 +304,7 @@ a {
         &__more {
             margin: 0;
             font-size: 18px;
-            line-height: 35px;
+            line-height: 30px;
         }
 
         &__button-green {

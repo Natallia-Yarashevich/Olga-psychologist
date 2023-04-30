@@ -170,7 +170,7 @@ a {
 .about {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 80px;
 
@@ -340,7 +340,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color: $color-light;
-    border-radius: 10%;
+    border-radius: 30px;
     overflow: hidden;
 }
 
@@ -366,18 +366,22 @@ a {
 // FOOTER =VICTORIA
 .footer {
     background-color: $color-bg-dark;
+    height: auto;
 }
 
 .navbar {
-    min-height: 80px;
+    height: 100px;
     width: 100%;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    bottom: 0;
+    // bottom: 0;
 
     &__text {
         @include phone;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -385,6 +389,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 10px;
 
     &__whatsapp {
         margin-right: 40px;

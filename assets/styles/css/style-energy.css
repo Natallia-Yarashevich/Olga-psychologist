@@ -214,7 +214,7 @@ a:after {
 }
 
 .navbar {
-  min-height: 90px;
+  height: 100px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,7 +225,6 @@ a:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  bottom: 0;
 }
 .navbar__text {
   font-family: "Montserrat";
@@ -297,6 +296,12 @@ a:after {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .button-green {
+    font-size: 17px;
+    line-height: 17px;
+    padding: 12px 20px;
+    border-radius: 12px;
+  }
   .navbar .logo-title {
     font-size: 23px;
     line-height: 25px;
@@ -332,7 +337,7 @@ a:after {
   .tariff__more {
     margin: 0;
     font-size: 18px;
-    line-height: 35px;
+    line-height: 30px;
   }
   .tariff__button-green {
     line-height: 17px;

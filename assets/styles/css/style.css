@@ -224,9 +224,8 @@ a:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -399,7 +398,6 @@ a:after {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
   line-height: 160%;
   /* or 24px */
   color: #000;
@@ -433,7 +431,7 @@ a:after {
       -ms-flex-align: center;
           align-items: center;
   background-color: #EFECE8;
-  border-radius: 10%;
+  border-radius: 30px;
   overflow: hidden;
 }
 
@@ -458,11 +456,14 @@ a:after {
 
 .footer {
   background-color: #ABA39B;
+  height: auto;
 }
 
 .navbar {
-  min-height: 80px;
+  height: 100px;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,7 +473,6 @@ a:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  bottom: 0;
 }
 .navbar__text {
   font-family: "Montserrat";
@@ -481,6 +481,8 @@ a:after {
   font-size: 32px;
   line-height: 39px;
   color: #383838;
+  padding: 0;
+  margin: 0;
 }
 
 .social-network {
@@ -494,6 +496,7 @@ a:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 10px;
 }
 .social-network__whatsapp {
   margin-right: 40px;
@@ -562,7 +565,11 @@ a:after {
     line-height: 29px;
   }
   .about {
-    gap: 34px;
+    gap: 50px;
+  }
+  .about__photo {
+    width: 500px;
+    height: 637px;
   }
   .servise__list {
     font-size: 30px;
@@ -589,6 +596,8 @@ a:after {
 #slide6,
 #slide7 {
     padding: 0px;
+    height: 590px;
+    border-radius: 25px;
   }
   .navbar__text {
     font-size: 26px;
@@ -623,9 +632,10 @@ a:after {
     line-height: 25px;
   }
   .button-green {
-    font-size: 20px;
-    line-height: 24px;
-    padding: 17px 30px;
+    font-size: 17px;
+    line-height: 17px;
+    padding: 12px 20px;
+    border-radius: 12px;
   }
   .nav {
     display: none;
@@ -685,7 +695,7 @@ a:after {
     height: 311px;
   }
   .about {
-    gap: 32px;
+    gap: 50px;
   }
   .about__photo {
     width: 249px;
@@ -708,6 +718,20 @@ a:after {
   .review__image {
     width: 4%;
     height: 4%;
+  }
+  #slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+    height: 380px;
+    border-radius: 20px;
+  }
+  .blog {
+    margin-bottom: 80px;
   }
   .navbar__text {
     font-size: 26px;
@@ -789,6 +813,10 @@ a:after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 16px;
     line-height: 20px;
     padding-top: 0;
@@ -898,6 +926,9 @@ a:after {
 #slide6,
 #slide7 {
     height: 550px;
+  }
+  .blog {
+    margin-bottom: 70px;
   }
   .blog__paragraf {
     text-align: center;

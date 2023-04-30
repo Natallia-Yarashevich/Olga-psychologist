@@ -51,7 +51,11 @@
     line-height: 29px;
   }
   .about {
-    gap: 34px;
+    gap: 50px;
+  }
+  .about__photo {
+    width: 500px;
+    height: 637px;
   }
   .servise__list {
     font-size: 30px;
@@ -78,6 +82,8 @@
 #slide6,
 #slide7 {
     padding: 0px;
+    height: 590px;
+    border-radius: 25px;
   }
   .navbar__text {
     font-size: 26px;
@@ -112,9 +118,10 @@
     line-height: 25px;
   }
   .button-green {
-    font-size: 20px;
-    line-height: 24px;
-    padding: 17px 30px;
+    font-size: 17px;
+    line-height: 17px;
+    padding: 12px 20px;
+    border-radius: 12px;
   }
   .nav {
     display: none;
@@ -174,7 +181,7 @@
     height: 311px;
   }
   .about {
-    gap: 32px;
+    gap: 50px;
   }
   .about__photo {
     width: 249px;
@@ -197,6 +204,20 @@
   .review__image {
     width: 4%;
     height: 4%;
+  }
+  #slide,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+    height: 380px;
+    border-radius: 20px;
+  }
+  .blog {
+    margin-bottom: 80px;
   }
   .navbar__text {
     font-size: 26px;
@@ -278,6 +299,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 16px;
     line-height: 20px;
     padding-top: 0;
@@ -387,6 +412,9 @@
 #slide6,
 #slide7 {
     height: 550px;
+  }
+  .blog {
+    margin-bottom: 70px;
   }
   .blog__paragraf {
     text-align: center;
