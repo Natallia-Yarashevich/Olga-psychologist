@@ -320,7 +320,11 @@ a {
     &__text {
         @include p;
         color: $color-black;
+        text-align: center;
         font-size: 17px;
+        margin-left: 7px;
+        margin-right: 7px;
+        margin-bottom: 25px;
     }
 
     &__image {
@@ -350,7 +354,8 @@ a {
 #swiper-button-prev,
 #swiper-button-next {
     color: $color-black;
-    top: 50%;
+    top: 93%;
+    opacity: 15%;
 }
 
 .swiper-pagination-bullet-active {
